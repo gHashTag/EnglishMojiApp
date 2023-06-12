@@ -1,0 +1,45 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/3270Narrow.ttf",
+      "sha1": "12fa7f1a4cf24f2d4322b98111995591aabbac7f"
+    },
+    {
+      "path": "assets/fonts/Hack-Regular.ttf",
+      "sha1": "664cfe2a64de1486c0ace8073ceeb6d9281e8b78"
+    },
+    {
+      "path": "assets/fonts/IBM-Logo.ttf",
+      "sha1": "458d9f12f3a362e3bc301dd54289bf0c4d5ad9b1"
+    },
+    {
+      "path": "assets/fonts/KLMN_Flash_Pix.ttf",
+      "sha1": "48722514ca968d0af3d0974654fb9f3ba8a9bea5"
+    },
+    {
+      "path": "assets/fonts/Spectral-Bold.ttf",
+      "sha1": "0ac952b795815a2b49a48856324c854524005687"
+    },
+    {
+      "path": "assets/fonts/Spectral-BoldItalic.ttf",
+      "sha1": "96b1ce3d89a36dd06c9e5c5bec2f1d5f23d40de4"
+    },
+    {
+      "path": "assets/fonts/Spectral-Medium.ttf",
+      "sha1": "07dd85ad4b7573745e612b88e058d18fcc865704"
+    },
+    {
+      "path": "assets/fonts/Spectral-MediumItalic.ttf",
+      "sha1": "5447ed18508900bc03356062d2df8c1f01502bc7"
+    },
+    {
+      "path": "assets/fonts/TheDolbak-Brush.ttf",
+      "sha1": "ebe878750912914be8cc8aa157ef6039b702c7a6"
+    },
+    {
+      "path": "assets/fonts/etna-free-font.otf",
+      "sha1": "1cecfb8066b5867ef113e97346c21e935c45ae61"
+    }
+  ]
+}
