@@ -52,7 +52,7 @@ export function ExamIndicator({ part, questions, dark = false }: ExamIndicatorT)
       {questions && (
         <>
           <TouchableOpacity onPress={handlePress} activeOpacity={0.7}>
-            <Text oneColor={dark ? undefined : white} h9 title={'Экзамен'} />
+            <Text oneColor={dark ? undefined : white} h9 title={'Exam'} />
           </TouchableOpacity>
           <ButtonVectorIcon
             onPress={handlePress}

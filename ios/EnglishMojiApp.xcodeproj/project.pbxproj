@@ -12,18 +12,18 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1541F6A2B85334F84BBD7B20 /* libPods-EnglishMojiApp-EnglishMojiAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2007C0D4F32B5D51EE6C8A39 /* libPods-EnglishMojiApp-EnglishMojiAppTests.a */; };
-		43EA30A1A74F5F0FFEDA9717 /* libPods-EnglishMojiApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6494399B4FBE7E520AB494F /* libPods-EnglishMojiApp.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		B2D3ACC5AA1742F5914A94B8 /* etna-free-font.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9790E44433E4F2281853DA5 /* etna-free-font.otf */; };
-		499A2BA27E6844F9B0600160 /* 3270Narrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A42A4340C7B94485B11B0F6F /* 3270Narrow.ttf */; };
 		333C4C4CB2A94D7FBE8938FD /* Hack-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53075DC679B74AA98F2F9726 /* Hack-Regular.ttf */; };
-		F35E41BD3AB3409FB840F237 /* IBM-Logo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F390F33A91A497BAA77768E /* IBM-Logo.ttf */; };
-		F1FB9E4C27504B0AB8E09EA1 /* KLMN_Flash_Pix.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5F06437D8F642CA91A340C7 /* KLMN_Flash_Pix.ttf */; };
-		F8B883A48CA540ED969FCCB3 /* Spectral-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54E7DD853BEF48179A869540 /* Spectral-Bold.ttf */; };
-		8408C9900A8742B3A523528A /* Spectral-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1FF8D288CB4BF1A262DD39 /* Spectral-BoldItalic.ttf */; };
-		F94C94EB491D401586994AED /* Spectral-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5874F9872B6C4A36B8E72F00 /* Spectral-Medium.ttf */; };
-		7B0CFBA8C9A040A08D929706 /* Spectral-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1611ADB1A3C464BA4DC9442 /* Spectral-MediumItalic.ttf */; };
+		43EA30A1A74F5F0FFEDA9717 /* libPods-EnglishMojiApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6494399B4FBE7E520AB494F /* libPods-EnglishMojiApp.a */; };
+		499A2BA27E6844F9B0600160 /* 3270Narrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A42A4340C7B94485B11B0F6F /* 3270Narrow.ttf */; };
 		4DD37F8348974B6C8FCF465F /* TheDolbak-Brush.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAACDD339BAE40ABA53F2088 /* TheDolbak-Brush.ttf */; };
+		7B0CFBA8C9A040A08D929706 /* Spectral-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1611ADB1A3C464BA4DC9442 /* Spectral-MediumItalic.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8408C9900A8742B3A523528A /* Spectral-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1FF8D288CB4BF1A262DD39 /* Spectral-BoldItalic.ttf */; };
+		B2D3ACC5AA1742F5914A94B8 /* etna-free-font.otf in Resources */ = {isa = PBXBuildFile; fileRef = A9790E44433E4F2281853DA5 /* etna-free-font.otf */; };
+		F1FB9E4C27504B0AB8E09EA1 /* KLMN_Flash_Pix.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5F06437D8F642CA91A340C7 /* KLMN_Flash_Pix.ttf */; };
+		F35E41BD3AB3409FB840F237 /* IBM-Logo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F390F33A91A497BAA77768E /* IBM-Logo.ttf */; };
+		F8B883A48CA540ED969FCCB3 /* Spectral-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54E7DD853BEF48179A869540 /* Spectral-Bold.ttf */; };
+		F94C94EB491D401586994AED /* Spectral-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5874F9872B6C4A36B8E72F00 /* Spectral-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +41,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* EnglishMojiAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnglishMojiAppTests.m; sourceTree = "<group>"; };
 		01A2B4F96DC6FD0693B7EEBA /* Pods-EnglishMojiApp-EnglishMojiAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishMojiApp-EnglishMojiAppTests.release.xcconfig"; path = "Target Support Files/Pods-EnglishMojiApp-EnglishMojiAppTests/Pods-EnglishMojiApp-EnglishMojiAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		0C1FF8D288CB4BF1A262DD39 /* Spectral-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Spectral-BoldItalic.ttf"; path = "../assets/fonts/Spectral-BoldItalic.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* EnglishMojiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishMojiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = EnglishMojiApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = EnglishMojiApp/AppDelegate.mm; sourceTree = "<group>"; };
@@ -48,22 +49,21 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EnglishMojiApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EnglishMojiApp/main.m; sourceTree = "<group>"; };
 		2007C0D4F32B5D51EE6C8A39 /* libPods-EnglishMojiApp-EnglishMojiAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EnglishMojiApp-EnglishMojiAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53075DC679B74AA98F2F9726 /* Hack-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Hack-Regular.ttf"; path = "../assets/fonts/Hack-Regular.ttf"; sourceTree = "<group>"; };
+		54E7DD853BEF48179A869540 /* Spectral-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Spectral-Bold.ttf"; path = "../assets/fonts/Spectral-Bold.ttf"; sourceTree = "<group>"; };
+		5874F9872B6C4A36B8E72F00 /* Spectral-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Spectral-Medium.ttf"; path = "../assets/fonts/Spectral-Medium.ttf"; sourceTree = "<group>"; };
+		7F390F33A91A497BAA77768E /* IBM-Logo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "IBM-Logo.ttf"; path = "../assets/fonts/IBM-Logo.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = EnglishMojiApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CF99C4374EF7785A2846980 /* Pods-EnglishMojiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishMojiApp.debug.xcconfig"; path = "Target Support Files/Pods-EnglishMojiApp/Pods-EnglishMojiApp.debug.xcconfig"; sourceTree = "<group>"; };
 		988BCD133D95884F76802153 /* Pods-EnglishMojiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishMojiApp.release.xcconfig"; path = "Target Support Files/Pods-EnglishMojiApp/Pods-EnglishMojiApp.release.xcconfig"; sourceTree = "<group>"; };
+		A42A4340C7B94485B11B0F6F /* 3270Narrow.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = 3270Narrow.ttf; path = ../assets/fonts/3270Narrow.ttf; sourceTree = "<group>"; };
+		A9790E44433E4F2281853DA5 /* etna-free-font.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "etna-free-font.otf"; path = "../assets/fonts/etna-free-font.otf"; sourceTree = "<group>"; };
 		C0D1D5518D9DB80F198DF324 /* Pods-EnglishMojiApp-EnglishMojiAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishMojiApp-EnglishMojiAppTests.debug.xcconfig"; path = "Target Support Files/Pods-EnglishMojiApp-EnglishMojiAppTests/Pods-EnglishMojiApp-EnglishMojiAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DAACDD339BAE40ABA53F2088 /* TheDolbak-Brush.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "TheDolbak-Brush.ttf"; path = "../assets/fonts/TheDolbak-Brush.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F1611ADB1A3C464BA4DC9442 /* Spectral-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Spectral-MediumItalic.ttf"; path = "../assets/fonts/Spectral-MediumItalic.ttf"; sourceTree = "<group>"; };
+		F5F06437D8F642CA91A340C7 /* KLMN_Flash_Pix.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = KLMN_Flash_Pix.ttf; path = ../assets/fonts/KLMN_Flash_Pix.ttf; sourceTree = "<group>"; };
 		F6494399B4FBE7E520AB494F /* libPods-EnglishMojiApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EnglishMojiApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9790E44433E4F2281853DA5 /* etna-free-font.otf */ = {isa = PBXFileReference; name = "etna-free-font.otf"; path = "../assets/fonts/etna-free-font.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A42A4340C7B94485B11B0F6F /* 3270Narrow.ttf */ = {isa = PBXFileReference; name = "3270Narrow.ttf"; path = "../assets/fonts/3270Narrow.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		53075DC679B74AA98F2F9726 /* Hack-Regular.ttf */ = {isa = PBXFileReference; name = "Hack-Regular.ttf"; path = "../assets/fonts/Hack-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7F390F33A91A497BAA77768E /* IBM-Logo.ttf */ = {isa = PBXFileReference; name = "IBM-Logo.ttf"; path = "../assets/fonts/IBM-Logo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F5F06437D8F642CA91A340C7 /* KLMN_Flash_Pix.ttf */ = {isa = PBXFileReference; name = "KLMN_Flash_Pix.ttf"; path = "../assets/fonts/KLMN_Flash_Pix.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		54E7DD853BEF48179A869540 /* Spectral-Bold.ttf */ = {isa = PBXFileReference; name = "Spectral-Bold.ttf"; path = "../assets/fonts/Spectral-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0C1FF8D288CB4BF1A262DD39 /* Spectral-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Spectral-BoldItalic.ttf"; path = "../assets/fonts/Spectral-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5874F9872B6C4A36B8E72F00 /* Spectral-Medium.ttf */ = {isa = PBXFileReference; name = "Spectral-Medium.ttf"; path = "../assets/fonts/Spectral-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F1611ADB1A3C464BA4DC9442 /* Spectral-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Spectral-MediumItalic.ttf"; path = "../assets/fonts/Spectral-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DAACDD339BAE40ABA53F2088 /* TheDolbak-Brush.ttf */ = {isa = PBXFileReference; name = "TheDolbak-Brush.ttf"; path = "../assets/fonts/TheDolbak-Brush.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,19 +158,8 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8CF99C4374EF7785A2846980 /* Pods-EnglishMojiApp.debug.xcconfig */,
-				988BCD133D95884F76802153 /* Pods-EnglishMojiApp.release.xcconfig */,
-				C0D1D5518D9DB80F198DF324 /* Pods-EnglishMojiApp-EnglishMojiAppTests.debug.xcconfig */,
-				01A2B4F96DC6FD0693B7EEBA /* Pods-EnglishMojiApp-EnglishMojiAppTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		B25EA94B56994BAAAC16FF24 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				A9790E44433E4F2281853DA5 /* etna-free-font.otf */,
 				A42A4340C7B94485B11B0F6F /* 3270Narrow.ttf */,
@@ -185,7 +174,17 @@
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CF99C4374EF7785A2846980 /* Pods-EnglishMojiApp.debug.xcconfig */,
+				988BCD133D95884F76802153 /* Pods-EnglishMojiApp.release.xcconfig */,
+				C0D1D5518D9DB80F198DF324 /* Pods-EnglishMojiApp-EnglishMojiAppTests.debug.xcconfig */,
+				01A2B4F96DC6FD0693B7EEBA /* Pods-EnglishMojiApp-EnglishMojiAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -534,10 +533,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 5EM4M85VSQ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = EnglishMojiApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EnglishMoji;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,9 +563,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 5EM4M85VSQ;
 				INFOPLIST_FILE = EnglishMojiApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = EnglishMoji;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

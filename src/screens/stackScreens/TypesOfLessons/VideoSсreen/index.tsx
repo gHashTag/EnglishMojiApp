@@ -68,9 +68,9 @@ export function VideoSсreen({}: VideoSсreenT) {
         /> */}
         {isPortrait && (
           <View style={btnContainer}>
-            {hasLearn && <Button color={white} onPress={handleLearn} title="Учить" />}
+            {hasLearn && <Button color={white} onPress={handleLearn} title="Learn" />}
             <Space height={20} />
-            {!isLast && <Button color={white} onPress={handleNext} title="Тест" />}
+            {!isLast && <Button color={white} onPress={handleNext} title="Test" />}
           </View>
         )}
       </View>
