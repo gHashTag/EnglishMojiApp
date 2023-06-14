@@ -1,0 +1,520 @@
+[
+  {
+    "id": 0,
+    "name": ":aerial_tramway:",
+    "ru": "канатная дорога",
+    "title": "aerial tramway",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/aerial_tramway.mp3"
+  },
+  {
+    "id": 1,
+    "name": ":airplane_arriving:",
+    "ru": "самолет прибывает",
+    "title": "airplane arriving",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/airplane_arriving.mp3"
+  },
+  {
+    "id": 2,
+    "name": ":airplane_departure:",
+    "ru": "вылет самолета",
+    "title": "airplane departure",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/airplane_departure.mp3"
+  },
+  {
+    "id": 3,
+    "name": ":ambulance:",
+    "ru": "скорая помощь",
+    "title": "ambulance",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/ambulance.mp3"
+  },
+  {
+    "id": 4,
+    "name": ":anchor:",
+    "ru": "якорь",
+    "title": "anchor",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/anchor.mp3"
+  },
+  {
+    "id": 5,
+    "name": ":articulated_lorry:",
+    "ru": "автопоезд",
+    "title": "articulated lorry",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/articulated_lorry.mp3"
+  },
+  {
+    "id": 6,
+    "name": ":car:",
+    "ru": "машина",
+    "title": "automobile",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/automobile.mp3"
+  },
+  {
+    "id": 7,
+    "name": ":bank:",
+    "ru": "банк",
+    "title": "bank",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/bank.mp3"
+  },
+  {
+    "id": 8,
+    "name": ":bike:",
+    "ru": "велосипед",
+    "title": "bicycle",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/bicycle.mp3"
+  },
+  {
+    "id": 9,
+    "name": ":building_construction:",
+    "ru": "строительство здания",
+    "title": "building construction",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/building_construction.mp3"
+  },
+  {
+    "id": 10,
+    "name": ":bus:",
+    "ru": "автобус",
+    "title": "bus",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/bus.mp3"
+  },
+  {
+    "id": 11,
+    "name": ":busstop:",
+    "ru": "остановка",
+    "title": "bus stop",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/bus_stop.mp3"
+  },
+  {
+    "id": 12,
+    "name": ":camping:",
+    "ru": "кемпинг",
+    "title": "camping",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/camping.mp3"
+  },
+  {
+    "id": 13,
+    "name": ":canoe:",
+    "ru": "каноэ",
+    "title": "canoe",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/canoe.mp3"
+  },
+  {
+    "id": 14,
+    "name": ":carousel_horse:",
+    "ru": "карусель",
+    "title": "carousel horse",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/carousel_horse.mp3"
+  },
+  {
+    "id": 15,
+    "name": ":church:",
+    "ru": "церковь",
+    "title": "church",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/church.mp3"
+  },
+  {
+    "id": 16,
+    "name": ":city_sunset:",
+    "ru": "городской пейзаж в сумерках",
+    "title": "cityscape at dusk",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/cityscape_at_dusk.mp3"
+  },
+  {
+    "id": 17,
+    "name": ":construction:",
+    "ru": "строительство",
+    "title": "construction",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/construction.mp3"
+  },
+  {
+    "id": 18,
+    "name": ":convenience_store:",
+    "ru": "круглосуточный магазин",
+    "title": "convenience store",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/convenience_store.mp3"
+  },
+  {
+    "id": 19,
+    "name": ":derelict_house_building:",
+    "ru": "заброшенный дом",
+    "title": "derelict house building",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/derelict_house_building.mp3"
+  },
+  {
+    "id": 20,
+    "name": ":european_castle:",
+    "ru": "европейский замок",
+    "title": "european castle",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/european_castle.mp3"
+  },
+  {
+    "id": 21,
+    "name": ":european_post_office:",
+    "ru": "почтовое отделение",
+    "title": "european post office",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/european_post_office.mp3"
+  },
+  {
+    "id": 22,
+    "name": ":factory:",
+    "ru": "фабрика",
+    "title": "factory",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/factory.mp3"
+  },
+  {
+    "id": 23,
+    "name": ":ferris_wheel:",
+    "ru": "колесо обозрения",
+    "title": "ferris wheel",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/ferris_wheel.mp3"
+  },
+  {
+    "id": 24,
+    "name": ":ferry:",
+    "ru": "паром",
+    "title": "ferry",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/ferry.mp3"
+  },
+  {
+    "id": 25,
+    "name": ":fire_engine:",
+    "ru": "пожарная машина",
+    "title": "fire engine",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/fire_engine.mp3"
+  },
+  {
+    "id": 26,
+    "name": ":sparkler:",
+    "ru": "бенгальский огонь",
+    "title": "firework sparkler",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/firework_sparkler.mp3"
+  },
+  {
+    "id": 27,
+    "name": ":foggy:",
+    "ru": "мост в туманне",
+    "title": "foggy",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/foggy.mp3"
+  },
+  {
+    "id": 28,
+    "name": ":fountain:",
+    "ru": "фонтан",
+    "title": "fountain",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/fountain.mp3"
+  },
+  {
+    "id": 29,
+    "name": ":helicopter:",
+    "ru": "вертолёт",
+    "title": "helicopter",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/helicopter.mp3"
+  },
+  {
+    "id": 30,
+    "name": ":bullettrain_side:",
+    "ru": "высокоскоростной поезд",
+    "title": "high-speed train",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/high-speed_train.mp3"
+  },
+  {
+    "id": 31,
+    "name": ":hospital:",
+    "ru": "больница",
+    "title": "hospital",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/hospital.mp3"
+  },
+  {
+    "id": 32,
+    "name": ":hotel:",
+    "ru": "отель",
+    "title": "hotel",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/hotel.mp3"
+  },
+  {
+    "id": 33,
+    "name": ":house_buildings:",
+    "ru": "домовые постройки",
+    "title": "house buildings",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/house_buildings.mp3"
+  },
+  {
+    "id": 34,
+    "name": ":japanese_castle:",
+    "ru": "японский замок",
+    "title": "japanese castle",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/japanese_castle.mp3"
+  },
+  {
+    "id": 35,
+    "name": ":metro:",
+    "ru": "метро",
+    "title": "metro",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/metro.mp3"
+  },
+  {
+    "id": 36,
+    "name": ":milky_way:",
+    "ru": "млечный путь",
+    "title": "milky way",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/milky_way.mp3"
+  },
+  {
+    "id": 37,
+    "name": ":minibus:",
+    "ru": "маршрутка",
+    "title": "minibus",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/minibus.mp3"
+  },
+  {
+    "id": 38,
+    "name": ":monorail:",
+    "ru": "монорельс",
+    "title": "monorail",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/monorail.mp3"
+  },
+  {
+    "id": 39,
+    "name": ":mosque:",
+    "ru": "мечеть",
+    "title": "mosque",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/mosque.mp3"
+  },
+  {
+    "id": 40,
+    "name": ":motor_boat:",
+    "ru": "моторная лодка",
+    "title": "motor boat",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/motor_boat.mp3"
+  },
+  {
+    "id": 41,
+    "name": ":motor_scooter:",
+    "ru": "скутер",
+    "title": "motor scooter",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/motor_scooter.mp3"
+  },
+  {
+    "id": 42,
+    "name": ":motorway:",
+    "ru": "автомагистраль",
+    "title": "motorway",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/motorway.mp3"
+  },
+  {
+    "id": 43,
+    "name": ":mountain_cableway:",
+    "ru": "горная канатная дорога",
+    "title": "mountain cableway",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/mountain_cableway.mp3"
+  },
+  {
+    "id": 44,
+    "name": ":night_with_stars:",
+    "ru": "ночь со звездами",
+    "title": "night with stars",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/night_with_stars.mp3"
+  },
+  {
+    "id": 45,
+    "name": ":office:",
+    "ru": "офисное здание",
+    "title": "office building",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/office_building.mp3"
+  },
+  {
+    "id": 46,
+    "name": ":passenger_ship:",
+    "ru": "пассажирское судно",
+    "title": "passenger ship",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/passenger_ship.mp3"
+  },
+  {
+    "id": 47,
+    "name": ":police_car:",
+    "ru": "полицейская машина",
+    "title": "police car",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/police_car.mp3"
+  },
+  {
+    "id": 48,
+    "name": ":racing_car:",
+    "ru": "гоночный автомобиль",
+    "title": "racing car",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/racing_car.mp3"
+  },
+  {
+    "id": 49,
+    "name": ":racing_motorcycle:",
+    "ru": "гоночный мотоцикл",
+    "title": "racing motorcycle",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/racing_motorcycle.mp3"
+  },
+  {
+    "id": 50,
+    "name": ":railway_track:",
+    "ru": "железнодорожные пути",
+    "title": "railway track",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/railway_track.mp3"
+  },
+  {
+    "id": 51,
+    "name": ":rocket:",
+    "ru": "ракета",
+    "title": "rocket",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/rocket.mp3"
+  },
+  {
+    "id": 52,
+    "name": ":roller_coaster:",
+    "ru": "американские горки",
+    "title": "roller coaster",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/roller_coaster.mp3"
+  },
+  {
+    "id": 53,
+    "name": ":boat:",
+    "ru": "парусное судно",
+    "title": "sailboat",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/sailboat.mp3"
+  },
+  {
+    "id": 54,
+    "name": ":satellite:",
+    "ru": "спутник",
+    "title": "satellite",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/satellite.mp3"
+  },
+  {
+    "id": 55,
+    "name": ":school:",
+    "ru": "школа",
+    "title": "school",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/school.mp3"
+  },
+  {
+    "id": 56,
+    "name": ":seat:",
+    "ru": "сиденье",
+    "title": "seat",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/seat.mp3"
+  },
+  {
+    "id": 57,
+    "name": ":shinto_shrine:",
+    "ru": "синтоистский храм",
+    "title": "shinto shrine",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/shinto_shrine.mp3"
+  },
+  {
+    "id": 58,
+    "name": ":ship:",
+    "ru": "корабль",
+    "title": "ship",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/ship.mp3"
+  },
+  {
+    "id": 59,
+    "name": ":stars:",
+    "ru": "падающая звезда",
+    "title": "shooting star",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/shooting_star.mp3"
+  },
+  {
+    "id": 60,
+    "name": ":speedboat:",
+    "ru": "быстроходный катер",
+    "title": "speedboat",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/speedboat.mp3"
+  },
+  {
+    "id": 61,
+    "name": ":station:",
+    "ru": "станция",
+    "title": "station",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/station.mp3"
+  },
+  {
+    "id": 62,
+    "name": ":statue_of_liberty:",
+    "ru": "статуя Свободы",
+    "title": "statue of liberty",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/statue_of_liberty.mp3"
+  },
+  {
+    "id": 63,
+    "name": ":steam_locomotive:",
+    "ru": "паровоз",
+    "title": "steam locomotive",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/steam_locomotive.mp3"
+  },
+  {
+    "id": 64,
+    "name": ":suspension_railway:",
+    "ru": "подвесная железная дорога",
+    "title": "suspension railway",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/suspension_railway.mp3"
+  },
+  {
+    "id": 65,
+    "name": ":synagogue:",
+    "ru": "синагога",
+    "title": "synagogue",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/synagogue.mp3"
+  },
+  {
+    "id": 66,
+    "name": ":taxi:",
+    "ru": "такси",
+    "title": "taxi",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/taxi.mp3"
+  },
+  {
+    "id": 67,
+    "name": ":tent:",
+    "ru": "палатка",
+    "title": "tent",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/tent.mp3"
+  },
+  {
+    "id": 68,
+    "name": ":tokyo_tower:",
+    "ru": "башня в Токио",
+    "title": "tokyo tower",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/tokyo_tower.mp3"
+  },
+  {
+    "id": 69,
+    "name": ":tractor:",
+    "ru": "трактор",
+    "title": "tractor",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/tractor.mp3"
+  },
+  {
+    "id": 70,
+    "name": ":traffic_light:",
+    "ru": "светофор",
+    "title": "traffic light",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/traffic_light.mp3"
+  },
+  {
+    "id": 71,
+    "name": ":tram:",
+    "ru": "трамвай",
+    "title": "tram",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/tram.mp3"
+  },
+  {
+    "id": 72,
+    "name": ":trolleybus:",
+    "ru": "троллейбус",
+    "title": "trolleybus",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/trolleybus.mp3"
+  },
+  {
+    "id": 73,
+    "name": ":volcano:",
+    "ru": "вулкан",
+    "title": "volcano",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/volcano.mp3"
+  }
+]

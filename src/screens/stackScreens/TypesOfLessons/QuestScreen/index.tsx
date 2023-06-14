@@ -16,9 +16,11 @@ import { goPrevious, incrementSection } from '../../../../slices'
 interface QuestScreenT {}
 
 export function QuestScreen({}: QuestScreenT) {
-  const { lessonData, currentLesson, sectionIndex } = useTypedSelector(st => st.section)
+  const { currentLesson } = useTypedSelector(st => st.section)
   const dispatch = useDispatch()
-  if (!currentLesson?.question) return null
+  if (!currentLesson?.question) {
+    return null
+  }
   const { question, header } = currentLesson
   const handleBack = () => {
     dispatch(goPrevious())
@@ -77,4 +79,4 @@ const styles = StyleSheet.create({
   }
 })
 
-const { container, videoContainer } = styles
+const { container } = styles

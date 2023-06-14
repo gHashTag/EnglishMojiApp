@@ -1,0 +1,4671 @@
+[
+  {
+    "id": 0,
+    "name": ":earth_americas:",
+    "title": "America",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/america.mp3",
+    "ru": "Америка"
+  },
+  {
+    "id": 1,
+    "name": ":earth_asia:",
+    "title": "Asia-Australia",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/asia-australia.mp3",
+    "ru": "Азия-Австралия"
+  },
+  {
+    "id": 2,
+    "name": ":admission_tickets:",
+    "title": "admission tickets",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/admission_tickets.mp3"
+  },
+  {
+    "id": 3,
+    "name": ":aerial_tramway:",
+    "title": "aerial tramway",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/aerial_tramway.mp3",
+    "ru": "канатная дорога"
+  },
+  {
+    "id": 4,
+    "name": ":airplane_arriving:",
+    "title": "airplane arriving",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/airplane_arriving.mp3",
+    "ru": "самолет прибывает"
+  },
+  {
+    "id": 5,
+    "name": ":airplane_departure:",
+    "title": "airplane departure",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/airplane_departure.mp3",
+    "ru": "вылет самолета"
+  },
+  {
+    "id": 6,
+    "name": ":alarm_clock:",
+    "title": "alarm clock",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/alarm_clock.mp3",
+    "ru": "будильник"
+  },
+  {
+    "id": 7,
+    "name": ":ambulance:",
+    "title": "ambulance",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/ambulance.mp3",
+    "ru": "скорая помощь"
+  },
+  {
+    "id": 8,
+    "name": ":football:",
+    "title": "american football",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/american_football.mp3"
+  },
+  {
+    "id": 9,
+    "name": ":amphora:",
+    "title": "amphora",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/amphora.mp3",
+    "ru": "амфора"
+  },
+  {
+    "id": 10,
+    "name": ":anchor:",
+    "title": "anchor",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/anchor.mp3",
+    "ru": "якорь"
+  },
+  {
+    "id": 11,
+    "name": ":anchor:",
+    "title": "anchor",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/anchor.mp3",
+    "ru": "якорь"
+  },
+  {
+    "id": 12,
+    "name": ":ant:",
+    "title": "ant",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/ant.mp3"
+  },
+  {
+    "id": 13,
+    "name": ":green_apple:",
+    "title": "apple",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/apple.mp3"
+  },
+  {
+    "id": 14,
+    "name": ":aquarius:",
+    "title": "aquarius",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/aquarius.mp3",
+    "ru": "водолей"
+  },
+  {
+    "id": 15,
+    "name": ":aries:",
+    "title": "aries",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/aries.mp3",
+    "ru": "овен"
+  },
+  {
+    "id": 16,
+    "name": ":articulated_lorry:",
+    "title": "articulated lorry",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/articulated_lorry.mp3",
+    "ru": "автопоезд"
+  },
+  {
+    "id": 17,
+    "name": ":female-artist:",
+    "title": "artist",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/artist.mp3",
+    "ru": "художник"
+  },
+  {
+    "id": 18,
+    "name": ":art:",
+    "title": "artist palette",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/artist_palette.mp3"
+  },
+  {
+    "id": 19,
+    "name": ":male-astronaut:",
+    "title": "astronaut",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/astronaut.mp3",
+    "ru": "астронавт"
+  },
+  {
+    "id": 20,
+    "name": ":athletic_shoe:",
+    "title": "athletic shoe",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/athletic_shoe.mp3"
+  },
+  {
+    "id": 21,
+    "name": ":atom_symbol:",
+    "title": "atom",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/atom.mp3",
+    "ru": "атом"
+  },
+  {
+    "id": 22,
+    "name": ":eggplant:",
+    "title": "aubergine",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/aubergine.mp3"
+  },
+  {
+    "id": 23,
+    "name": ":car:",
+    "title": "automobile",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/automobile.mp3",
+    "ru": "машина"
+  },
+  {
+    "id": 24,
+    "name": ":baby_symbol:",
+    "title": "baby",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/baby.mp3",
+    "ru": "детка"
+  },
+  {
+    "id": 25,
+    "name": ":baby:",
+    "title": "baby",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/baby.mp3",
+    "ru": "младенец"
+  },
+  {
+    "id": 26,
+    "name": ":angel:",
+    "title": "baby angel",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/baby_angel.mp3",
+    "ru": "маленький ангел"
+  },
+  {
+    "id": 27,
+    "name": ":baby_bottle:",
+    "title": "baby bottle",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/baby_bottle.mp3"
+  },
+  {
+    "id": 28,
+    "name": ":baby_chick:",
+    "title": "baby chick",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/baby_chick.mp3"
+  },
+  {
+    "id": 29,
+    "name": ":bacon:",
+    "title": "bacon",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/bacon.mp3"
+  },
+  {
+    "id": 30,
+    "name": ":badminton_racquet_and_shuttlecock:",
+    "title": "badminton",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/badminton.mp3"
+  },
+  {
+    "id": 31,
+    "name": ":baggage_claim:",
+    "title": "baggage claim",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/baggage_claim.mp3",
+    "ru": "получение багажа"
+  },
+  {
+    "id": 32,
+    "name": ":baguette_bread:",
+    "title": "baguette bread",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/baguette_bread.mp3"
+  },
+  {
+    "id": 33,
+    "name": ":ballot_box_with_ballot:",
+    "title": "ballot box with ballot",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/ballot_box_with_ballot.mp3",
+    "ru": "урна с бюллетенем"
+  },
+  {
+    "id": 34,
+    "name": ":banana:",
+    "title": "banana",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/banana.mp3"
+  },
+  {
+    "id": 35,
+    "name": ":bank:",
+    "title": "bank",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/bank.mp3",
+    "ru": "банк"
+  },
+  {
+    "id": 36,
+    "name": ":bar_chart:",
+    "title": "bar chart",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/bar_chart.mp3",
+    "ru": "гистограмма"
+  },
+  {
+    "id": 37,
+    "name": ":barely_sunny:",
+    "title": "barely sunny",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/barely_sunny.mp3",
+    "ru": "едва солнечно"
+  },
+  {
+    "id": 38,
+    "name": ":baseball:",
+    "title": "baseball",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/baseball.mp3"
+  },
+  {
+    "id": 39,
+    "name": ":bat:",
+    "title": "bat",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/bat.mp3"
+  },
+  {
+    "id": 40,
+    "name": ":bathtub:",
+    "title": "bathtub",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/bathtub.mp3",
+    "ru": "ванна"
+  },
+  {
+    "id": 41,
+    "name": ":battery:",
+    "title": "battery",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/battery.mp3",
+    "ru": "аккумулятор"
+  },
+  {
+    "id": 42,
+    "name": ":heartbeat:",
+    "title": "beating heart",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/beating_heart.mp3",
+    "ru": "бьющееся сердце"
+  },
+  {
+    "id": 43,
+    "name": ":bee:",
+    "title": "bee",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/bee.mp3"
+  },
+  {
+    "id": 44,
+    "name": ":beginner:",
+    "title": "beginner",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/beginner.mp3",
+    "ru": "новичок"
+  },
+  {
+    "id": 45,
+    "name": ":bell:",
+    "title": "bell",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/bell.mp3",
+    "ru": "колокол"
+  },
+  {
+    "id": 46,
+    "name": ":bellhop_bell:",
+    "title": "bellhop bell",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/bellhop_bell.mp3",
+    "ru": "колокол"
+  },
+  {
+    "id": 47,
+    "name": ":bento:",
+    "title": "bento box",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/bento_box.mp3"
+  },
+  {
+    "id": 48,
+    "name": ":bike:",
+    "title": "bicycle",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/bicycle.mp3",
+    "ru": "велосипед"
+  },
+  {
+    "id": 49,
+    "name": ":bicyclist:",
+    "title": "bicyclist",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/bicyclist.mp3"
+  },
+  {
+    "id": 50,
+    "name": ":billed_cap:",
+    "title": "billed cap",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/billed_cap.mp3"
+  },
+  {
+    "id": 51,
+    "name": ":8ball:",
+    "title": "billiards",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/billiards.mp3"
+  },
+  {
+    "id": 52,
+    "name": ":biohazard_sign:",
+    "title": "biohazard sign",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/biohazard_sign.mp3",
+    "ru": "знак биологической опасности"
+  },
+  {
+    "id": 53,
+    "name": ":bird:",
+    "title": "bird",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/bird.mp3"
+  },
+  {
+    "id": 54,
+    "name": ":blond-haired-woman:",
+    "title": "blond haired woman",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/blond_haired_woman.mp3",
+    "ru": "белокурая женщина"
+  },
+  {
+    "id": 55,
+    "name": ":blossom:",
+    "title": "blossom",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/blossom.mp3",
+    "ru": "цвести"
+  },
+  {
+    "id": 56,
+    "name": ":boar:",
+    "title": "boar",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/boar.mp3"
+  },
+  {
+    "id": 57,
+    "name": ":bomb:",
+    "title": "bomb",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/bomb.mp3",
+    "ru": "бомбить"
+  },
+  {
+    "id": 58,
+    "name": ":books:",
+    "title": "books",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/books.mp3",
+    "ru": "книги"
+  },
+  {
+    "id": 59,
+    "name": ":bouquet:",
+    "title": "bouquet",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/bouquet.mp3",
+    "ru": "букет"
+  },
+  {
+    "id": 60,
+    "name": ":bow_and_arrow:",
+    "title": "bow and arrow",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/bow_and_arrow.mp3"
+  },
+  {
+    "id": 61,
+    "name": ":bowling:",
+    "title": "bowling",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/bowling.mp3"
+  },
+  {
+    "id": 62,
+    "name": ":boxing_glove:",
+    "title": "boxing glove",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/boxing_glove.mp3",
+    "ru": "боксерская перчатка"
+  },
+  {
+    "id": 63,
+    "name": ":boy:",
+    "title": "boy",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/boy.mp3",
+    "ru": "мальчик"
+  },
+  {
+    "id": 64,
+    "name": ":brain:",
+    "title": "brain",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/brain.mp3",
+    "ru": "головной мозг"
+  },
+  {
+    "id": 65,
+    "name": ":brain:",
+    "title": "brain",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/brain.mp3",
+    "ru": "мозг"
+  },
+  {
+    "id": 66,
+    "name": ":bread:",
+    "title": "bread",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/bread.mp3"
+  },
+  {
+    "id": 67,
+    "name": ":breast-feeding:",
+    "title": "breast feeding",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/breast_feeding.mp3",
+    "ru": "кормление грудью"
+  },
+  {
+    "id": 68,
+    "name": ":bride_with_veil:",
+    "title": "bride with veil",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/bride_with_veil.mp3",
+    "ru": "невеста с вуалью"
+  },
+  {
+    "id": 69,
+    "name": ":low_brightness:",
+    "title": "brightness",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/brightness.mp3",
+    "ru": "яркость"
+  },
+  {
+    "id": 70,
+    "name": ":broccoli:",
+    "title": "broccoli",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/broccoli.mp3"
+  },
+  {
+    "id": 71,
+    "name": ":water_buffalo:",
+    "title": "buffalo",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/buffalo.mp3"
+  },
+  {
+    "id": 72,
+    "name": ":building_construction:",
+    "title": "building construction",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/building_construction.mp3",
+    "ru": "строительство здания"
+  },
+  {
+    "id": 73,
+    "name": ":burrito:",
+    "title": "burrito",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/burrito.mp3"
+  },
+  {
+    "id": 74,
+    "name": ":bus:",
+    "title": "bus",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/bus.mp3",
+    "ru": "автобус"
+  },
+  {
+    "id": 75,
+    "name": ":busstop:",
+    "title": "bus stop",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/bus_stop.mp3",
+    "ru": "остановка"
+  },
+  {
+    "id": 76,
+    "name": ":butterfly:",
+    "title": "butterfly",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/butterfly.mp3"
+  },
+  {
+    "id": 77,
+    "name": ":cactus:",
+    "title": "cactus",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/cactus.mp3",
+    "ru": "кактус"
+  },
+  {
+    "id": 78,
+    "name": ":call_me_hand:",
+    "title": "call me hand",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/call_me_hand.mp3",
+    "ru": "позвони мне"
+  },
+  {
+    "id": 79,
+    "name": ":camel:",
+    "title": "camel",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/camel.mp3"
+  },
+  {
+    "id": 80,
+    "name": ":camera_with_flash:",
+    "title": "camera with flash",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/camera_with_flash.mp3",
+    "ru": "камера со вспышкой"
+  },
+  {
+    "id": 81,
+    "name": ":camping:",
+    "title": "camping",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/camping.mp3",
+    "ru": "кемпинг"
+  },
+  {
+    "id": 82,
+    "name": ":cancer:",
+    "title": "cancer",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/cancer.mp3",
+    "ru": "рак"
+  },
+  {
+    "id": 83,
+    "name": ":candle:",
+    "title": "candle",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/candle.mp3",
+    "ru": "свеча"
+  },
+  {
+    "id": 84,
+    "name": ":candy:",
+    "title": "candy",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/candy.mp3"
+  },
+  {
+    "id": 85,
+    "name": ":canned_food:",
+    "title": "canned food",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/canned_food.mp3"
+  },
+  {
+    "id": 86,
+    "name": ":canoe:",
+    "title": "canoe",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/canoe.mp3"
+  },
+  {
+    "id": 87,
+    "name": ":canoe:",
+    "title": "canoe",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/canoe.mp3",
+    "ru": "каноэ"
+  },
+  {
+    "id": 88,
+    "name": ":capricorn:",
+    "title": "capricorn",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/capricorn.mp3",
+    "ru": "козерог"
+  },
+  {
+    "id": 89,
+    "name": ":parking:",
+    "title": "car parking",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/car_parking.mp3",
+    "ru": "автомобильная стоянка"
+  },
+  {
+    "id": 90,
+    "name": ":card_file_box:",
+    "title": "card file box",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/card_file_box.mp3",
+    "ru": "коробка картотеки"
+  },
+  {
+    "id": 91,
+    "name": ":card_index_dividers:",
+    "title": "card index dividers",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/card_index_dividers.mp3",
+    "ru": "разделители картотеки"
+  },
+  {
+    "id": 92,
+    "name": ":carousel_horse:",
+    "title": "carousel horse",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/carousel_horse.mp3",
+    "ru": "карусель"
+  },
+  {
+    "id": 93,
+    "name": ":carrot:",
+    "title": "carrot",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/carrot.mp3"
+  },
+  {
+    "id": 94,
+    "name": ":person_doing_cartwheel:",
+    "title": "cartwheel",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/cartwheel.mp3"
+  },
+  {
+    "id": 95,
+    "name": ":cat2:",
+    "title": "cat",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/cat.mp3"
+  },
+  {
+    "id": 96,
+    "name": ":bug:",
+    "title": "caterpillar",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/caterpillar.mp3"
+  },
+  {
+    "id": 97,
+    "name": ":cheese_wedge:",
+    "title": "cheese",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/cheese.mp3"
+  },
+  {
+    "id": 98,
+    "name": ":cherries:",
+    "title": "cherries",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/cherries.mp3"
+  },
+  {
+    "id": 99,
+    "name": ":cherry_blossom:",
+    "title": "cherry blossom",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/cherry_blossom.mp3",
+    "ru": "вишня в цвету"
+  },
+  {
+    "id": 100,
+    "name": ":chestnut:",
+    "title": "chestnut",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/chestnut.mp3",
+    "ru": "каштан"
+  },
+  {
+    "id": 101,
+    "name": ":chicken:",
+    "title": "chicken",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/chicken.mp3"
+  },
+  {
+    "id": 102,
+    "name": ":child:",
+    "title": "child",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/child.mp3",
+    "ru": "ребёнок"
+  },
+  {
+    "id": 103,
+    "name": ":children_crossing:",
+    "title": "children crossing",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/children_crossing.mp3",
+    "ru": "дети переходят"
+  },
+  {
+    "id": 104,
+    "name": ":chocolate_bar:",
+    "title": "chocolate bar",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/chocolate_bar.mp3"
+  },
+  {
+    "id": 105,
+    "name": ":chopsticks:",
+    "title": "chopsticks",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/chopsticks.mp3"
+  },
+  {
+    "id": 106,
+    "name": ":christmas_tree:",
+    "title": "christmas tree",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/christmas_tree.mp3",
+    "ru": "рождественоская елка"
+  },
+  {
+    "id": 107,
+    "name": ":church:",
+    "title": "church",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/church.mp3",
+    "ru": "церковь"
+  },
+  {
+    "id": 108,
+    "name": ":circus_tent:",
+    "title": "circus",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/circus.mp3"
+  },
+  {
+    "id": 109,
+    "name": ":city_sunset:",
+    "title": "cityscape at dusk",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/cityscape_at_dusk.mp3",
+    "ru": "городской пейзаж в сумерках"
+  },
+  {
+    "id": 110,
+    "name": ":clapper:",
+    "title": "clapper",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/clapper.mp3"
+  },
+  {
+    "id": 111,
+    "name": ":clapper:",
+    "title": "clapper board",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/clapper_board.mp3",
+    "ru": "хлопушка"
+  },
+  {
+    "id": 112,
+    "name": ":person_climbing:",
+    "title": "climbing",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/climbing.mp3"
+  },
+  {
+    "id": 113,
+    "name": ":clipboard:",
+    "title": "clipboard",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/clipboard.mp3",
+    "ru": ""
+  },
+  {
+    "id": 114,
+    "name": ":closed_umbrella:",
+    "title": "closed umbrella",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/closed_umbrella.mp3"
+  },
+  {
+    "id": 115,
+    "name": ":cloud:",
+    "title": "cloud",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/cloud.mp3",
+    "ru": "облако"
+  },
+  {
+    "id": 116,
+    "name": ":clubs:",
+    "title": "clubs",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/clubs.mp3",
+    "ru": "клубы"
+  },
+  {
+    "id": 117,
+    "name": ":coat:",
+    "title": "coat",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/coat.mp3"
+  },
+  {
+    "id": 118,
+    "name": ":coconut:",
+    "title": "coconut",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/coconut.mp3"
+  },
+  {
+    "id": 119,
+    "name": ":coffee:",
+    "title": "coffee",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/coffee.mp3"
+  },
+  {
+    "id": 120,
+    "name": ":comet:",
+    "title": "comet",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/comet.mp3",
+    "ru": "комета"
+  },
+  {
+    "id": 121,
+    "name": ":compression:",
+    "title": "compression",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/compression.mp3",
+    "ru": "сжатие"
+  },
+  {
+    "id": 122,
+    "name": ":construction:",
+    "title": "construction",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/construction.mp3",
+    "ru": "строительство"
+  },
+  {
+    "id": 123,
+    "name": ":construction_worker:",
+    "title": "construction worker",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/construction_worker.mp3",
+    "ru": "строитель"
+  },
+  {
+    "id": 124,
+    "name": ":control_knobs:",
+    "title": "control knobs",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/control_knobs.mp3",
+    "ru": "ручки управления"
+  },
+  {
+    "id": 125,
+    "name": ":convenience_store:",
+    "title": "convenience store",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/convenience_store.mp3",
+    "ru": "круглосуточный магазин"
+  },
+  {
+    "id": 126,
+    "name": ":male-cook:",
+    "title": "cook",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/cook.mp3",
+    "ru": "повар"
+  },
+  {
+    "id": 127,
+    "name": ":rice:",
+    "title": "cooked rice",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/cooked_rice.mp3"
+  },
+  {
+    "id": 128,
+    "name": ":cookie:",
+    "title": "cookie",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/cookie.mp3"
+  },
+  {
+    "id": 129,
+    "name": ":copyright:",
+    "title": "copyright",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/copyright.mp3",
+    "ru": "авторское право"
+  },
+  {
+    "id": 130,
+    "name": ":corn:",
+    "title": "corn",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/corn.mp3"
+  },
+  {
+    "id": 131,
+    "name": ":couch_and_lamp:",
+    "title": "couch and lamp",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/couch_and_lamp.mp3",
+    "ru": "диван и лампа"
+  },
+  {
+    "id": 132,
+    "name": ":couple_with_heart:",
+    "title": "couple with heart",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/couple_with_heart.mp3",
+    "ru": "пара с сердцем"
+  },
+  {
+    "id": 133,
+    "name": ":cow2:",
+    "title": "cow",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/cow.mp3"
+  },
+  {
+    "id": 134,
+    "name": ":crab:",
+    "title": "crab",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/crab.mp3"
+  },
+  {
+    "id": 135,
+    "name": ":credit_card:",
+    "title": "credit card",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/credit_card.mp3",
+    "ru": "кредитная карта"
+  },
+  {
+    "id": 136,
+    "name": ":crescent_moon:",
+    "title": "crescent moon",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/crescent_moon.mp3",
+    "ru": "полумесяц"
+  },
+  {
+    "id": 137,
+    "name": ":cricket_bat_and_ball:",
+    "title": "cricket",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/cricket.mp3"
+  },
+  {
+    "id": 138,
+    "name": ":crocodile:",
+    "title": "crocodile",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/crocodile.mp3"
+  },
+  {
+    "id": 139,
+    "name": ":croissant:",
+    "title": "croissant",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/croissant.mp3"
+  },
+  {
+    "id": 140,
+    "name": ":crossed_fingers:",
+    "title": "crossed fingers",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/crossed_fingers.mp3",
+    "ru": "скрещенные пальцы"
+  },
+  {
+    "id": 141,
+    "name": ":crossed_swords:",
+    "title": "crossed swords",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/crossed_swords.mp3",
+    "ru": "скрещенные мечи"
+  },
+  {
+    "id": 142,
+    "name": ":crown:",
+    "title": "crown",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/crown.mp3"
+  },
+  {
+    "id": 143,
+    "name": ":crystal_ball:",
+    "title": "crystal ball",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/crystal_ball.mp3",
+    "ru": "хрустальный шар"
+  },
+  {
+    "id": 144,
+    "name": ":cucumber:",
+    "title": "cucumber",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/cucumber.mp3"
+  },
+  {
+    "id": 145,
+    "name": ":curling_stone:",
+    "title": "curling stone",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/curling_stone.mp3"
+  },
+  {
+    "id": 146,
+    "name": ":curling_stone:",
+    "title": "curling stone",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/curling_stone.mp3",
+    "ru": "керлинг"
+  },
+  {
+    "id": 147,
+    "name": ":currency_exchange:",
+    "title": "currency exchange",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/currency_exchange.mp3",
+    "ru": "обмен валют"
+  },
+  {
+    "id": 148,
+    "name": ":curry:",
+    "title": "curry and rice",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/curry_and_rice.mp3"
+  },
+  {
+    "id": 149,
+    "name": ":custard:",
+    "title": "custard",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/custard.mp3"
+  },
+  {
+    "id": 150,
+    "name": ":customs:",
+    "title": "customs",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/customs.mp3",
+    "ru": "таможня"
+  },
+  {
+    "id": 151,
+    "name": ":cut_of_meat:",
+    "title": "cut of meat",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/cut_of_meat.mp3"
+  },
+  {
+    "id": 152,
+    "name": ":dancers:",
+    "title": "dancers with bunny ears",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/dancers_with_bunny_ears.mp3",
+    "ru": "танцоры с заячьими ушами"
+  },
+  {
+    "id": 153,
+    "name": ":man_dancing:",
+    "title": "dancing",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/dancing.mp3",
+    "ru": "танцы"
+  },
+  {
+    "id": 154,
+    "name": ":dango:",
+    "title": "dango",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/dango.mp3"
+  },
+  {
+    "id": 155,
+    "name": ":dart:",
+    "title": "dart",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/dart.mp3"
+  },
+  {
+    "id": 156,
+    "name": ":deciduous_tree:",
+    "title": "deciduous tree",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/deciduous_tree.mp3",
+    "ru": "лиственное дерево"
+  },
+  {
+    "id": 157,
+    "name": ":deer:",
+    "title": "deer",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/deer.mp3"
+  },
+  {
+    "id": 158,
+    "name": ":derelict_house_building:",
+    "title": "derelict house building",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/derelict_house_building.mp3",
+    "ru": "заброшенный дом"
+  },
+  {
+    "id": 159,
+    "name": ":desktop_computer:",
+    "title": "desktop computer",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/desktop_computer.mp3",
+    "ru": "настольный компьютер"
+  },
+  {
+    "id": 160,
+    "name": ":male-detective:",
+    "title": "detective",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/detective.mp3",
+    "ru": "детектив"
+  },
+  {
+    "id": 161,
+    "name": ":floppy_disk:",
+    "title": "diskette",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/diskette.mp3",
+    "ru": "дискета"
+  },
+  {
+    "id": 162,
+    "name": ":do_not_litter:",
+    "title": "do not litter",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/do_not_litter.mp3",
+    "ru": "не сорить"
+  },
+  {
+    "id": 163,
+    "name": ":dog2:",
+    "title": "dog",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/dog.mp3"
+  },
+  {
+    "id": 164,
+    "name": ":dollar:",
+    "title": "dollar",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/dollar.mp3",
+    "ru": "доллар"
+  },
+  {
+    "id": 165,
+    "name": ":dolphin:",
+    "title": "dolphin",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/dolphin.mp3"
+  },
+  {
+    "id": 166,
+    "name": ":door:",
+    "title": "door",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/door.mp3",
+    "ru": "дверь"
+  },
+  {
+    "id": 167,
+    "name": ":loop:",
+    "title": "double curly loop",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/double_curly_loop.mp3",
+    "ru": "двойная фигурная петля"
+  },
+  {
+    "id": 168,
+    "name": ":doughnut:",
+    "title": "doughnut",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/doughnut.mp3"
+  },
+  {
+    "id": 169,
+    "name": ":dove_of_peace:",
+    "title": "dove of peace",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/dove_of_peace.mp3",
+    "ru": "голубь мира"
+  },
+  {
+    "id": 170,
+    "name": ":dragon:",
+    "title": "dragon",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/dragon.mp3"
+  },
+  {
+    "id": 171,
+    "name": ":dress:",
+    "title": "dress",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/dress.mp3"
+  },
+  {
+    "id": 172,
+    "name": ":droplet:",
+    "title": "droplet",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/droplet.mp3",
+    "ru": "капля"
+  },
+  {
+    "id": 173,
+    "name": ":droplet:",
+    "title": "droplet",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/droplet.mp3",
+    "ru": "капля"
+  },
+  {
+    "id": 174,
+    "name": ":drum_with_drumsticks:",
+    "title": "drum",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/drum.mp3"
+  },
+  {
+    "id": 175,
+    "name": ":dumpling:",
+    "title": "dumpling",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/dumpling.mp3"
+  },
+  {
+    "id": 176,
+    "name": ":e-mail:",
+    "title": "e-mail",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/e-mail.mp3",
+    "ru": "эл. почта"
+  },
+  {
+    "id": 177,
+    "name": ":eagle:",
+    "title": "eagle",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/eagle.mp3"
+  },
+  {
+    "id": 178,
+    "name": ":ear:",
+    "title": "ear",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/ear.mp3",
+    "ru": "ухо"
+  },
+  {
+    "id": 179,
+    "name": ":ear_of_rice:",
+    "title": "ear of rice",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/ear_of_rice.mp3",
+    "ru": "початок риса"
+  },
+  {
+    "id": 180,
+    "name": ":egg:",
+    "title": "egg",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/egg.mp3"
+  },
+  {
+    "id": 181,
+    "name": ":eight:",
+    "title": "eight",
+    "url": "https://leelachakra.com/resource/EnForKids/01-Numbers/mp3/8.mp3"
+  },
+  {
+    "id": 182,
+    "name": ":clock8:",
+    "title": "eight oclock",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/eight_oclock.mp3",
+    "ru": "восемь часов"
+  },
+  {
+    "id": 183,
+    "name": ":clock830:",
+    "title": "eight-thirty",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/eight-thirty.mp3",
+    "ru": "восемь тридцать"
+  },
+  {
+    "id": 184,
+    "name": ":bulb:",
+    "title": "electric light bulb",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/electric_light_bulb.mp3",
+    "ru": "электрическая лампа"
+  },
+  {
+    "id": 185,
+    "name": ":electric_plug:",
+    "title": "electric plug",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/electric_plug.mp3",
+    "ru": "электрическая вилка"
+  },
+  {
+    "id": 186,
+    "name": ":flashlight:",
+    "title": "electric torch",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/electric_torch.mp3",
+    "ru": "электрический фонарик"
+  },
+  {
+    "id": 187,
+    "name": ":elephant:",
+    "title": "elephant",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/elephant.mp3"
+  },
+  {
+    "id": 188,
+    "name": ":clock11:",
+    "title": "eleven oclock",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/eleven_oclock.mp3",
+    "ru": "одиннадцать часов"
+  },
+  {
+    "id": 189,
+    "name": ":clock1130:",
+    "title": "eleven-thirty",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/eleven-thirty.mp3",
+    "ru": "одиннадцать тридцать"
+  },
+  {
+    "id": 190,
+    "name": ":female_elf:",
+    "title": "elf",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/elf.mp3",
+    "ru": "эльф"
+  },
+  {
+    "id": 191,
+    "name": ":euro:",
+    "title": "euro",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/euro.mp3",
+    "ru": "евро"
+  },
+  {
+    "id": 192,
+    "name": ":european_castle:",
+    "title": "european castle",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/european_castle.mp3",
+    "ru": "европейский замок"
+  },
+  {
+    "id": 193,
+    "name": ":european_post_office:",
+    "title": "european post office",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/european_post_office.mp3",
+    "ru": "почтовое отделение"
+  },
+  {
+    "id": 194,
+    "name": ":evergreen_tree:",
+    "title": "evergreen tree",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/evergreen_tree.mp3",
+    "ru": "вечнозелёное дерево"
+  },
+  {
+    "id": 195,
+    "name": ":eye:",
+    "title": "eye",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/eye.mp3",
+    "ru": "глаз"
+  },
+  {
+    "id": 196,
+    "name": ":eyeglasses:",
+    "title": "eyeglasses",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/eyeglasses.mp3"
+  },
+  {
+    "id": 197,
+    "name": ":massage:",
+    "title": "face massage",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/face_massage.mp3",
+    "ru": "массаж лица"
+  },
+  {
+    "id": 198,
+    "name": ":factory:",
+    "title": "factory",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/factory.mp3",
+    "ru": "фабрика"
+  },
+  {
+    "id": 199,
+    "name": ":female-factory-worker:",
+    "title": "factory worker",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/factory_worker.mp3",
+    "ru": "работник фабрики"
+  },
+  {
+    "id": 200,
+    "name": ":fairy:",
+    "title": "fairy",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/fairy.mp3",
+    "ru": "фея"
+  },
+  {
+    "id": 201,
+    "name": ":fallen_leaf:",
+    "title": "fallen leaf",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/fallen_leaf.mp3",
+    "ru": "падающий лист"
+  },
+  {
+    "id": 202,
+    "name": ":family:",
+    "title": "family",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/family.mp3",
+    "ru": "семья"
+  },
+  {
+    "id": 203,
+    "name": ":female-farmer:",
+    "title": "farmer",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/farmer.mp3",
+    "ru": "фермер"
+  },
+  {
+    "id": 204,
+    "name": ":santa:",
+    "title": "father christmas",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/father_christmas.mp3",
+    "ru": "Дед Мороз"
+  },
+  {
+    "id": 205,
+    "name": ":fax:",
+    "title": "fax machine",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/fax_machine.mp3",
+    "ru": "факс"
+  },
+  {
+    "id": 206,
+    "name": ":female_sign:",
+    "title": "female sign",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/female_sign.mp3",
+    "ru": "женский знак"
+  },
+  {
+    "id": 207,
+    "name": ":fencer:",
+    "title": "fencer",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/fencer.mp3"
+  },
+  {
+    "id": 208,
+    "name": ":ferris_wheel:",
+    "title": "ferris wheel",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/ferris_wheel.mp3",
+    "ru": "колесо обозрения"
+  },
+  {
+    "id": 209,
+    "name": ":ferry:",
+    "title": "ferry",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/ferry.mp3",
+    "ru": "паром"
+  },
+  {
+    "id": 210,
+    "name": ":field_hockey_stick_and_ball:",
+    "title": "field hockey",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/field_hockey.mp3"
+  },
+  {
+    "id": 211,
+    "name": ":file_cabinet:",
+    "title": "file cabinet",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/file_cabinet.mp3",
+    "ru": "картотечный шкаф"
+  },
+  {
+    "id": 212,
+    "name": ":file_folder:",
+    "title": "file folder",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/file_folder.mp3",
+    "ru": "папка"
+  },
+  {
+    "id": 213,
+    "name": ":film_frames:",
+    "title": "film frames",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/film_frames.mp3",
+    "ru": "кадры фильма"
+  },
+  {
+    "id": 214,
+    "name": ":film_projector:",
+    "title": "film projector",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/film_projector.mp3",
+    "ru": "кинопроектор"
+  },
+  {
+    "id": 215,
+    "name": ":fire:",
+    "title": "fire",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/fire.mp3",
+    "ru": "пожар"
+  },
+  {
+    "id": 216,
+    "name": ":fire_engine:",
+    "title": "fire engine",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/fire_engine.mp3",
+    "ru": "пожарная машина"
+  },
+  {
+    "id": 217,
+    "name": ":male-firefighter:",
+    "title": "firefighter",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/firefighter.mp3",
+    "ru": "пожарный"
+  },
+  {
+    "id": 218,
+    "name": ":sparkler:",
+    "title": "firework sparkler",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/firework_sparkler.mp3",
+    "ru": "бенгальский огонь"
+  },
+  {
+    "id": 219,
+    "name": ":first_place_medal:",
+    "title": "first place medal",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/first_place_medal.mp3"
+  },
+  {
+    "id": 220,
+    "name": ":first_place_medal:",
+    "title": "first place medal",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/first_place_medal.mp3",
+    "ru": "медаль за первое место"
+  },
+  {
+    "id": 221,
+    "name": ":first_quarter_moon:",
+    "title": "first quarter moon",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/first_quarter_moon.mp3",
+    "ru": "первая четверть луны"
+  },
+  {
+    "id": 222,
+    "name": ":fish:",
+    "title": "fish",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/fish.mp3"
+  },
+  {
+    "id": 223,
+    "name": ":fishing_pole_and_fish:",
+    "title": "fishing pole",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/fishing_pole.mp3"
+  },
+  {
+    "id": 224,
+    "name": ":five:",
+    "title": "five",
+    "url": "https://leelachakra.com/resource/EnForKids/01-Numbers/mp3/5.mp3"
+  },
+  {
+    "id": 225,
+    "name": ":clock5:",
+    "title": "five oclock",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/five_oclock.mp3",
+    "ru": "пять часов"
+  },
+  {
+    "id": 226,
+    "name": ":clock530:",
+    "title": "five-thirty",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/five-thirty.mp3",
+    "ru": "пять тридцать"
+  },
+  {
+    "id": 227,
+    "name": ":clock530:",
+    "title": "five-thirty",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/five-thirty.mp3",
+    "ru": "пол шестого"
+  },
+  {
+    "id": 228,
+    "name": ":golf:",
+    "title": "flag in hole",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/flag_in_hole.mp3"
+  },
+  {
+    "id": 229,
+    "name": ":fog:",
+    "title": "fog",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/fog.mp3",
+    "ru": "туман"
+  },
+  {
+    "id": 230,
+    "name": ":foggy:",
+    "title": "foggy",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/foggy.mp3",
+    "ru": "мост в туманне"
+  },
+  {
+    "id": 231,
+    "name": ":pray:",
+    "title": "folded hands",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/folded_hands.mp3",
+    "ru": "сложенные руки"
+  },
+  {
+    "id": 232,
+    "name": ":footprints:",
+    "title": "footprints",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/footprints.mp3",
+    "ru": "следы"
+  },
+  {
+    "id": 233,
+    "name": ":fork_and_knife:",
+    "title": "fork and knife",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/fork_and_knife.mp3"
+  },
+  {
+    "id": 234,
+    "name": ":fortune_cookie:",
+    "title": "fortune cookie",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/fortune_cookie.mp3"
+  },
+  {
+    "id": 235,
+    "name": ":fountain:",
+    "title": "fountain",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/fountain.mp3",
+    "ru": "фонтан"
+  },
+  {
+    "id": 236,
+    "name": ":four:",
+    "title": "four",
+    "url": "https://leelachakra.com/resource/EnForKids/01-Numbers/mp3/4.mp3"
+  },
+  {
+    "id": 237,
+    "name": ":four_leaf_clover:",
+    "title": "four leaf clover",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/four_leaf_clover.mp3",
+    "ru": "четырёхлистный клевер"
+  },
+  {
+    "id": 238,
+    "name": ":clock4:",
+    "title": "four oclock",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/four_oclock.mp3",
+    "ru": "четыре часа"
+  },
+  {
+    "id": 239,
+    "name": ":clock430:",
+    "title": "four-thirty",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/four-thirty.mp3",
+    "ru": "четыре тридцать"
+  },
+  {
+    "id": 240,
+    "name": ":frame_with_picture:",
+    "title": "frame with picture",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/frame_with_picture.mp3",
+    "ru": "рамка с изображением"
+  },
+  {
+    "id": 241,
+    "name": ":fries:",
+    "title": "french fries",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/french_fries.mp3"
+  },
+  {
+    "id": 242,
+    "name": ":fried_egg:",
+    "title": "fried egg",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/fried_egg.mp3"
+  },
+  {
+    "id": 243,
+    "name": ":fried_shrimp:",
+    "title": "fried shrimp",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/fried_shrimp.mp3"
+  },
+  {
+    "id": 244,
+    "name": ":full_moon:",
+    "title": "full moon",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/full_moon.mp3",
+    "ru": "полнолуние"
+  },
+  {
+    "id": 245,
+    "name": ":game_die:",
+    "title": "game die",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/game_die.mp3"
+  },
+  {
+    "id": 246,
+    "name": ":gemini:",
+    "title": "gemini",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/gemini.mp3",
+    "ru": "близнецы"
+  },
+  {
+    "id": 247,
+    "name": ":genie:",
+    "title": "genie",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/genie.mp3",
+    "ru": "джин"
+  },
+  {
+    "id": 248,
+    "name": ":giraffe_face:",
+    "title": "giraffe",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/giraffe.mp3"
+  },
+  {
+    "id": 249,
+    "name": ":girl:",
+    "title": "girl",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/girl.mp3",
+    "ru": "девочка"
+  },
+  {
+    "id": 250,
+    "name": ":glass_of_milk:",
+    "title": "glass of milk",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/glass_of_milk.mp3"
+  },
+  {
+    "id": 251,
+    "name": ":earth_africa:",
+    "title": "globe europe-africa",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/globe_europe-africa.mp3",
+    "ru": "глобус Европа-Африка"
+  },
+  {
+    "id": 252,
+    "name": ":globe_with_meridians:",
+    "title": "globe with meridians",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/globe_with_meridians.mp3",
+    "ru": "глобус с меридианами"
+  },
+  {
+    "id": 253,
+    "name": ":globe_with_meridians:",
+    "title": "globe with meridians",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/globe_with_meridians.mp3",
+    "ru": "глобус с меридианами"
+  },
+  {
+    "id": 254,
+    "name": ":gloves:",
+    "title": "gloves",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/gloves.mp3"
+  },
+  {
+    "id": 255,
+    "name": ":star2:",
+    "title": "glowing star",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/glowing_star.mp3",
+    "ru": "святящаяся звезда"
+  },
+  {
+    "id": 256,
+    "name": ":goal_net:",
+    "title": "goal net",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/goal_net.mp3"
+  },
+  {
+    "id": 257,
+    "name": ":goal_net:",
+    "title": "goal net",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/goal_net.mp3",
+    "ru": "сетка ворот"
+  },
+  {
+    "id": 258,
+    "name": ":goat:",
+    "title": "goat",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/goat.mp3"
+  },
+  {
+    "id": 259,
+    "name": ":golfer:",
+    "title": "golfer",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/golfer.mp3"
+  },
+  {
+    "id": 260,
+    "name": ":mortar_board:",
+    "title": "graduation cap",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/graduation_cap.mp3"
+  },
+  {
+    "id": 261,
+    "name": ":grapes:",
+    "title": "grapes",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/grapes.mp3"
+  },
+  {
+    "id": 262,
+    "name": ":green_salad:",
+    "title": "green salad",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/green_salad.mp3"
+  },
+  {
+    "id": 263,
+    "name": ":male-guard:",
+    "title": "guard",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/guard.mp3",
+    "ru": "охранник"
+  },
+  {
+    "id": 264,
+    "name": ":guitar:",
+    "title": "guitar",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/guitar.mp3"
+  },
+  {
+    "id": 265,
+    "name": ":haircut:",
+    "title": "haircut",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/haircut.mp3",
+    "ru": "стрижка волос"
+  },
+  {
+    "id": 266,
+    "name": ":hamburger:",
+    "title": "hamburger",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/hamburger.mp3"
+  },
+  {
+    "id": 267,
+    "name": ":hammer:",
+    "title": "hammer",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/hammer.mp3",
+    "ru": "молоток"
+  },
+  {
+    "id": 268,
+    "name": ":hammer_and_pick:",
+    "title": "hammer and pick",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/hammer_and_pick.mp3",
+    "ru": "молоток и кирка"
+  },
+  {
+    "id": 269,
+    "name": ":hammer_and_wrench:",
+    "title": "hammer and wrench",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/hammer_and_wrench.mp3",
+    "ru": "молоток и гаечный ключ"
+  },
+  {
+    "id": 270,
+    "name": ":hammer_and_wrench:",
+    "title": "hammer and wrench",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/hammer_and_wrench.mp3",
+    "ru": "молоток и гаечный ключ"
+  },
+  {
+    "id": 271,
+    "name": ":raised_hand_with_fingers_splayed:",
+    "title": "hand with fingers splayed",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/hand_with_fingers_splayed.mp3",
+    "ru": "рука с растопыренными пальцами"
+  },
+  {
+    "id": 272,
+    "name": ":handbag:",
+    "title": "handbag",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/handbag.mp3"
+  },
+  {
+    "id": 273,
+    "name": ":handball:",
+    "title": "handball",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/handball.mp3"
+  },
+  {
+    "id": 274,
+    "name": ":handshake:",
+    "title": "handshake",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/handshake.mp3",
+    "ru": "рукопожатие"
+  },
+  {
+    "id": 275,
+    "name": ":headphones:",
+    "title": "headphone",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/headphone.mp3"
+  },
+  {
+    "id": 276,
+    "name": ":hearts:",
+    "title": "hearts",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/hearts.mp3",
+    "ru": "сердца"
+  },
+  {
+    "id": 277,
+    "name": ":heavy_check_mark:",
+    "title": "heavy check mark",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/heavy_check_mark.mp3",
+    "ru": "жирная галочка"
+  },
+  {
+    "id": 278,
+    "name": ":heavy_division_sign:",
+    "title": "heavy division sign",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/heavy_division_sign.mp3",
+    "ru": "знак деления"
+  },
+  {
+    "id": 279,
+    "name": ":exclamation:",
+    "title": "heavy exclamation mark",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/heavy_exclamation_mark.mp3",
+    "ru": "жирный восклицательный знак"
+  },
+  {
+    "id": 280,
+    "name": ":heavy_minus_sign:",
+    "title": "heavy minus sign",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/heavy_minus_sign.mp3",
+    "ru": "знак минус"
+  },
+  {
+    "id": 281,
+    "name": ":heavy_plus_sign:",
+    "title": "heavy plus sign",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/heavy_plus_sign.mp3",
+    "ru": "знак плюс"
+  },
+  {
+    "id": 282,
+    "name": ":hedgehog:",
+    "title": "hedgehog",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/hedgehog.mp3"
+  },
+  {
+    "id": 283,
+    "name": ":helicopter:",
+    "title": "helicopter",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/helicopter.mp3",
+    "ru": "вертолёт"
+  },
+  {
+    "id": 284,
+    "name": ":helmet_with_white_cross:",
+    "title": "helmet with white cross",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/helmet_with_white_cross.mp3"
+  },
+  {
+    "id": 285,
+    "name": ":herb:",
+    "title": "herb",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/herb.mp3",
+    "ru": "трава"
+  },
+  {
+    "id": 286,
+    "name": ":hibiscus:",
+    "title": "hibiscus",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/hibiscus.mp3",
+    "ru": "гибискус"
+  },
+  {
+    "id": 287,
+    "name": ":high_heel:",
+    "title": "high heeled shoe",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/high_heeled_shoe.mp3"
+  },
+  {
+    "id": 288,
+    "name": ":zap:",
+    "title": "high voltage",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/high_voltage.mp3",
+    "ru": "высокое напряжение"
+  },
+  {
+    "id": 289,
+    "name": ":zap:",
+    "title": "high voltage sign",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/high_voltage_sign.mp3",
+    "ru": "знак высокого напряжения"
+  },
+  {
+    "id": 290,
+    "name": ":bullettrain_side:",
+    "title": "high-speed train",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/high-speed_train.mp3",
+    "ru": "высокоскоростной поезд"
+  },
+  {
+    "id": 291,
+    "name": ":two_women_holding_hands:",
+    "title": "hold hands",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/hold_hands.mp3",
+    "ru": "держаться за руки"
+  },
+  {
+    "id": 292,
+    "name": ":honey_pot:",
+    "title": "honey pot",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/honey_pot.mp3"
+  },
+  {
+    "id": 293,
+    "name": ":racehorse:",
+    "title": "horse",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/horse.mp3"
+  },
+  {
+    "id": 294,
+    "name": ":horse_racing:",
+    "title": "horse racing",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/horse_racing.mp3"
+  },
+  {
+    "id": 295,
+    "name": ":hospital:",
+    "title": "hospital",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/hospital.mp3",
+    "ru": "больница"
+  },
+  {
+    "id": 296,
+    "name": ":hotdog:",
+    "title": "hot dog",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/hot_dog.mp3"
+  },
+  {
+    "id": 297,
+    "name": ":hotel:",
+    "title": "hotel",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/hotel.mp3",
+    "ru": "отель"
+  },
+  {
+    "id": 298,
+    "name": ":hotsprings:",
+    "title": "hotsprings",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/hotsprings.mp3",
+    "ru": "горячие источники"
+  },
+  {
+    "id": 299,
+    "name": ":hourglass:",
+    "title": "hourglass",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/hourglass.mp3",
+    "ru": "песочные часы"
+  },
+  {
+    "id": 300,
+    "name": ":house_buildings:",
+    "title": "house buildings",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/house_buildings.mp3",
+    "ru": "домовые постройки"
+  },
+  {
+    "id": 301,
+    "name": ":100:",
+    "title": "hundred points",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/hundred_points.mp3",
+    "ru": "100 очков"
+  },
+  {
+    "id": 302,
+    "name": ":ice_cream:",
+    "title": "ice cream",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/ice_cream.mp3"
+  },
+  {
+    "id": 303,
+    "name": ":ice_hockey_stick_and_puck:",
+    "title": "ice hockey",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/ice_hockey.mp3"
+  },
+  {
+    "id": 304,
+    "name": ":ice_skate:",
+    "title": "ice skate",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/ice_skate.mp3"
+  },
+  {
+    "id": 305,
+    "name": ":information_desk_person:",
+    "title": "information desk person",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/information_desk_person.mp3",
+    "ru": "сотрудник справочной службы"
+  },
+  {
+    "id": 306,
+    "name": ":information_source:",
+    "title": "information source",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/information_source.mp3",
+    "ru": "информационный ресурс"
+  },
+  {
+    "id": 307,
+    "name": ":japanese_castle:",
+    "title": "japanese castle",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/japanese_castle.mp3",
+    "ru": "японский замок"
+  },
+  {
+    "id": 308,
+    "name": ":dolls:",
+    "title": "japanese dolls",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/japanese_dolls.mp3",
+    "ru": "японские куклы"
+  },
+  {
+    "id": 309,
+    "name": ":jeans:",
+    "title": "jeans",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/jeans.mp3"
+  },
+  {
+    "id": 310,
+    "name": ":joystick:",
+    "title": "joystick",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/joystick.mp3",
+    "ru": "джойстик"
+  },
+  {
+    "id": 311,
+    "name": ":male-judge:",
+    "title": "judge",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/judge.mp3",
+    "ru": "судья"
+  },
+  {
+    "id": 312,
+    "name": ":juggling:",
+    "title": "juggling",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/juggling.mp3"
+  },
+  {
+    "id": 313,
+    "name": ":keyboard:",
+    "title": "keyboard",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/keyboard.mp3",
+    "ru": "клавиатура"
+  },
+  {
+    "id": 314,
+    "name": ":kimono:",
+    "title": "kimono",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/kimono.mp3"
+  },
+  {
+    "id": 315,
+    "name": ":woman-kiss-man:",
+    "title": "kiss",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/kiss.mp3",
+    "ru": "поцелуй"
+  },
+  {
+    "id": 316,
+    "name": ":kiss:",
+    "title": "kiss mark",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/kiss_mark.mp3"
+  },
+  {
+    "id": 317,
+    "name": ":kiwifruit:",
+    "title": "kiwi",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/kiwi.mp3"
+  },
+  {
+    "id": 318,
+    "name": ":knife_fork_plate:",
+    "title": "knife fork plate",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/knife_fork_plate.mp3"
+  },
+  {
+    "id": 319,
+    "name": ":koala:",
+    "title": "koala",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/koala.mp3"
+  },
+  {
+    "id": 320,
+    "name": ":label:",
+    "title": "label",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/label.mp3",
+    "ru": "метка"
+  },
+  {
+    "id": 321,
+    "name": ":beetle:",
+    "title": "lady beetle",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/lady_beetle.mp3"
+  },
+  {
+    "id": 322,
+    "name": ":latin_cross:",
+    "title": "latin cross",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/latin_cross.mp3",
+    "ru": "латинский крест"
+  },
+  {
+    "id": 323,
+    "name": ":leaves:",
+    "title": "leaf fluttering in wind",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/leaf_fluttering_in_wind.mp3",
+    "ru": "лист, развивающийся на ветру"
+  },
+  {
+    "id": 324,
+    "name": ":ledger:",
+    "title": "ledger",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/ledger.mp3",
+    "ru": "бухгалтерская книга"
+  },
+  {
+    "id": 325,
+    "name": ":lemon:",
+    "title": "lemon",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/lemon.mp3"
+  },
+  {
+    "id": 326,
+    "name": ":leo:",
+    "title": "leo",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/leo.mp3",
+    "ru": "лев"
+  },
+  {
+    "id": 327,
+    "name": ":leopard:",
+    "title": "leopard",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/leopard.mp3"
+  },
+  {
+    "id": 328,
+    "name": ":level_slider:",
+    "title": "level slider",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/level_slider.mp3",
+    "ru": "ползунок"
+  },
+  {
+    "id": 329,
+    "name": ":man_in_business_suit_levitating:",
+    "title": "levitating",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/levitating.mp3"
+  },
+  {
+    "id": 330,
+    "name": ":man_in_business_suit_levitating:",
+    "title": "levitation",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/levitation.mp3",
+    "ru": "левитация"
+  },
+  {
+    "id": 331,
+    "name": ":libra:",
+    "title": "libra",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/libra.mp3",
+    "ru": "весы"
+  },
+  {
+    "id": 332,
+    "name": ":lightning:",
+    "title": "lightning",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/lightning.mp3",
+    "ru": "молния"
+  },
+  {
+    "id": 333,
+    "name": ":linked_paperclips:",
+    "title": "linked paperclips",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/linked_paperclips.mp3",
+    "ru": "связанные скрепки"
+  },
+  {
+    "id": 334,
+    "name": ":lipstick:",
+    "title": "lipstick",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/lipstick.mp3"
+  },
+  {
+    "id": 335,
+    "name": ":lizard:",
+    "title": "lizard",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/lizard.mp3"
+  },
+  {
+    "id": 336,
+    "name": ":lock:",
+    "title": "lock",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/lock.mp3",
+    "ru": "замок"
+  },
+  {
+    "id": 337,
+    "name": ":lollipop:",
+    "title": "lollipop",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/lollipop.mp3"
+  },
+  {
+    "id": 338,
+    "name": ":person_in_lotus_position:",
+    "title": "lotus position",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/lotus_position.mp3",
+    "ru": "поза лотоса"
+  },
+  {
+    "id": 339,
+    "name": ":loud_sound:",
+    "title": "loud sound",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/loud_sound.mp3",
+    "ru": "громкий звук"
+  },
+  {
+    "id": 340,
+    "name": ":i_love_you_hand_sign:",
+    "title": "love you gesture",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/love_you_gesture.mp3",
+    "ru": "жест любви"
+  },
+  {
+    "id": 341,
+    "name": ":mage:",
+    "title": "mage",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/mage.mp3",
+    "ru": "маг"
+  },
+  {
+    "id": 342,
+    "name": ":male_sign:",
+    "title": "male sign",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/male_sign.mp3",
+    "ru": "мужской знак"
+  },
+  {
+    "id": 343,
+    "name": ":man:",
+    "title": "man",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/man.mp3",
+    "ru": "мужчина"
+  },
+  {
+    "id": 344,
+    "name": ":man-gesturing-no:",
+    "title": "man gesturing-no",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/man_gesturing-no.mp3",
+    "ru": "мужчина жестикулирует-нет"
+  },
+  {
+    "id": 345,
+    "name": ":man_in_tuxedo:",
+    "title": "man in tuxedo",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/man_in_tuxedo.mp3",
+    "ru": "мужчина в смокинге"
+  },
+  {
+    "id": 346,
+    "name": ":bearded_person:",
+    "title": "man with a beard",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/man_with_a_beard.mp3",
+    "ru": "мужчина с бородой"
+  },
+  {
+    "id": 347,
+    "name": ":man-facepalming:",
+    "title": "man-facepalming",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/man-facepalming.mp3",
+    "ru": "ладонью по лицу"
+  },
+  {
+    "id": 348,
+    "name": ":mans_shoe:",
+    "title": "mans shoe",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/mans_shoe.mp3"
+  },
+  {
+    "id": 349,
+    "name": ":maple_leaf:",
+    "title": "maple leaf",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/maple_leaf.mp3",
+    "ru": "кленовый лист"
+  },
+  {
+    "id": 350,
+    "name": ":martial_arts_uniform:",
+    "title": "martial arts uniform",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/martial_arts_uniform.mp3"
+  },
+  {
+    "id": 351,
+    "name": ":meat_on_bone:",
+    "title": "meat on bone",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/meat_on_bone.mp3"
+  },
+  {
+    "id": 352,
+    "name": ":medal:",
+    "title": "medal",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/medal.mp3",
+    "ru": "медаль"
+  },
+  {
+    "id": 353,
+    "name": ":medical_symbol:",
+    "title": "medical",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/medical.mp3",
+    "ru": "медицинский"
+  },
+  {
+    "id": 354,
+    "name": ":melon:",
+    "title": "melon",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/melon.mp3"
+  },
+  {
+    "id": 355,
+    "name": ":menorah_with_nine_branches:",
+    "title": "menorah with nine branches",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/menorah_with_nine_branches.mp3",
+    "ru": "менора с девятью ветвями"
+  },
+  {
+    "id": 356,
+    "name": ":mens:",
+    "title": "mens",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/mens.mp3",
+    "ru": "мужской"
+  },
+  {
+    "id": 357,
+    "name": ":mermaid:",
+    "title": "mermaid",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/mermaid.mp3",
+    "ru": "русалка"
+  },
+  {
+    "id": 358,
+    "name": ":merman:",
+    "title": "merman",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/merman.mp3",
+    "ru": "водяной"
+  },
+  {
+    "id": 359,
+    "name": ":metro:",
+    "title": "metro",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/metro.mp3",
+    "ru": "метро"
+  },
+  {
+    "id": 360,
+    "name": ":microphone:",
+    "title": "microphone",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/microphone.mp3"
+  },
+  {
+    "id": 361,
+    "name": ":microphone:",
+    "title": "microphone",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/microphone.mp3",
+    "ru": "микрофон"
+  },
+  {
+    "id": 362,
+    "name": ":microscope:",
+    "title": "microscope",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/microscope.mp3",
+    "ru": "микроскоп"
+  },
+  {
+    "id": 363,
+    "name": ":middle_finger:",
+    "title": "middle finger",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/middle_finger.mp3",
+    "ru": "средний палец"
+  },
+  {
+    "id": 364,
+    "name": ":medal:",
+    "title": "military medal",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/military_medal.mp3"
+  },
+  {
+    "id": 365,
+    "name": ":milky_way:",
+    "title": "milky way",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/milky_way.mp3",
+    "ru": "млечный путь"
+  },
+  {
+    "id": 366,
+    "name": ":minibus:",
+    "title": "minibus",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/minibus.mp3",
+    "ru": "маршрутка"
+  },
+  {
+    "id": 367,
+    "name": ":iphone:",
+    "title": "mobile phone",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/mobile_phone.mp3",
+    "ru": "мобильный телефон"
+  },
+  {
+    "id": 368,
+    "name": ":moneybag:",
+    "title": "money bag",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/money_bag.mp3",
+    "ru": "сумка денег"
+  },
+  {
+    "id": 369,
+    "name": ":monkey:",
+    "title": "monkey",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/monkey.mp3"
+  },
+  {
+    "id": 370,
+    "name": ":monorail:",
+    "title": "monorail",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/monorail.mp3",
+    "ru": "монорельс"
+  },
+  {
+    "id": 371,
+    "name": ":mosque:",
+    "title": "mosque",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/mosque.mp3",
+    "ru": "мечеть"
+  },
+  {
+    "id": 372,
+    "name": ":mostly_sunny:",
+    "title": "mostly sunny",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/mostly_sunny.mp3",
+    "ru": "преимущественно солнечно"
+  },
+  {
+    "id": 373,
+    "name": ":motor_boat:",
+    "title": "motor boat",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/motor_boat.mp3",
+    "ru": "моторная лодка"
+  },
+  {
+    "id": 374,
+    "name": ":motor_scooter:",
+    "title": "motor scooter",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/motor_scooter.mp3",
+    "ru": "скутер"
+  },
+  {
+    "id": 375,
+    "name": ":motorway:",
+    "title": "motorway",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/motorway.mp3",
+    "ru": "автомагистраль"
+  },
+  {
+    "id": 376,
+    "name": ":mountain_cableway:",
+    "title": "mountain cableway",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/mountain_cableway.mp3",
+    "ru": "горная канатная дорога"
+  },
+  {
+    "id": 377,
+    "name": ":mouse2:",
+    "title": "mouse",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/mouse.mp3"
+  },
+  {
+    "id": 378,
+    "name": ":three_button_mouse:",
+    "title": "mouse",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/mouse.mp3",
+    "ru": "мышь"
+  },
+  {
+    "id": 379,
+    "name": ":lips:",
+    "title": "mouth",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/mouth.mp3",
+    "ru": "рот"
+  },
+  {
+    "id": 380,
+    "name": ":movie_camera:",
+    "title": "movie camera",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/movie_camera.mp3",
+    "ru": "кинокамера"
+  },
+  {
+    "id": 381,
+    "name": ":mrs_claus:",
+    "title": "mrs. claus",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/mrs._claus.mp3",
+    "ru": "Снегурочка"
+  },
+  {
+    "id": 382,
+    "name": ":muscle:",
+    "title": "muscle",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/muscle.mp3",
+    "ru": "мышцы"
+  },
+  {
+    "id": 383,
+    "name": ":mushroom:",
+    "title": "mushroom",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/mushroom.mp3",
+    "ru": "гриб"
+  },
+  {
+    "id": 384,
+    "name": ":musical_keyboard:",
+    "title": "musical keyboard",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/musical_keyboard.mp3"
+  },
+  {
+    "id": 385,
+    "name": ":musical_note:",
+    "title": "musical note",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/musical_note.mp3",
+    "ru": "музыкальная нота"
+  },
+  {
+    "id": 386,
+    "name": ":musical_score:",
+    "title": "musical score",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/musical_score.mp3"
+  },
+  {
+    "id": 387,
+    "name": ":nail_care:",
+    "title": "nail care",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/nail_care.mp3",
+    "ru": "уход за ногтями"
+  },
+  {
+    "id": 388,
+    "name": ":necktie:",
+    "title": "necktie",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/necktie.mp3"
+  },
+  {
+    "id": 389,
+    "name": ":new_moon:",
+    "title": "new moon",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/new_moon.mp3",
+    "ru": "новолуние"
+  },
+  {
+    "id": 390,
+    "name": ":newspaper:",
+    "title": "newspaper",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/newspaper.mp3",
+    "ru": "газета"
+  },
+  {
+    "id": 391,
+    "name": ":night_with_stars:",
+    "title": "night with stars",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/night_with_stars.mp3",
+    "ru": "ночь со звездами"
+  },
+  {
+    "id": 392,
+    "name": ":nine:",
+    "title": "nine",
+    "url": "https://leelachakra.com/resource/EnForKids/01-Numbers/mp3/9.mp3"
+  },
+  {
+    "id": 393,
+    "name": ":clock9:",
+    "title": "nine oclock",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/nine_oclock.mp3",
+    "ru": "девять часов"
+  },
+  {
+    "id": 394,
+    "name": ":clock930:",
+    "title": "nine-thirty",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/nine-thirty.mp3",
+    "ru": "девять тридцать"
+  },
+  {
+    "id": 395,
+    "name": ":no_bicycles:",
+    "title": "no bicycles",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/no_bicycles.mp3",
+    "ru": "велосипеды запрещены"
+  },
+  {
+    "id": 396,
+    "name": ":no_entry:",
+    "title": "no entry",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/no_entry.mp3",
+    "ru": "нет входа"
+  },
+  {
+    "id": 397,
+    "name": ":no_entry_sign:",
+    "title": "no entry sign",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/no_entry_sign.mp3",
+    "ru": "знак запрещен"
+  },
+  {
+    "id": 398,
+    "name": ":no_mobile_phones:",
+    "title": "no mobile phones",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/no_mobile_phones.mp3",
+    "ru": "нет мобильных телефонов"
+  },
+  {
+    "id": 399,
+    "name": ":no_pedestrians:",
+    "title": "no pedestrians",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/no_pedestrians.mp3",
+    "ru": "движение пешеходов запрещено"
+  },
+  {
+    "id": 400,
+    "name": ":no_smoking:",
+    "title": "no smoking",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/no_smoking.mp3",
+    "ru": "не курить"
+  },
+  {
+    "id": 401,
+    "name": ":non-potable_water:",
+    "title": "non potable water",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/non_potable_water.mp3",
+    "ru": "непитьевая вода"
+  },
+  {
+    "id": 402,
+    "name": ":nose:",
+    "title": "nose",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/nose.mp3",
+    "ru": "нос"
+  },
+  {
+    "id": 403,
+    "name": ":notebook:",
+    "title": "notebook",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/notebook.mp3",
+    "ru": "ноутбук"
+  },
+  {
+    "id": 404,
+    "name": ":notes:",
+    "title": "notes",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/notes.mp3",
+    "ru": "ноты"
+  },
+  {
+    "id": 405,
+    "name": ":nut_and_bolt:",
+    "title": "nut and bolt",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/nut_and_bolt.mp3",
+    "ru": "гайка и болт"
+  },
+  {
+    "id": 406,
+    "name": ":octopus:",
+    "title": "octopus",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/octopus.mp3"
+  },
+  {
+    "id": 407,
+    "name": ":oden:",
+    "title": "oden",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/oden.mp3"
+  },
+  {
+    "id": 408,
+    "name": ":office:",
+    "title": "office building",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/office_building.mp3",
+    "ru": "офисное здание"
+  },
+  {
+    "id": 409,
+    "name": ":male-office-worker:",
+    "title": "office worker",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/office_worker.mp3",
+    "ru": "офисный работник"
+  },
+  {
+    "id": 410,
+    "name": ":oil_drum:",
+    "title": "oil drum",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/oil_drum.mp3",
+    "ru": "бочка для нефтепродуктов"
+  },
+  {
+    "id": 411,
+    "name": "ok_hand",
+    "title": "ok",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/ok.mp3",
+    "ru": "хорошо"
+  },
+  {
+    "id": 412,
+    "name": ":old_key:",
+    "title": "old key",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/old_key.mp3",
+    "ru": "старый ключ"
+  },
+  {
+    "id": 413,
+    "name": ":older_woman:",
+    "title": "old woman",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/old_woman.mp3",
+    "ru": "пожилая женщина"
+  },
+  {
+    "id": 414,
+    "name": ":older_adult:",
+    "title": "older person",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/older_person.mp3",
+    "ru": "пожилой человек"
+  },
+  {
+    "id": 415,
+    "name": ":om_symbol:",
+    "title": "om symbol",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/om_symbol.mp3",
+    "ru": "символ ом"
+  },
+  {
+    "id": 416,
+    "name": ":facepunch:",
+    "title": "oncoming fist",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/oncoming_fist.mp3",
+    "ru": "встречный кулак"
+  },
+  {
+    "id": 417,
+    "name": ":one:",
+    "title": "one",
+    "url": "https://leelachakra.com/resource/EnForKids/01-Numbers/mp3/1.mp3"
+  },
+  {
+    "id": 418,
+    "name": ":clock1:",
+    "title": "one oclock",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/one_oclock.mp3",
+    "ru": "один час"
+  },
+  {
+    "id": 419,
+    "name": ":clock130:",
+    "title": "one-thirty",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/one-thirty.mp3",
+    "ru": "час тридцать"
+  },
+  {
+    "id": 420,
+    "name": ":open_hands:",
+    "title": "open hands",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/open_hands.mp3",
+    "ru": "открытые руки"
+  },
+  {
+    "id": 421,
+    "name": ":ophiuchus:",
+    "title": "ophiuchus",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/ophiuchus.mp3",
+    "ru": "змееносец"
+  },
+  {
+    "id": 422,
+    "name": ":cd:",
+    "title": "optical disc",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/optical_disc.mp3",
+    "ru": "оптический диск"
+  },
+  {
+    "id": 423,
+    "name": ":orthodox_cross:",
+    "title": "orthodox cross",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/orthodox_cross.mp3",
+    "ru": "православный крест"
+  },
+  {
+    "id": 424,
+    "name": ":owl:",
+    "title": "owl",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/owl.mp3"
+  },
+  {
+    "id": 425,
+    "name": ":ox:",
+    "title": "ox",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/ox.mp3"
+  },
+  {
+    "id": 426,
+    "name": ":package:",
+    "title": "package",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/package.mp3",
+    "ru": "пакет"
+  },
+  {
+    "id": 427,
+    "name": ":pager:",
+    "title": "pager",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/pager.mp3",
+    "ru": "пейджер"
+  },
+  {
+    "id": 428,
+    "name": ":palm_tree:",
+    "title": "palm tree",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/palm_tree.mp3",
+    "ru": "пальма"
+  },
+  {
+    "id": 429,
+    "name": ":palms_up_together:",
+    "title": "palms up together",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/palms_up_together.mp3",
+    "ru": "ладони вместе"
+  },
+  {
+    "id": 430,
+    "name": ":pancakes:",
+    "title": "pancakes",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/pancakes.mp3"
+  },
+  {
+    "id": 431,
+    "name": ":paperclip:",
+    "title": "paperclip",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/paperclip.mp3",
+    "ru": "скрепка"
+  },
+  {
+    "id": 432,
+    "name": ":passenger_ship:",
+    "title": "passenger ship",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/passenger_ship.mp3",
+    "ru": "пассажирское судно"
+  },
+  {
+    "id": 433,
+    "name": ":passport_control:",
+    "title": "passport control",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/passport_control.mp3",
+    "ru": "паспортный контроль"
+  },
+  {
+    "id": 434,
+    "name": ":feet:",
+    "title": "paw prints",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/paw_prints.mp3"
+  },
+  {
+    "id": 435,
+    "name": ":peace_symbol:",
+    "title": "peace",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/peace.mp3",
+    "ru": "мир"
+  },
+  {
+    "id": 436,
+    "name": ":peach:",
+    "title": "peach",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/peach.mp3"
+  },
+  {
+    "id": 437,
+    "name": ":peanuts:",
+    "title": "peanuts",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/peanuts.mp3"
+  },
+  {
+    "id": 438,
+    "name": ":pear:",
+    "title": "pear",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/pear.mp3"
+  },
+  {
+    "id": 439,
+    "name": ":walking:",
+    "title": "pedestrian",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/pedestrian.mp3",
+    "ru": "пешеход"
+  },
+  {
+    "id": 440,
+    "name": ":penguin:",
+    "title": "penguin",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/penguin.mp3"
+  },
+  {
+    "id": 441,
+    "name": ":hot_pepper:",
+    "title": "pepper",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/pepper.mp3"
+  },
+  {
+    "id": 442,
+    "name": ":performing_arts:",
+    "title": "performing arts",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/performing_arts.mp3"
+  },
+  {
+    "id": 443,
+    "name": ":person_with_blond_hair:",
+    "title": "person",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/person.mp3",
+    "ru": "человек"
+  },
+  {
+    "id": 444,
+    "name": ":bow:",
+    "title": "person bowing deeply",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/person_bowing_deeply.mp3",
+    "ru": "человек глубоко клянётся"
+  },
+  {
+    "id": 445,
+    "name": ":person_frowning:",
+    "title": "person frowning",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/person_frowning.mp3",
+    "ru": "хмурый человек"
+  },
+  {
+    "id": 446,
+    "name": ":person_in_steamy_room:",
+    "title": "person in steamy room",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/person_in_steamy_room.mp3",
+    "ru": "человек в парной"
+  },
+  {
+    "id": 447,
+    "name": ":man-wearing-turban:",
+    "title": "person wearing turban",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/person_wearing_turban.mp3",
+    "ru": "человек в тюрбане"
+  },
+  {
+    "id": 448,
+    "name": ":person_with_ball:",
+    "title": "person with ball",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/person_with_ball.mp3"
+  },
+  {
+    "id": 449,
+    "name": ":man_with_gua_pi_mao:",
+    "title": "person with skullcap",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/person_with_skullcap.mp3",
+    "ru": "человек с тюбитейкой"
+  },
+  {
+    "id": 450,
+    "name": ":computer:",
+    "title": "personal computer",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/personal_computer.mp3",
+    "ru": "персональный компьютер"
+  },
+  {
+    "id": 451,
+    "name": ":pie:",
+    "title": "pie",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/pie.mp3"
+  },
+  {
+    "id": 452,
+    "name": ":pig2:",
+    "title": "pig",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/pig.mp3"
+  },
+  {
+    "id": 453,
+    "name": ":pill:",
+    "title": "pill",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/pill.mp3",
+    "ru": "таблетка"
+  },
+  {
+    "id": 454,
+    "name": ":male-pilot:",
+    "title": "pilot",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/pilot.mp3",
+    "ru": "пилот"
+  },
+  {
+    "id": 455,
+    "name": ":bamboo:",
+    "title": "pine decoration",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/pine_decoration.mp3",
+    "ru": "украшение из сосны"
+  },
+  {
+    "id": 456,
+    "name": ":pineapple:",
+    "title": "pineapple",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/pineapple.mp3"
+  },
+  {
+    "id": 457,
+    "name": ":table_tennis_paddle_and_ball:",
+    "title": "ping pong",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/ping_pong.mp3"
+  },
+  {
+    "id": 458,
+    "name": ":pisces:",
+    "title": "pisces",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/pisces.mp3",
+    "ru": "рыбы"
+  },
+  {
+    "id": 459,
+    "name": ":gun:",
+    "title": "pistol",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/pistol.mp3",
+    "ru": "пистолет"
+  },
+  {
+    "id": 460,
+    "name": ":pizza:",
+    "title": "pizza",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/pizza.mp3"
+  },
+  {
+    "id": 461,
+    "name": ":point_down:",
+    "title": "pointer down",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/pointer_down.mp3",
+    "ru": "указатель вниз"
+  },
+  {
+    "id": 462,
+    "name": ":point_left:",
+    "title": "pointer to the left",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/pointer_to_the_left.mp3",
+    "ru": "указатель налево"
+  },
+  {
+    "id": 463,
+    "name": ":point_right:",
+    "title": "pointer to the right",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/pointer_to_the_right.mp3",
+    "ru": "указатель вправо"
+  },
+  {
+    "id": 464,
+    "name": ":point_up_2:",
+    "title": "pointer up",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/pointer_up.mp3",
+    "ru": "указатель вверх"
+  },
+  {
+    "id": 465,
+    "name": ":police_car:",
+    "title": "police car",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/police_car.mp3",
+    "ru": "полицейская машина"
+  },
+  {
+    "id": 466,
+    "name": ":cop:",
+    "title": "police officer",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/police_officer.mp3",
+    "ru": "полицейский"
+  },
+  {
+    "id": 467,
+    "name": ":poodle:",
+    "title": "poodle",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/poodle.mp3"
+  },
+  {
+    "id": 468,
+    "name": ":popcorn:",
+    "title": "popcorn",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/popcorn.mp3"
+  },
+  {
+    "id": 469,
+    "name": ":postbox:",
+    "title": "postbox",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/postbox.mp3",
+    "ru": "почтовый ящик"
+  },
+  {
+    "id": 470,
+    "name": ":potable_water:",
+    "title": "potable water",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/potable_water.mp3",
+    "ru": "питьевая вода"
+  },
+  {
+    "id": 471,
+    "name": ":potable_water:",
+    "title": "potable water",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/potable_water.mp3",
+    "ru": "Питьевая вода"
+  },
+  {
+    "id": 472,
+    "name": ":potato:",
+    "title": "potato",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/potato.mp3"
+  },
+  {
+    "id": 473,
+    "name": ":poultry_leg:",
+    "title": "poultry leg",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/poultry_leg.mp3"
+  },
+  {
+    "id": 474,
+    "name": ":prayer_beads:",
+    "title": "prayer beads",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/prayer_beads.mp3"
+  },
+  {
+    "id": 475,
+    "name": ":pregnant_woman:",
+    "title": "pregnant woman",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/pregnant_woman.mp3",
+    "ru": "беременная женщина"
+  },
+  {
+    "id": 476,
+    "name": ":pretzel:",
+    "title": "pretzel",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/pretzel.mp3"
+  },
+  {
+    "id": 477,
+    "name": ":princess:",
+    "title": "princess",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/princess.mp3",
+    "ru": "принцесса"
+  },
+  {
+    "id": 478,
+    "name": ":printer:",
+    "title": "printer",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/printer.mp3",
+    "ru": "принтер"
+  },
+  {
+    "id": 479,
+    "name": ":purse:",
+    "title": "purse",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/purse.mp3"
+  },
+  {
+    "id": 480,
+    "name": ":pushpin:",
+    "title": "pushpin",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/pushpin.mp3",
+    "ru": "канцелярская кнопка"
+  },
+  {
+    "id": 481,
+    "name": ":rabbit2:",
+    "title": "rabbit",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/rabbit.mp3"
+  },
+  {
+    "id": 482,
+    "name": ":racing_car:",
+    "title": "racing car",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/racing_car.mp3",
+    "ru": "гоночный автомобиль"
+  },
+  {
+    "id": 483,
+    "name": ":racing_motorcycle:",
+    "title": "racing motorcycle",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/racing_motorcycle.mp3",
+    "ru": "гоночный мотоцикл"
+  },
+  {
+    "id": 484,
+    "name": ":radio:",
+    "title": "radio",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/radio.mp3",
+    "ru": "радио"
+  },
+  {
+    "id": 485,
+    "name": ":radioactive_sign:",
+    "title": "radioactive sign",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/radioactive_sign.mp3",
+    "ru": "радиоактивный знак"
+  },
+  {
+    "id": 486,
+    "name": ":railway_track:",
+    "title": "railway track",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/railway_track.mp3",
+    "ru": "железнодорожные пути"
+  },
+  {
+    "id": 487,
+    "name": ":rain_cloud:",
+    "title": "rain cloud",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/rain_cloud.mp3",
+    "ru": "дождливые облака"
+  },
+  {
+    "id": 488,
+    "name": ":rainbow:",
+    "title": "rainbow",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/rainbow.mp3",
+    "ru": "радуга"
+  },
+  {
+    "id": 489,
+    "name": ":raised_back_of_hand:",
+    "title": "raised back of hand",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/raised_back_of_hand.mp3",
+    "ru": "поднятая тыльная сторона руки"
+  },
+  {
+    "id": 490,
+    "name": ":fist:",
+    "title": "raised fist",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/raised_fist.mp3",
+    "ru": "поднятый кулак"
+  },
+  {
+    "id": 491,
+    "name": ":hand:",
+    "title": "raised hand",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/raised_hand.mp3",
+    "ru": "поднятая рука"
+  },
+  {
+    "id": 492,
+    "name": ":raised_hands:",
+    "title": "raising hands",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/raising_hands.mp3",
+    "ru": "поднимать руки"
+  },
+  {
+    "id": 493,
+    "name": ":ram:",
+    "title": "ram",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/ram.mp3"
+  },
+  {
+    "id": 494,
+    "name": ":rat:",
+    "title": "rat",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/rat.mp3"
+  },
+  {
+    "id": 495,
+    "name": ":recycle:",
+    "title": "recycle",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/recycle.mp3",
+    "ru": "рециркулировать"
+  },
+  {
+    "id": 496,
+    "name": ":registered:",
+    "title": "registered",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/registered.mp3",
+    "ru": "зарегистрированный"
+  },
+  {
+    "id": 497,
+    "name": ":reminder_ribbon:",
+    "title": "reminder ribbon",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/reminder_ribbon.mp3"
+  },
+  {
+    "id": 498,
+    "name": ":repeat:",
+    "title": "repeat",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/repeat.mp3",
+    "ru": "повторение"
+  },
+  {
+    "id": 499,
+    "name": ":restroom:",
+    "title": "restroom",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/restroom.mp3",
+    "ru": "уборная"
+  },
+  {
+    "id": 500,
+    "name": ":rhinoceros:",
+    "title": "rhinoceros",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/rhinoceros.mp3"
+  },
+  {
+    "id": 501,
+    "name": ":rice_ball:",
+    "title": "rice ball",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/rice_ball.mp3"
+  },
+  {
+    "id": 502,
+    "name": ":rice_cracker:",
+    "title": "rice cracker",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/rice_cracker.mp3"
+  },
+  {
+    "id": 503,
+    "name": ":ring:",
+    "title": "ring",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/ring.mp3"
+  },
+  {
+    "id": 504,
+    "name": ":rocket:",
+    "title": "rocket",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/rocket.mp3",
+    "ru": "ракета"
+  },
+  {
+    "id": 505,
+    "name": ":rolled_up_newspaper:",
+    "title": "rolled up newspaper",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/rolled_up_newspaper.mp3",
+    "ru": "свернутая газета"
+  },
+  {
+    "id": 506,
+    "name": ":roller_coaster:",
+    "title": "roller coaster",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/roller_coaster.mp3",
+    "ru": "американские горки"
+  },
+  {
+    "id": 507,
+    "name": ":rooster:",
+    "title": "rooster",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/rooster.mp3"
+  },
+  {
+    "id": 508,
+    "name": ":rose:",
+    "title": "rose",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/rose.mp3",
+    "ru": "роза"
+  },
+  {
+    "id": 509,
+    "name": ":rosette:",
+    "title": "rosette",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/rosette.mp3",
+    "ru": "розетка"
+  },
+  {
+    "id": 510,
+    "name": ":rowboat:",
+    "title": "rowboat",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/rowboat.mp3"
+  },
+  {
+    "id": 511,
+    "name": ":rugby_football:",
+    "title": "rugby football",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/rugby_football.mp3"
+  },
+  {
+    "id": 512,
+    "name": ":runner:",
+    "title": "running",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/running.mp3",
+    "ru": "бег"
+  },
+  {
+    "id": 513,
+    "name": ":running_shirt_with_sash:",
+    "title": "running shirt",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/running_shirt.mp3"
+  },
+  {
+    "id": 514,
+    "name": ":sagittarius:",
+    "title": "sagittarius",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/sagittarius.mp3",
+    "ru": "стрелец"
+  },
+  {
+    "id": 515,
+    "name": ":boat:",
+    "title": "sailboat",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/sailboat.mp3",
+    "ru": "парусное судно"
+  },
+  {
+    "id": 516,
+    "name": ":satellite:",
+    "title": "satellite",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/satellite.mp3",
+    "ru": "спутник"
+  },
+  {
+    "id": 517,
+    "name": ":satellite_antenna:",
+    "title": "satellite antenna",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/satellite_antenna.mp3",
+    "ru": "спутниковая антенна"
+  },
+  {
+    "id": 518,
+    "name": ":sauropod:",
+    "title": "sauropod",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/sauropod.mp3"
+  },
+  {
+    "id": 519,
+    "name": ":saxophone:",
+    "title": "saxophone",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/saxophone.mp3"
+  },
+  {
+    "id": 520,
+    "name": ":scales:",
+    "title": "scales",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/scales.mp3",
+    "ru": "весы"
+  },
+  {
+    "id": 521,
+    "name": ":scarf:",
+    "title": "scarf",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/scarf.mp3"
+  },
+  {
+    "id": 522,
+    "name": ":school:",
+    "title": "school",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/school.mp3",
+    "ru": "школа"
+  },
+  {
+    "id": 523,
+    "name": ":school_satchel:",
+    "title": "school satchel",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/school_satchel.mp3"
+  },
+  {
+    "id": 524,
+    "name": ":female-scientist:",
+    "title": "scientist",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/scientist.mp3",
+    "ru": "ученый"
+  },
+  {
+    "id": 525,
+    "name": ":scorpion:",
+    "title": "scorpion",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/scorpion.mp3"
+  },
+  {
+    "id": 526,
+    "name": ":scorpius:",
+    "title": "scorpius",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/scorpius.mp3",
+    "ru": "скорпион"
+  },
+  {
+    "id": 527,
+    "name": ":seat:",
+    "title": "seat",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/seat.mp3",
+    "ru": "сиденье"
+  },
+  {
+    "id": 528,
+    "name": ":second_place_medal:",
+    "title": "second place medal",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/second_place_medal.mp3"
+  },
+  {
+    "id": 529,
+    "name": ":seedling:",
+    "title": "seedling",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/seedling.mp3",
+    "ru": "сажанец"
+  },
+  {
+    "id": 530,
+    "name": ":selfie:",
+    "title": "selfie",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/selfie.mp3",
+    "ru": "селфи"
+  },
+  {
+    "id": 531,
+    "name": ":seven:",
+    "title": "seven",
+    "url": "https://leelachakra.com/resource/EnForKids/01-Numbers/mp3/7.mp3"
+  },
+  {
+    "id": 532,
+    "name": ":clock7:",
+    "title": "seven oclock",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/seven_oclock.mp3",
+    "ru": "семь часов"
+  },
+  {
+    "id": 533,
+    "name": ":clock730:",
+    "title": "seven-thirty",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/seven-thirty.mp3",
+    "ru": "семь тридцать"
+  },
+  {
+    "id": 534,
+    "name": ":shamrock:",
+    "title": "shamrock",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/shamrock.mp3",
+    "ru": "трилистник"
+  },
+  {
+    "id": 535,
+    "name": ":shamrock:",
+    "title": "shamrock",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/shamrock.mp3",
+    "ru": "трилистник"
+  },
+  {
+    "id": 536,
+    "name": ":shark:",
+    "title": "shark",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/shark.mp3"
+  },
+  {
+    "id": 537,
+    "name": ":shaved_ice:",
+    "title": "shaved ice",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/shaved_ice.mp3"
+  },
+  {
+    "id": 538,
+    "name": ":sheep:",
+    "title": "sheep",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/sheep.mp3"
+  },
+  {
+    "id": 539,
+    "name": ":shell:",
+    "title": "shell",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/shell.mp3"
+  },
+  {
+    "id": 540,
+    "name": ":shield:",
+    "title": "shield",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/shield.mp3",
+    "ru": "щит"
+  },
+  {
+    "id": 541,
+    "name": ":shinto_shrine:",
+    "title": "shinto shrine",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/shinto_shrine.mp3",
+    "ru": "синтоистский храм"
+  },
+  {
+    "id": 542,
+    "name": ":ship:",
+    "title": "ship",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/ship.mp3",
+    "ru": "корабль"
+  },
+  {
+    "id": 543,
+    "name": ":stars:",
+    "title": "shooting star",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/shooting_star.mp3",
+    "ru": "падающая звезда"
+  },
+  {
+    "id": 544,
+    "name": ":stars:",
+    "title": "shooting star",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/shooting_star.mp3",
+    "ru": "падающая звезда"
+  },
+  {
+    "id": 545,
+    "name": ":shopping_trolley:",
+    "title": "shopping trolley",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/shopping_trolley.mp3",
+    "ru": "тележка для покупок"
+  },
+  {
+    "id": 546,
+    "name": ":cake:",
+    "title": "shortcake",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/shortcake.mp3"
+  },
+  {
+    "id": 547,
+    "name": ":shower:",
+    "title": "shower",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/shower.mp3",
+    "ru": "душ"
+  },
+  {
+    "id": 548,
+    "name": ":shower:",
+    "title": "shower",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/shower.mp3",
+    "ru": "душ"
+  },
+  {
+    "id": 549,
+    "name": ":shrimp:",
+    "title": "shrimp",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/shrimp.mp3"
+  },
+  {
+    "id": 550,
+    "name": ":shrug:",
+    "title": "shrug",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/shrug.mp3",
+    "ru": "пожимть плечами"
+  },
+  {
+    "id": 551,
+    "name": ":the_horns:",
+    "title": "sign of the horns",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/sign_of_the_horns.mp3",
+    "ru": "знак рогов"
+  },
+  {
+    "id": 552,
+    "name": ":female-singer:",
+    "title": "singer",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/singer.mp3",
+    "ru": "певица"
+  },
+  {
+    "id": 553,
+    "name": ":six:",
+    "title": "six",
+    "url": "https://leelachakra.com/resource/EnForKids/01-Numbers/mp3/6.mp3"
+  },
+  {
+    "id": 554,
+    "name": ":clock6:",
+    "title": "six oclock",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/six_oclock.mp3",
+    "ru": "шесть часов"
+  },
+  {
+    "id": 555,
+    "name": ":six_pointed_star:",
+    "title": "six pointed star",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/six_pointed_star.mp3",
+    "ru": "шестиконечная звезда"
+  },
+  {
+    "id": 556,
+    "name": ":clock630:",
+    "title": "six-thirty",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/six-thirty.mp3",
+    "ru": "шесть тридцать"
+  },
+  {
+    "id": 557,
+    "name": ":skier:",
+    "title": "skier",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/skier.mp3"
+  },
+  {
+    "id": 558,
+    "name": ":ski:",
+    "title": "skis",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/skis.mp3"
+  },
+  {
+    "id": 559,
+    "name": "skull_and_crossbones",
+    "title": "skull and crossbones",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/skull_and_crossbones.mp3",
+    "ru": "череп и кости"
+  },
+  {
+    "id": 560,
+    "name": ":sled:",
+    "title": "sled",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/sled.mp3"
+  },
+  {
+    "id": 561,
+    "name": ":slot_machine:",
+    "title": "slot machine",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/slot_machine.mp3"
+  },
+  {
+    "id": 562,
+    "name": ":snail:",
+    "title": "snail",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/snail.mp3"
+  },
+  {
+    "id": 563,
+    "name": ":snake:",
+    "title": "snake",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/snake.mp3"
+  },
+  {
+    "id": 564,
+    "name": ":snow_cloud:",
+    "title": "snow cloud",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/snow_cloud.mp3",
+    "ru": "снежное облако"
+  },
+  {
+    "id": 565,
+    "name": ":snowboarder:",
+    "title": "snowboarder",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/snowboarder.mp3"
+  },
+  {
+    "id": 566,
+    "name": ":snowflake:",
+    "title": "snowflake",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/snowflake.mp3",
+    "ru": "снежинки"
+  },
+  {
+    "id": 567,
+    "name": ":snowman:",
+    "title": "snowman",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/snowman.mp3",
+    "ru": "снеговик"
+  },
+  {
+    "id": 568,
+    "name": ":soccer:",
+    "title": "soccer",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/soccer.mp3"
+  },
+  {
+    "id": 569,
+    "name": ":socks:",
+    "title": "socks",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/socks.mp3"
+  },
+  {
+    "id": 570,
+    "name": ":icecream:",
+    "title": "soft ice cream",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/soft_ice_cream.mp3"
+  },
+  {
+    "id": 571,
+    "name": ":spaghetti:",
+    "title": "spaghetti",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/spaghetti.mp3"
+  },
+  {
+    "id": 572,
+    "name": ":sparkles:",
+    "title": "sparkles",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/sparkles.mp3",
+    "ru": "блестки"
+  },
+  {
+    "id": 573,
+    "name": ":speaking_head_in_silhouette:",
+    "title": "speaking head",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/speaking_head.mp3",
+    "ru": "говорящая голова"
+  },
+  {
+    "id": 574,
+    "name": ":speedboat:",
+    "title": "speedboat",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/speedboat.mp3",
+    "ru": "быстроходный катер"
+  },
+  {
+    "id": 575,
+    "name": ":spiral_calendar_pad:",
+    "title": "spiral calendar pad",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/spiral_calendar_pad.mp3",
+    "ru": "спиральный календарь"
+  },
+  {
+    "id": 576,
+    "name": ":spiral_note_pad:",
+    "title": "spiral note pad",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/spiral_note_pad.mp3",
+    "ru": "спиральный блокнот"
+  },
+  {
+    "id": 577,
+    "name": ":spoon:",
+    "title": "spoon",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/spoon.mp3"
+  },
+  {
+    "id": 578,
+    "name": ":sports_medal:",
+    "title": "sports medal",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/sports_medal.mp3"
+  },
+  {
+    "id": 579,
+    "name": ":squid:",
+    "title": "squid",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/squid.mp3"
+  },
+  {
+    "id": 580,
+    "name": ":chipmunk:",
+    "title": "squirrel",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/squirrel.mp3"
+  },
+  {
+    "id": 581,
+    "name": ":star_and_crescent:",
+    "title": "star and crescent",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/star_and_crescent.mp3",
+    "ru": "звезда и полумесяц"
+  },
+  {
+    "id": 582,
+    "name": ":star_of_david:",
+    "title": "star of David",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/star_of_David.mp3",
+    "ru": "звезда Давида"
+  },
+  {
+    "id": 583,
+    "name": ":station:",
+    "title": "station",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/station.mp3",
+    "ru": "станция"
+  },
+  {
+    "id": 584,
+    "name": ":statue_of_liberty:",
+    "title": "statue of liberty",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/statue_of_liberty.mp3",
+    "ru": "статуя Свободы"
+  },
+  {
+    "id": 585,
+    "name": ":steam_locomotive:",
+    "title": "steam locomotive",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/steam_locomotive.mp3",
+    "ru": "паровоз"
+  },
+  {
+    "id": 586,
+    "name": ":stopwatch:",
+    "title": "stopwatch",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/stopwatch.mp3",
+    "ru": "секундомер"
+  },
+  {
+    "id": 587,
+    "name": ":straight_ruler:",
+    "title": "straight ruler",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/straight_ruler.mp3",
+    "ru": "прямая линейка"
+  },
+  {
+    "id": 588,
+    "name": ":strawberry:",
+    "title": "strawberry",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/strawberry.mp3"
+  },
+  {
+    "id": 589,
+    "name": ":male-student:",
+    "title": "student",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/student.mp3",
+    "ru": "студент"
+  },
+  {
+    "id": 590,
+    "name": ":studio_microphone:",
+    "title": "studio microphone",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/studio_microphone.mp3"
+  },
+  {
+    "id": 591,
+    "name": ":studio_microphone:",
+    "title": "studio microphone",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/studio_microphone.mp3",
+    "ru": "студийный микрофон"
+  },
+  {
+    "id": 592,
+    "name": ":sun_with_face:",
+    "title": "sun",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/sun.mp3",
+    "ru": "солнце"
+  },
+  {
+    "id": 593,
+    "name": ":sunflower:",
+    "title": "sunflower",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/sunflower.mp3",
+    "ru": "подсолнечник"
+  },
+  {
+    "id": 594,
+    "name": ":dark_sunglasses:",
+    "title": "sunglasses",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/sunglasses.mp3"
+  },
+  {
+    "id": 595,
+    "name": ":partly_sunny_rain:",
+    "title": "sunny rain",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/sunny_rain.mp3",
+    "ru": "солнечный дождь"
+  },
+  {
+    "id": 596,
+    "name": ":surfer:",
+    "title": "surfer",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/surfer.mp3"
+  },
+  {
+    "id": 597,
+    "name": ":sushi:",
+    "title": "sushi",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/sushi.mp3"
+  },
+  {
+    "id": 598,
+    "name": ":suspension_railway:",
+    "title": "suspension railway",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/suspension_railway.mp3",
+    "ru": "подвесная железная дорога"
+  },
+  {
+    "id": 599,
+    "name": ":sweet_potato:",
+    "title": "sweet potato",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/sweet_potato.mp3"
+  },
+  {
+    "id": 600,
+    "name": ":swimmer:",
+    "title": "swimmer",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/swimmer.mp3"
+  },
+  {
+    "id": 601,
+    "name": ":synagogue:",
+    "title": "synagogue",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/synagogue.mp3",
+    "ru": "синагога"
+  },
+  {
+    "id": 602,
+    "name": ":t-rex:",
+    "title": "t-rex",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/t-rex.mp3"
+  },
+  {
+    "id": 603,
+    "name": ":shirt:",
+    "title": "t-shirt",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/t-shirt.mp3"
+  },
+  {
+    "id": 604,
+    "name": ":taco:",
+    "title": "taco",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/taco.mp3"
+  },
+  {
+    "id": 605,
+    "name": ":takeout_box:",
+    "title": "takeout box",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/takeout_box.mp3"
+  },
+  {
+    "id": 606,
+    "name": ":tanabata_tree:",
+    "title": "tanabata tree",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/tanabata_tree.mp3",
+    "ru": "дерево Танабата"
+  },
+  {
+    "id": 607,
+    "name": ":tangerine:",
+    "title": "tangerine",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/tangerine.mp3"
+  },
+  {
+    "id": 608,
+    "name": ":taurus:",
+    "title": "taurus",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/taurus.mp3",
+    "ru": "телец"
+  },
+  {
+    "id": 609,
+    "name": ":taxi:",
+    "title": "taxi",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/taxi.mp3",
+    "ru": "такси"
+  },
+  {
+    "id": 610,
+    "name": ":tea:",
+    "title": "tea",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/tea.mp3"
+  },
+  {
+    "id": 611,
+    "name": ":male-teacher:",
+    "title": "teacher",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/teacher.mp3",
+    "ru": "учитель"
+  },
+  {
+    "id": 612,
+    "name": ":female-technologist:",
+    "title": "technologist",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/technologist.mp3",
+    "ru": "технолог"
+  },
+  {
+    "id": 613,
+    "name": ":telephone_receiver:",
+    "title": "telephone receiver",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/telephone_receiver.mp3",
+    "ru": "телефонная трубка"
+  },
+  {
+    "id": 614,
+    "name": ":telescope:",
+    "title": "telescope",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/telescope.mp3",
+    "ru": "телескоп"
+  },
+  {
+    "id": 615,
+    "name": ":tv:",
+    "title": "television",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/television.mp3",
+    "ru": "телевидение"
+  },
+  {
+    "id": 616,
+    "name": ":keycap_ten:",
+    "title": "ten",
+    "url": "https://leelachakra.com/resource/EnForKids/01-Numbers/mp3/10.mp3"
+  },
+  {
+    "id": 617,
+    "name": ":clock10:",
+    "title": "ten oclock",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/ten_oclock.mp3",
+    "ru": "десять часов"
+  },
+  {
+    "id": 618,
+    "name": ":clock1030:",
+    "title": "ten-thirty",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/ten-thirty.mp3",
+    "ru": "десять тридцать"
+  },
+  {
+    "id": 619,
+    "name": ":tennis:",
+    "title": "tennis",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/tennis.mp3"
+  },
+  {
+    "id": 620,
+    "name": ":tent:",
+    "title": "tent",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/tent.mp3",
+    "ru": "палатка"
+  },
+  {
+    "id": 621,
+    "name": ":thermometer:",
+    "title": "thermometer",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/thermometer.mp3",
+    "ru": "термометр"
+  },
+  {
+    "id": 622,
+    "name": ":third_place_medal:",
+    "title": "third place medal",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/third_place_medal.mp3"
+  },
+  {
+    "id": 623,
+    "name": ":three:",
+    "title": "three",
+    "url": "https://leelachakra.com/resource/EnForKids/01-Numbers/mp3/3.mp3"
+  },
+  {
+    "id": 624,
+    "name": ":clock3:",
+    "title": "three oclock",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/three_oclock.mp3",
+    "ru": "три часа"
+  },
+  {
+    "id": 625,
+    "name": ":clock330:",
+    "title": "three-thirty",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/three-thirty.mp3",
+    "ru": "три тридцать"
+  },
+  {
+    "id": 626,
+    "name": ":-1:",
+    "title": "thumb down",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/thumb_down.mp3",
+    "ru": "палец вниз"
+  },
+  {
+    "id": 627,
+    "name": ":+1:",
+    "title": "thumbs up",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/thumbs_up.mp3",
+    "ru": "недурно"
+  },
+  {
+    "id": 628,
+    "name": ":ticket:",
+    "title": "ticket",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/ticket.mp3"
+  },
+  {
+    "id": 629,
+    "name": ":ticket:",
+    "title": "ticket",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/ticket.mp3",
+    "ru": "проездной билет"
+  },
+  {
+    "id": 630,
+    "name": ":tiger2:",
+    "title": "tiger",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/tiger.mp3"
+  },
+  {
+    "id": 631,
+    "name": ":toilet:",
+    "title": "toilet",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/toilet.mp3",
+    "ru": "туалет"
+  },
+  {
+    "id": 632,
+    "name": ":tokyo_tower:",
+    "title": "tokyo tower",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/tokyo_tower.mp3",
+    "ru": "башня в Токио"
+  },
+  {
+    "id": 633,
+    "name": ":tomato:",
+    "title": "tomato",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/tomato.mp3"
+  },
+  {
+    "id": 634,
+    "name": ":tongue:",
+    "title": "tongue",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/tongue.mp3",
+    "ru": "язык"
+  },
+  {
+    "id": 635,
+    "name": ":tophat:",
+    "title": "top hat",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/top_hat.mp3"
+  },
+  {
+    "id": 636,
+    "name": ":tornado:",
+    "title": "tornado",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/tornado.mp3",
+    "ru": "торнадо"
+  },
+  {
+    "id": 637,
+    "name": ":trackball:",
+    "title": "trackbally",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/trackbally.mp3",
+    "ru": "трекбально"
+  },
+  {
+    "id": 638,
+    "name": ":tractor:",
+    "title": "tractor",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/tractor.mp3",
+    "ru": "трактор"
+  },
+  {
+    "id": 639,
+    "name": ":tm:",
+    "title": "trade mark sign",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/trade_mark_sign.mp3",
+    "ru": "знак торговой марки"
+  },
+  {
+    "id": 640,
+    "name": ":traffic_light:",
+    "title": "traffic light",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/traffic_light.mp3",
+    "ru": "светофор"
+  },
+  {
+    "id": 641,
+    "name": ":tram:",
+    "title": "tram",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/tram.mp3",
+    "ru": "трамвай"
+  },
+  {
+    "id": 642,
+    "name": ":triangular_ruler:",
+    "title": "triangular ruler",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/triangular_ruler.mp3",
+    "ru": "треугольная линейка"
+  },
+  {
+    "id": 643,
+    "name": ":trident:",
+    "title": "trident",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/trident.mp3",
+    "ru": "трезубец"
+  },
+  {
+    "id": 644,
+    "name": ":trolleybus:",
+    "title": "trolleybus",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/trolleybus.mp3",
+    "ru": "троллейбус"
+  },
+  {
+    "id": 645,
+    "name": ":trophy:",
+    "title": "trophy",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/trophy.mp3"
+  },
+  {
+    "id": 646,
+    "name": ":trumpet:",
+    "title": "trumpet",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/trumpet.mp3"
+  },
+  {
+    "id": 647,
+    "name": ":tulip:",
+    "title": "tulip",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/tulip.mp3",
+    "ru": "тюльпан"
+  },
+  {
+    "id": 648,
+    "name": ":turkey:",
+    "title": "turkey",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/turkey.mp3"
+  },
+  {
+    "id": 649,
+    "name": ":turtle:",
+    "title": "turtle",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/turtle.mp3"
+  },
+  {
+    "id": 650,
+    "name": ":clock12:",
+    "title": "twelve oclock",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/twelve_oclock.mp3",
+    "ru": "двенадцать часов"
+  },
+  {
+    "id": 651,
+    "name": ":clock1230:",
+    "title": "twelve-thirty",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/twelve-thirty.mp3",
+    "ru": "двенадцать тридцать"
+  },
+  {
+    "id": 652,
+    "name": ":two:",
+    "title": "two",
+    "url": "https://leelachakra.com/resource/EnForKids/01-Numbers/mp3/2.mp3"
+  },
+  {
+    "id": 653,
+    "name": ":clock2:",
+    "title": "two oclock",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/two_oclock.mp3",
+    "ru": "два часа"
+  },
+  {
+    "id": 654,
+    "name": ":clock230:",
+    "title": "two-thirty",
+    "url": "https://leelachakra.com/resource/EnForKids/10-Time/mp3/two-thirty.mp3",
+    "ru": "два тридцать"
+  },
+  {
+    "id": 655,
+    "name": ":umbrella:",
+    "title": "umbrella",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/umbrella.mp3"
+  },
+  {
+    "id": 656,
+    "name": ":umbrella_with_rain_drops:",
+    "title": "umbrella with rain drops",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/umbrella_with_rain_drops.mp3",
+    "ru": "зонт с каплями дождя"
+  },
+  {
+    "id": 657,
+    "name": ":unicorn_face:",
+    "title": "unicorn",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/unicorn.mp3"
+  },
+  {
+    "id": 658,
+    "name": ":vampire:",
+    "title": "vampire",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/vampire.mp3",
+    "ru": "вампир"
+  },
+  {
+    "id": 659,
+    "name": ":video_game:",
+    "title": "video game",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/video_game.mp3"
+  },
+  {
+    "id": 660,
+    "name": ":video_game:",
+    "title": "video game",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/video_game.mp3",
+    "ru": "видео игра"
+  },
+  {
+    "id": 661,
+    "name": ":vhs:",
+    "title": "videocassette",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/videocassette.mp3",
+    "ru": "видеокассета"
+  },
+  {
+    "id": 662,
+    "name": ":violin:",
+    "title": "violin",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/violin.mp3"
+  },
+  {
+    "id": 663,
+    "name": ":virgo:",
+    "title": "virgo",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/virgo.mp3",
+    "ru": "дева"
+  },
+  {
+    "id": 664,
+    "name": ":volcano:",
+    "title": "volcano",
+    "url": "https://leelachakra.com/resource/EnForKids/09-Travel/mp3/volcano.mp3",
+    "ru": "вулкан"
+  },
+  {
+    "id": 665,
+    "name": ":volleyball:",
+    "title": "volleyball",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/volleyball.mp3"
+  },
+  {
+    "id": 666,
+    "name": ":spock-hand:",
+    "title": "vulcan salute",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/vulcan_salute.mp3",
+    "ru": "жест приветствия"
+  },
+  {
+    "id": 667,
+    "name": ":waning_gibbous_moon:",
+    "title": "waning gibbous moon",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/waning_gibbous_moon.mp3",
+    "ru": "убывающая луна"
+  },
+  {
+    "id": 668,
+    "name": ":warning:",
+    "title": "warning",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/warning.mp3",
+    "ru": "предупреждение"
+  },
+  {
+    "id": 669,
+    "name": ":wastebasket:",
+    "title": "wastebasket",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/wastebasket.mp3",
+    "ru": "мусорная корзина"
+  },
+  {
+    "id": 670,
+    "name": ":watch:",
+    "title": "watch",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/watch.mp3",
+    "ru": "смотреть"
+  },
+  {
+    "id": 671,
+    "name": ":wc:",
+    "title": "water closet",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/water_closet.mp3",
+    "ru": "туалет"
+  },
+  {
+    "id": 672,
+    "name": ":water_polo:",
+    "title": "water polo",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/water_polo.mp3"
+  },
+  {
+    "id": 673,
+    "name": ":watermelon:",
+    "title": "watermelon",
+    "url": "https://leelachakra.com/resource/EnForKids/02-Food/mp3/watermelon.mp3"
+  },
+  {
+    "id": 674,
+    "name": ":ocean:",
+    "title": "wave",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/wave.mp3",
+    "ru": "волна"
+  },
+  {
+    "id": 675,
+    "name": ":wave:",
+    "title": "waving hand",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/waving_hand.mp3",
+    "ru": "машущая рука"
+  },
+  {
+    "id": 676,
+    "name": ":waxing_crescent_moon:",
+    "title": "waxing crescent moon",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/waxing_crescent_moon.mp3",
+    "ru": "растущий полумесяц"
+  },
+  {
+    "id": 677,
+    "name": ":weight_lifter:",
+    "title": "weight lifter",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/weight_lifter.mp3"
+  },
+  {
+    "id": 678,
+    "name": ":whale2:",
+    "title": "whale",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/whale.mp3"
+  },
+  {
+    "id": 679,
+    "name": ":wheel_of_dharma:",
+    "title": "wheel of dharma",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/wheel_of_dharma.mp3",
+    "ru": "колесо дхармы"
+  },
+  {
+    "id": 680,
+    "name": ":wheelchair:",
+    "title": "wheelchair",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/wheelchair.mp3",
+    "ru": "инвалидная коляска"
+  },
+  {
+    "id": 681,
+    "name": ":white_flower:",
+    "title": "white flower",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/white_flower.mp3",
+    "ru": "белый цветок"
+  },
+  {
+    "id": 682,
+    "name": ":wilted_flower:",
+    "title": "wilted flower",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/wilted_flower.mp3",
+    "ru": "увядающий цветок"
+  },
+  {
+    "id": 683,
+    "name": ":wind_blowing_face:",
+    "title": "wind's blowing",
+    "url": "https://leelachakra.com/resource/EnForKids/12-Nature/mp3/wind's_blowing.mp3",
+    "ru": "дует ветер"
+  },
+  {
+    "id": 684,
+    "name": ":woman-gesturing-ok:",
+    "title": "woman gesturing-ok",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/woman_gesturing-ok.mp3",
+    "ru": "женщина жестикулирует-ок"
+  },
+  {
+    "id": 685,
+    "name": ":person_with_headscarf:",
+    "title": "woman in headscarf",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/woman_in_headscarf.mp3",
+    "ru": "женщина в платке"
+  },
+  {
+    "id": 686,
+    "name": ":woman-pouting:",
+    "title": "woman pouting",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/woman_pouting.mp3",
+    "ru": "нахмуренная женщиина"
+  },
+  {
+    "id": 687,
+    "name": ":woman-raising-hand:",
+    "title": "woman raising hand",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/woman_raising_hand.mp3",
+    "ru": "женщина поднимает руку"
+  },
+  {
+    "id": 688,
+    "name": ":boot:",
+    "title": "womans boots",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/womans_boots.mp3"
+  },
+  {
+    "id": 689,
+    "name": ":womans_clothes:",
+    "title": "womans clothes",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/womans_clothes.mp3"
+  },
+  {
+    "id": 690,
+    "name": ":womans_hat:",
+    "title": "womans hat",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/womans_hat.mp3"
+  },
+  {
+    "id": 691,
+    "name": ":sandal:",
+    "title": "womans sandal",
+    "url": "https://leelachakra.com/resource/EnForKids/05-Clothes/mp3/womans_sandal.mp3"
+  },
+  {
+    "id": 692,
+    "name": ":womens:",
+    "title": "womens",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/womens.mp3",
+    "ru": "женский"
+  },
+  {
+    "id": 693,
+    "name": ":world_map:",
+    "title": "world map",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/world_map.mp3",
+    "ru": "карта мира"
+  },
+  {
+    "id": 694,
+    "name": ":wrench:",
+    "title": "wrench",
+    "url": "https://leelachakra.com/resource/EnForKids/08-Objects/mp3/wrench.mp3",
+    "ru": "гаечный ключ"
+  },
+  {
+    "id": 695,
+    "name": ":wrestlers:",
+    "title": "wrestlers",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/wrestlers.mp3"
+  },
+  {
+    "id": 696,
+    "name": ":writing_hand:",
+    "title": "writing hand",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/writing_hand.mp3",
+    "ru": "пищущая рука"
+  },
+  {
+    "id": 697,
+    "name": ":yin_yang:",
+    "title": "yin yang",
+    "url": "https://leelachakra.com/resource/EnForKids/07-Symbols/mp3/yin_yang.mp3",
+    "ru": "инь янь"
+  },
+  {
+    "id": 698,
+    "name": ":person_in_lotus_position:",
+    "title": "yoga",
+    "url": "https://leelachakra.com/resource/EnForKids/04-Activity/mp3/yoga.mp3"
+  },
+  {
+    "id": 699,
+    "name": ":zebra_face:",
+    "title": "zebra",
+    "url": "https://leelachakra.com/resource/EnForKids/03-Animals/mp3/zebra.mp3"
+  },
+  {
+    "id": 700,
+    "name": ":zero:",
+    "title": "zero",
+    "url": "https://leelachakra.com/resource/EnForKids/01-Numbers/mp3/0.mp3"
+  },
+  {
+    "id": 701,
+    "name": ":zombie:",
+    "title": "zombie",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/zombie.mp3",
+    "ru": "зомби"
+  },
+  {
+    "id": 702,
+    "name": ":clap:",
+    "title": "сlapping hands",
+    "url": "https://leelachakra.com/resource/EnForKids/11-People/mp3/сlapping_hands.mp3",
+    "ru": "хлопая в ладоши"
+  }
+]

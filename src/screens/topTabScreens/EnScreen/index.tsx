@@ -26,11 +26,10 @@ export function EnScreen() {
   }, [data])
   const fetchData = async () => {
     setLoad(true)
-    const res = await fetchJson(
-      'https://s3.eu-central-1.wasabisys.com/jscamp/EnForKids/Main.json'
-    )
+    const res = await fetchJson('https://leelachakra.com/resource/EnForKids/Main.json')
+
     const resExam = await fetchJson(
-      'https://s3.eu-central-1.wasabisys.com/jscamp/EnForKids/examData/examEn.json'
+      'https://leelachakra.com/resource/EnForKids/examData/examEn.json'
     )
     setData(res)
     setExamData(resExam)

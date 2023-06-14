@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { StatusBar, StyleSheet, View } from 'react-native'
-import { Button, Header, Text, VideoPlayer } from '../../../../components'
+import { Button, Header, Space, Text, VideoPlayer } from '../../../../components'
 import { s, vs } from 'react-native-size-matters'
 import Orientation, { OrientationType } from 'react-native-orientation-locker'
 import { white } from '../../../../constants'
@@ -14,7 +14,9 @@ export function VideoSсreen({}: VideoSсreenT) {
   const { currentLesson, sectionIndex, lessonData, lastIndex, part, lessonId } =
     useTypedSelector(st => st.section)
   const dispatch = useTypedDispatch()
-  if (!currentLesson) return <Text title="error" h2 />
+  if (!currentLesson) {
+    return <Text title="error" h2 />
+  }
   const { contentUrl, header, poster } = currentLesson
   const oLestener = (orientation: OrientationType) => {
     const portrair = orientation === 'PORTRAIT' || orientation === 'PORTRAIT-UPSIDEDOWN'
@@ -56,17 +58,18 @@ export function VideoSсreen({}: VideoSсreenT) {
         />
       )}
       <View style={container}>
-        <VideoPlayer
+        {/* <VideoPlayer
           source={{
             uri: contentUrl
           }}
           poster={poster}
           paused
           viewStyle={isPortrait && videoContainer}
-        />
+        /> */}
         {isPortrait && (
           <View style={btnContainer}>
             {hasLearn && <Button color={white} onPress={handleLearn} title="Учить" />}
+            <Space height={20} />
             {!isLast && <Button color={white} onPress={handleNext} title="Тест" />}
           </View>
         )}
@@ -84,7 +87,8 @@ const styles = StyleSheet.create({
     maxHeight: s(196)
   },
   btnContainer: {
-    flexDirection: 'row',
+    // flexDirection: 'row',
+
     justifyContent: 'space-around'
   }
 })
