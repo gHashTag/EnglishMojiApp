@@ -4,6 +4,7 @@ import { s, vs } from 'react-native-size-matters'
 import { Button } from '../'
 import { Text } from '../../'
 import { green } from '../../../constants'
+import { useTranslation } from 'react-i18next'
 
 interface ButtonSubmitT {
   onSubmit: () => null | boolean
@@ -12,6 +13,7 @@ interface ButtonSubmitT {
 
 export function ButtonSubmit({ onSubmit, onWin }: ButtonSubmitT) {
   const [isCorrect, setIsCorrect] = useState<null | boolean>(null)
+  const { t } = useTranslation()
   const handlePress = () => {
     const isEqual = onSubmit()
     setIsCorrect(isEqual)
@@ -25,11 +27,11 @@ export function ButtonSubmit({ onSubmit, onWin }: ButtonSubmitT) {
   return (
     <View style={bottomView}>
       {isCorrect === null ? (
-        <Button onPress={handlePress} title={'Проверить'} />
+        <Button onPress={handlePress} title={t('check')} />
       ) : isCorrect === false ? (
-        <Text h7 oneColor="red" title="Неверно" centerText />
+        <Text h7 oneColor="red" title={t('wrong')} centerText />
       ) : (
-        <Text h7 oneColor={green} title="Верно ✓" centerText />
+        <Text h7 oneColor={green} title={t('right')} centerText />
       )}
     </View>
   )

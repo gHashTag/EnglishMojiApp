@@ -1,0 +1,16 @@
+{
+    "checkAnswers": {
+    "check": "チェック",
+    "wrong": "間違い",
+    "right": "本当 ✓"
+    },
+    "errors": {
+        "loadFailed": "コンテンツの読み込み中にエラーが発生しました",
+        "back": "戻ってくる"
+    },
+    "input": {
+        "question": "  質問:",
+        "yourAnswer": "あなたの答え",
+        "winScreen": "あなたは試験に合格しました！!!"
+    }
+}

@@ -6,10 +6,12 @@ import { examComplete, schemeToggle } from '../../../slices'
 import { useTypedDispatch, useTypedSelector } from '../../../store'
 import { RootStackParamList } from '../../../types'
 import { SelectQuestType, WinScreen } from '../TypesOfLessons'
+import { useTranslation } from 'react-i18next'
 
 export function ExamScreen({ navigation, route }: ExamScreenT) {
   const [questId, setQuestId] = useState(0)
   const { questions, part } = route.params
+  const { t } = useTranslation()
   const dispatch = useTypedDispatch()
   const lastId = questions.length - 1
   const bg = useTypedSelector(st => st.bgColor.bgWithScheme)
@@ -28,7 +30,7 @@ export function ExamScreen({ navigation, route }: ExamScreenT) {
   return (
     <View style={{ flex: 1, backgroundColor: bg }}>
       {questId === lastId + 1 ? (
-        <WinScreen title="Вы прошли экзамен!!!" />
+        <WinScreen title={t('winScreen')} />
       ) : (
         <SelectQuestType onWin={onWin} {...questions[questId]} />
       )}

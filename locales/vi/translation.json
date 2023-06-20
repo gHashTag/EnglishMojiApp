@@ -1,0 +1,16 @@
+{
+    "checkAnswers": {
+    "check": "Kiểm tra",
+    "wrong": "Sai",
+    "right": "Đúng ✓"
+    },
+    "errors": {
+        "loadFailed": "Đã xảy ra lỗi khi tải nội dung",
+        "back": "Sự trở lại"
+    },
+    "input": {
+        "question": "  Câu hỏi:",
+        "yourAnswer": "Câu trả lời của bạn",
+        "winScreen": "Bạn đã vượt qua kỳ thi!!!"
+    }
+}

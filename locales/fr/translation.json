@@ -1,0 +1,16 @@
+{
+    "checkAnswers": {
+    "check": "Vérifier",
+    "wrong": "Faux",
+    "right": "Vrai ✓"
+    },
+    "errors": {
+        "loadFailed": "Une erreur s'est produite lors du chargement du contenu",
+        "back": "Revenir"
+    },
+    "input": {
+        "question": "  Question:",
+        "yourAnswer": "Votre Réponse",
+        "winScreen": "Vous avez passé l'examen!!!"
+    }
+}

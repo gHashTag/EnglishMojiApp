@@ -1,0 +1,16 @@
+{
+    "checkAnswers": {
+    "check": "Check",
+    "wrong": "Wrong",
+    "right": "Right ✓"
+    },
+    "errors": {
+        "loadFailed": "There was an error loading content",
+        "back": "Come back"
+    },
+    "input": {
+        "question": "  Question:",
+        "yourAnswer": "Your Answer",
+        "winScreen": "You have passed the exam!!!"
+    }
+}
