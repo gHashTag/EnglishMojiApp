@@ -12,5 +12,9 @@
         "question": "  Pitakonan:",
         "yourAnswer": "Jawaban Panjenengan",
         "winScreen": "Kowé wis lulus ujian!!!"
+    },
+    "titles": {
+        "learn": "Sinau",
+        "test": "Tes"
     }
 }

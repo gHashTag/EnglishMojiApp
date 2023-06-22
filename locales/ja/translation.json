@@ -12,5 +12,9 @@
         "question": "  質問:",
         "yourAnswer": "あなたの答え",
         "winScreen": "あなたは試験に合格しました！!!"
+    },
+    "titles": {
+        "learn": "学び",
+        "test": "テスト"
     }
 }

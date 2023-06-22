@@ -18,9 +18,14 @@ export function LoadFailed() {
   return (
     <SafeAreaView style={container}>
       <Ionicons color={text} size={s(100)} name="warning-outline" />
-      <Text h8 title={t('loadFailed')} />
+      <Text h8 title={t('errors.loadFailed')} />
       <Space height={vs(30)} />
-      <Button title={t('back')} onPress={goBack} color={red} viewStyle={btnStyle} />
+      <Button
+        title={t('errors.back')}
+        onPress={goBack}
+        color={red}
+        viewStyle={btnStyle}
+      />
       <Space height={vs(30)} />
     </SafeAreaView>
   )

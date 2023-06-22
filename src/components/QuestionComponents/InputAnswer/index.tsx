@@ -64,12 +64,12 @@ export function InputAnswer({ questionText, correctAnswer, onWin }: thisT) {
       <ScrollView>
         <FormProvider {...methods}>
           <Space height={vs(20)} />
-          <Text h6 title={t('question')} />
+          <Text h6 title={t('input.question')} />
           <View style={questionCard}>
             <Text h4 title={questionText} />
           </View>
           <Space height={vs(50)} />
-          <Input type="underline" name={answerName} placeholder={t('yourAnswer')} />
+          <Input type="underline" name={answerName} placeholder={t('input.yourAnswer')} />
           <Space height={vs(15)} />
           <ButtonSubmit onWin={handleWin} onSubmit={handleSubmit} />
           <Space height={vs(50)} />

@@ -12,5 +12,9 @@
         "question": "  질문:",
         "yourAnswer": "너의 답",
         "winScreen": "당신은 시험에 합격했습니다!!!"
+    },
+    "titles": {
+        "learn": "배우다",
+        "test": "시험"
     }
 }

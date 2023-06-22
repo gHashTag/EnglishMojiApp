@@ -12,5 +12,9 @@
         "question": "  Soru:",
         "yourAnswer": "Cevabınız",
         "winScreen": "Sınavı geçtiniz!!!"
+    },
+    "titles": {
+        "learn": "Öğrenmek",
+        "test": "Ölçek"
     }
 }

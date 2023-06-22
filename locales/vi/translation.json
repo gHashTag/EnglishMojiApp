@@ -12,5 +12,9 @@
         "question": "  Câu hỏi:",
         "yourAnswer": "Câu trả lời của bạn",
         "winScreen": "Bạn đã vượt qua kỳ thi!!!"
+    },
+    "titles": {
+        "learn": "Học hỏi",
+        "test": "Bài kiểm tra"
     }
 }

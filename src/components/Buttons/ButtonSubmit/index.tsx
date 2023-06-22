@@ -27,11 +27,11 @@ export function ButtonSubmit({ onSubmit, onWin }: ButtonSubmitT) {
   return (
     <View style={bottomView}>
       {isCorrect === null ? (
-        <Button onPress={handlePress} title={t('check')} />
+        <Button onPress={handlePress} title={t('checkAnswers.check')} />
       ) : isCorrect === false ? (
-        <Text h7 oneColor="red" title={t('wrong')} centerText />
+        <Text h7 oneColor="red" title={t('checkAnswers.wrong')} centerText />
       ) : (
-        <Text h7 oneColor={green} title={t('right')} centerText />
+        <Text h7 oneColor={green} title={t('checkAnswers.right')} centerText />
       )}
     </View>
   )

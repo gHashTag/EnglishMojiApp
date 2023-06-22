@@ -12,5 +12,9 @@
         "question": "  Frage:",
         "yourAnswer": "Deine Antwort",
         "winScreen": "Sie haben die Prüfung bestanden!!!"
+    },
+    "titles": {
+        "learn": "Lernen",
+        "test": "Prüfen"
     }
 }

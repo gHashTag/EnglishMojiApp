@@ -10,7 +10,11 @@
     },
     "input": {
         "question": "  Question:",
-        "yourAnswer": "Your Answer",
+        "yourA nswer": "Your Answer",
         "winScreen": "You have passed the exam!!!"
+    },
+    "titles": {
+        "learn": "Learn",
+        "test": "Test"
     }
 }

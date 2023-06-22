@@ -1,23 +1,26 @@
 import React, { useEffect, useState } from 'react'
 import { StatusBar, StyleSheet, View } from 'react-native'
-import { Button, Header, Space, Text, VideoPlayer } from '../../../../components'
-import { s, vs } from 'react-native-size-matters'
+import { Button, Header, Space, Text } from '../../../../components'
+import { s } from 'react-native-size-matters'
 import Orientation, { OrientationType } from 'react-native-orientation-locker'
 import { white } from '../../../../constants'
 import { useTypedDispatch, useTypedSelector } from '../../../../store'
 import { goPrevious, incrementSection, setSection } from '../../../../slices'
+import { useTranslation } from 'react-i18next'
 
 interface VideoSсreenT {}
 
 export function VideoSсreen({}: VideoSсreenT) {
   const [isPortrait, setIsPortrait] = useState<boolean>(true)
-  const { currentLesson, sectionIndex, lessonData, lastIndex, part, lessonId } =
-    useTypedSelector(st => st.section)
+  const { t } = useTranslation()
+  const { currentLesson, sectionIndex, lessonData, lastIndex } = useTypedSelector(
+    st => st.section
+  )
   const dispatch = useTypedDispatch()
   if (!currentLesson) {
     return <Text title="error" h2 />
   }
-  const { contentUrl, header, poster } = currentLesson
+  const { header } = currentLesson
   const oLestener = (orientation: OrientationType) => {
     const portrair = orientation === 'PORTRAIT' || orientation === 'PORTRAIT-UPSIDEDOWN'
     setIsPortrait(portrair)
@@ -68,9 +71,13 @@ export function VideoSсreen({}: VideoSсreenT) {
         /> */}
         {isPortrait && (
           <View style={btnContainer}>
-            {hasLearn && <Button color={white} onPress={handleLearn} title="Learn" />}
+            {hasLearn && (
+              <Button color={white} onPress={handleLearn} title={t('titles.learn')} />
+            )}
             <Space height={20} />
-            {!isLast && <Button color={white} onPress={handleNext} title="Test" />}
+            {!isLast && (
+              <Button color={white} onPress={handleNext} title={t('titles.test')} />
+            )}
           </View>
         )}
       </View>
@@ -93,4 +100,4 @@ const styles = StyleSheet.create({
   }
 })
 
-const { container, videoContainer, btnContainer } = styles
+const { container, btnContainer } = styles

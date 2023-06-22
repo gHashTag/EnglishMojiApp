@@ -12,5 +12,9 @@
         "question": "  Вопрос:",
         "yourAnswer": "Ваш ответ",
         "winScreen": "Вы прошли экзамен!!!"
+    },
+    "titles": {
+        "learn": "Учить",
+        "test": "Тест"
     }
 }

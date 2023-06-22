@@ -8,10 +8,10 @@ import { RootStackParamList } from '../../../types'
 import { SelectQuestType, WinScreen } from '../TypesOfLessons'
 import { useTranslation } from 'react-i18next'
 
-export function ExamScreen({ navigation, route }: ExamScreenT) {
+export function ExamScreen({ route }: ExamScreenT) {
   const [questId, setQuestId] = useState(0)
-  const { questions, part } = route.params
   const { t } = useTranslation()
+  const { questions, part } = route.params
   const dispatch = useTypedDispatch()
   const lastId = questions.length - 1
   const bg = useTypedSelector(st => st.bgColor.bgWithScheme)
@@ -30,7 +30,7 @@ export function ExamScreen({ navigation, route }: ExamScreenT) {
   return (
     <View style={{ flex: 1, backgroundColor: bg }}>
       {questId === lastId + 1 ? (
-        <WinScreen title={t('winScreen')} />
+        <WinScreen title={t('input.winScreen')} />
       ) : (
         <SelectQuestType onWin={onWin} {...questions[questId]} />
       )}

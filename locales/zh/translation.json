@@ -12,5 +12,9 @@
         "question": "  问题：",
         "yourAnswer": "您的答案",
         "winScreen": "你通过了考试！!!"
+    },
+    "titles": {
+        "learn": "学习",
+        "test": "测试"
     }
 }
