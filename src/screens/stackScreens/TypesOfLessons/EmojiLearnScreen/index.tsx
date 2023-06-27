@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { RootStackParamList } from '../../../../types'
 import {
@@ -22,20 +22,21 @@ const win = new Sound('win.mp3')
 export function EmojiLearnScreen() {
   const { currentLesson } = useTypedSelector(st => st.section)
   const dataUrl = currentLesson?.contentUrl
+  console.log('dataUrl', dataUrl)
   const [emojiData, setEmojiData] = useState<emojiT[]>()
   const [curEmoji, setCurEmoji] = useState<emojiT>()
   const [speed, setSpeed] = useState<number>(35)
   const curIndex = useRef<number>(0)
   const dispatch = useTypedDispatch()
-  const fetchEmojiData = async () => {
+  const fetchEmojiData = useCallback(async () => {
     if (dataUrl) {
       const res = await fetchJson(dataUrl)
       setEmojiData(shuffle(res))
     }
-  }
+  }, [dataUrl])
   useEffect(() => {
     fetchEmojiData()
-  }, [])
+  }, [fetchEmojiData])
   useEffect(() => {
     if (emojiData) {
       const timerId = setInterval(() => {

@@ -6,16 +6,32 @@ import {
   ScrollContainer,
   Space
 } from '../../../components'
-import { en_color, en_gradient, fetchJson, handlePressCard } from '../../../constants'
+import { en_color, en_gradient, handlePressCard } from '../../../constants'
 
 import { LessonData } from '../../../types/LessonTypes'
 import { useColorScheme } from 'react-native'
 import { changeCourseLength } from '../../../slices'
 import { useTypedDispatch } from '../../../store'
+const res: LessonData[] = require('../../../EnForKids/Main.json')
+const resExam: questionsT[] = require('../../../EnForKids/examData/examEn.json')
+
+interface questionsT {
+  type:
+    | 'input'
+    | 'oneChoice'
+    | 'drag'
+    | 'manySelect'
+    | 'joinVariants'
+    | 'supplement'
+    | 'emoji'
+  text: string
+  options: string[]
+  correctAnswer: string
+}
 
 export function EnScreen() {
-  const [data, setData] = useState([])
-  const [examData, setExamData] = useState([])
+  const [data, setData] = useState<LessonData[]>([])
+  const [examData, setExamData] = useState<questionsT[]>([])
   const [load, setLoad] = useState(true)
   const isDark = useColorScheme() === 'dark'
   const dispatch = useTypedDispatch()
@@ -23,17 +39,18 @@ export function EnScreen() {
     if (data.length > 0) {
       dispatch(changeCourseLength({ part: 'en', length: data.length }))
     }
-  }, [data])
-  const fetchData = async () => {
-    setLoad(true)
-    const res = await fetchJson('https://leelachakra.com/resource/EnForKids/Main.json')
+  }, [data, dispatch])
 
-    const resExam = await fetchJson(
-      'https://leelachakra.com/resource/EnForKids/examData/examEn.json'
-    )
-    setData(res)
-    setExamData(resExam)
-    setLoad(false)
+  const fetchData = async () => {
+    try {
+      setLoad(true)
+      setData(res)
+      setExamData(resExam)
+    } catch (error) {
+      console.log('error:', error)
+    } finally {
+      setLoad(false)
+    }
   }
   useEffect(() => {
     fetchData()
@@ -44,9 +61,7 @@ export function EnScreen() {
   ) : (
     <ScrollContainer bgColor={!isDark ? en_color : undefined}>
       <Space height={50} />
-      {/* @ts-ignore */}
       <ExamIndicator questions={examData} part="en" />
-      {/* @ts-ignore */}
       {data.map((item: LessonData) => {
         return (
           <LessonCard
