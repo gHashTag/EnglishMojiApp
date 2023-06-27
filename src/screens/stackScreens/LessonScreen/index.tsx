@@ -16,6 +16,7 @@ export function LessonScreen() {
   const type = sectionState.currentLesson?.type
   const bg = useTypedSelector(st => st.bgColor.bgWithScheme)
   const dispatch = useTypedDispatch()
+
   useFocusEffect(() => {
     const sub = Appearance.addChangeListener(({ colorScheme }) => {
       dispatch(schemeToggle(colorScheme === 'dark'))
@@ -23,23 +24,27 @@ export function LessonScreen() {
     return () => sub.remove()
   })
 
+  const renderLessonScreen = () => {
+    switch (type) {
+      case 'video':
+        return <VideoSсreen />
+      case 'markdown':
+      case 'learn':
+        return <MarkdownScreen />
+      case 'emojiLearn':
+        return <EmojiLearnScreen />
+      case 'quest':
+        return <QuestScreen />
+      case 'win':
+        return <WinScreen />
+      default:
+        return null
+    }
+  }
+
   return (
-    <View style={[container, { backgroundColor: bg }]}>
-      {type === 'video' ? (
-        <VideoSсreen />
-      ) : type === 'markdown' ? (
-        <MarkdownScreen />
-      ) : type === 'learn' ? (
-        <MarkdownScreen />
-      ) : type === 'emojiLearn' ? (
-        <EmojiLearnScreen />
-      ) : type === 'quest' ? (
-        <QuestScreen />
-      ) : type === 'win' ? (
-        <WinScreen />
-      ) : (
-        <View />
-      )}
+    <View style={[styles.container, { backgroundColor: bg }]}>
+      {renderLessonScreen()}
     </View>
   )
 }
@@ -49,4 +54,3 @@ const styles = StyleSheet.create({
     flex: 1
   }
 })
-const { container } = styles
