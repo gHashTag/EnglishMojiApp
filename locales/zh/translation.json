@@ -1,0 +1,20 @@
+{
+    "checkAnswers": {
+    "check": "查看",
+    "wrong": "错误的",
+    "right": "正确 ✓"
+    },
+    "errors": {
+        "loadFailed": "加载内容时出错",
+        "back": "回来"
+    },
+    "input": {
+        "question": "  问题：",
+        "yourAnswer": "您的答案",
+        "winScreen": "你通过了考试！!!"
+    },
+    "titles": {
+        "learn": "学习",
+        "test": "测试"
+    }
+}

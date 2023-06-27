@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
   KeyboardAvoidingView,
   Platform,
@@ -11,10 +11,11 @@ import { Input, Text } from '../../'
 import { useForm, FormProvider } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
-import { Button, ButtonSubmit } from '../../Buttons'
+import { ButtonSubmit } from '../../Buttons'
 import { s, vs } from 'react-native-size-matters'
 import { Space } from '../../Space'
 import { useHeaderHeight } from '@react-navigation/elements'
+import { useTranslation } from 'react-i18next'
 
 const schema = yup
   .object()
@@ -36,6 +37,9 @@ export function InputAnswer({ questionText, correctAnswer, onWin }: thisT) {
     criteriaMode: 'all',
     resolver: yupResolver(schema)
   })
+
+  const { t } = useTranslation()
+
   const headerH = useHeaderHeight()
 
   const handleSubmit = () => {
@@ -60,12 +64,12 @@ export function InputAnswer({ questionText, correctAnswer, onWin }: thisT) {
       <ScrollView>
         <FormProvider {...methods}>
           <Space height={vs(20)} />
-          <Text h6 title={'  Вопрос:'} />
+          <Text h6 title={t('input.question')} />
           <View style={questionCard}>
             <Text h4 title={questionText} />
           </View>
           <Space height={vs(50)} />
-          <Input type="underline" name={answerName} placeholder="Ваш ответ" />
+          <Input type="underline" name={answerName} placeholder={t('input.yourAnswer')} />
           <Space height={vs(15)} />
           <ButtonSubmit onWin={handleWin} onSubmit={handleSubmit} />
           <Space height={vs(50)} />

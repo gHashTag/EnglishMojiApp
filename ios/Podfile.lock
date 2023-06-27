@@ -440,6 +440,10 @@ PODS:
     - React-Core
   - RNGestureHandler (2.11.0):
     - React-Core
+  - RNI18n (2.0.15):
+    - React
+  - RNLocalize (3.0.0):
+    - React-Core
   - RNReanimated (2.17.0):
     - DoubleConversion
     - FBLazyVector
@@ -553,6 +557,8 @@ DEPENDENCIES:
   - "RNCAsyncStorage (from `../node_modules/@react-native-async-storage/async-storage`)"
   - "RNCClipboard (from `../node_modules/@react-native-clipboard/clipboard`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
+  - RNI18n (from `../node_modules/react-native-i18n`)
+  - RNLocalize (from `../node_modules/react-native-localize`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNSound (from `../node_modules/react-native-sound`)
@@ -665,6 +671,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-clipboard/clipboard"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
+  RNI18n:
+    :path: "../node_modules/react-native-i18n"
+  RNLocalize:
+    :path: "../node_modules/react-native-localize"
   RNReanimated:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
@@ -735,6 +745,8 @@ SPEC CHECKSUMS:
   RNCAsyncStorage: ddc4ee162bfd41b0d2c68bf2d95acd81dd7f1f93
   RNCClipboard: 3f0451a8100393908bea5c5c5b16f96d45f30bfc
   RNGestureHandler: 026038a97d4c8649ce397a22e162ca58b4e6c230
+  RNI18n: e2f7e76389fcc6e84f2c8733ea89b92502351fd8
+  RNLocalize: 5944c97d2fe8150913a51ddd5eab4e23a82bd80d
   RNReanimated: f186e85d9f28c9383d05ca39e11dd194f59093ec
   RNScreens: 218801c16a2782546d30bd2026bb625c0302d70f
   RNSound: 6c156f925295bdc83e8e422e7d8b38d33bc71852
@@ -746,4 +758,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 19cc5995cdf993ae2b6270bbeb0c525ea9d92d9c
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.11.3

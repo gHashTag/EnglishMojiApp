@@ -1,0 +1,20 @@
+{
+    "checkAnswers": {
+    "check": "Kontrol etmek",
+    "wrong": "Yanlış",
+    "right": "Doğru ✓"
+    },
+    "errors": {
+        "loadFailed": "İçerik yüklenirken bir hata oluştu",
+        "back": "Geri gelmek"
+    },
+    "input": {
+        "question": "  Soru:",
+        "yourAnswer": "Cevabınız",
+        "winScreen": "Sınavı geçtiniz!!!"
+    },
+    "titles": {
+        "learn": "Öğrenmek",
+        "test": "Ölçek"
+    }
+}

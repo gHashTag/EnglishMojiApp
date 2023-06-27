@@ -1,0 +1,20 @@
+{
+    "checkAnswers": {
+    "check": "Sprawdzać",
+    "wrong": "Zło",
+    "right": "Prawda ✓"
+    },
+    "errors": {
+        "loadFailed": "Podczas ładowania treści wystąpił błąd",
+        "back": "Wróć"
+    },
+    "input": {
+        "question": "  Pytanie:",
+        "yourAnswer": "Twoja odpowiedź",
+        "winScreen": "Zdałeś egzamin!!!"
+    },
+    "titles": {
+        "learn": "Uczyć się",
+        "test": "Test"
+    }
+}
