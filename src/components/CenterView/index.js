@@ -6,7 +6,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  },
+    width: '80%',
+    alignSelf: 'center'
+  }
 })
 
 const CenterView = ({ children }) => {

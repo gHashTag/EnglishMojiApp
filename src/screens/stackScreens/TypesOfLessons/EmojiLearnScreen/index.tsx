@@ -61,11 +61,17 @@ export function EmojiLearnScreen() {
         onPressL={() => dispatch(goPrevious())}
         nameIconL=":back:"
         textColor={white}
-        title={title && title.length > 1 ? curEmoji?.title : ' '}
+        title={' '}
       />
       {emojiData && curEmoji ? (
         <>
           <CenterView>
+            <Text
+              oneColor={white}
+              h8
+              title={title && title.length > 1 ? curEmoji?.title : ' '}
+            />
+            <Space height={vs(30)} />
             {isSymbol ? (
               <Text h10 title={curEmoji.title} />
             ) : (
