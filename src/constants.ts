@@ -4,7 +4,7 @@ import Sound from 'react-native-sound'
 import { initLessonData, toggleColor } from './slices'
 import { store } from './store'
 import { RootStackParamList } from './types'
-import { LessonData, sectionT } from './types/LessonTypes'
+import { sectionT } from './types/LessonTypes'
 import { allPartsT } from './types/LessonTypes'
 
 // NAVIGATION
