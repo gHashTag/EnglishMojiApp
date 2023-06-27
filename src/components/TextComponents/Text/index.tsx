@@ -9,7 +9,7 @@ import {
 } from 'react-native'
 import { useTheme } from '@react-navigation/native'
 import { s } from 'react-native-size-matters'
-import { primary, secondary, Etna, KLMN, Narrow } from '../../../constants'
+import { primary, secondary, Etna, KLMN, Narrow, white } from '../../../constants'
 
 const styles = StyleSheet.create({
   h0Style: {
@@ -55,7 +55,8 @@ const styles = StyleSheet.create({
     fontSize: s(30),
     fontFamily: 'Avenir Next',
     fontWeight: 'bold',
-    textAlign: 'center'
+    textAlign: 'center',
+    color: white
   },
   h9Style: {
     fontSize: s(35),
@@ -63,7 +64,8 @@ const styles = StyleSheet.create({
   },
   h10Style: {
     fontSize: s(150),
-    fontFamily: Etna
+    fontFamily: Etna,
+    color: white
   },
   bodyStyle: {
     fontSize: s(13),
@@ -76,20 +78,20 @@ interface TwoColorsT {
   light: string
 }
 
-export type FontType = {
-  h0?: boolean
-  h1?: boolean
-  h2?: boolean
-  h3?: boolean
-  h4?: boolean
-  h5?: boolean
-  h6?: boolean
-  h7?: boolean
-  h8?: boolean
-  h9?: boolean
-  h10?: boolean
-  bodyH?: boolean
-}
+type FontTypeKeys =
+  | 'h0'
+  | 'h1'
+  | 'h2'
+  | 'h3'
+  | 'h4'
+  | 'h5'
+  | 'h6'
+  | 'h7'
+  | 'h8'
+  | 'h9'
+  | 'h10'
+  | 'bodyH'
+export type FontType = Partial<Record<FontTypeKeys, boolean>>
 
 export interface TextT extends TextProps, FontType {
   title?: string
@@ -101,26 +103,13 @@ export interface TextT extends TextProps, FontType {
 }
 
 export const Text = ({
-  h0,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  h7,
-  h8,
-  h9,
-  h10,
-  bodyH,
-  // no H
   title,
   oneColor,
   colors,
   textStyle,
   centerText,
   fontSize,
-  ...otherProp
+  ...fontType
 }: TextT) => {
   const {
     colors: { text }
@@ -137,43 +126,20 @@ export const Text = ({
       : colors.dark
     : text
 
-  const {
-    h0Style,
-    h1Style,
-    h2Style,
-    h3Style,
-    h4Style,
-    h5Style,
-    h6Style,
-    h7Style,
-    h8Style,
-    h9Style,
-    h10Style,
-    //h11Style,
-    bodyStyle
-  } = styles
+  const stylesArray = Object.keys(fontType)
+    .filter(key => fontType[key as FontTypeKeys])
+    .map(key => styles[`${key}Style` as keyof typeof styles])
+
   return (
     <RNText
       style={[
-        h0 && h0Style,
-        h1 && h1Style,
-        h2 && h2Style,
-        h3 && h3Style,
-        h4 && h4Style,
-        h5 && h5Style,
-        h6 && h6Style,
-        h7 && h7Style,
-        h8 && h8Style,
-        h9 && h9Style,
-        h10 && h10Style,
-        //h11 && h11Style,
-        bodyH && bodyStyle,
-        centerText && { textAlign: 'center' },
         { color: curColor, textShadowColor },
-        fontSize ? { fontSize } : {},
-        textStyle
+        centerText && { textAlign: 'center' },
+        fontSize && fontSize > 0 ? { fontSize } : {},
+        textStyle,
+        ...stylesArray
       ]}
-      {...otherProp}
+      {...fontType}
     >
       {title ? title : ' '}
     </RNText>
