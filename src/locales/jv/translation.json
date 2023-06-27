@@ -1,0 +1,21 @@
+{
+  "checkAnswers": {
+    "check": "Mrikso",
+    "wrong": "Salah",
+    "right": "Bener ✓"
+  },
+  "errors": {
+    "loadFailed": "Ana kesalahan nalika ngemot konten",
+    "back": "Bali"
+  },
+  "input": {
+    "question": "  Pitakonan:",
+    "yourAnswer": "Jawaban Panjenengan",
+    "winScreen": "Kowé wis lulus ujian!!!"
+  },
+  "titles": {
+    "learn": "Sinau",
+    "test": "Tes"
+  },
+  "exam": "Ujian"
+}

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { LogBox } from 'react-native'
+import './src/i18n'
 import { AppWithProviders } from './src/AppWithProviders'
 
 import SplashScreen from 'react-native-splash-screen'

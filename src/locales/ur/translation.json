@@ -1,0 +1,21 @@
+{
+  "checkAnswers": {
+    "check": "چیک کریں۔",
+    "wrong": "غلط",
+    "right": "سچ ✓"
+  },
+  "errors": {
+    "loadFailed": "مواد لوڈ کرنے میں ایک خرابی تھی۔",
+    "back": "واپس آو"
+  },
+  "input": {
+    "question": "  سوال:",
+    "yourAnswer": "آپ کا جواب",
+    "winScreen": "آپ نے امتحان پاس کیا ہے!!!"
+  },
+  "titles": {
+    "learn": "سیکھیں۔",
+    "test": "پرکھ"
+  },
+  "exam": "امتحان"
+}

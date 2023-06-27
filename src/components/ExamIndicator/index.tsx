@@ -5,17 +5,16 @@ import { allPartsT, questionsT } from '../../types/LessonTypes'
 import CircularProgress from 'react-native-circular-progress-indicator'
 import { s } from 'react-native-size-matters'
 import { white } from '../../constants'
-import { useNavigation, useTheme } from '@react-navigation/native'
+import { useNavigation } from '@react-navigation/native'
 import { Text } from '../TextComponents'
 import { ButtonVectorIcon } from '../Buttons'
 import { RootStackParamList } from '../../types'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { toggleColor } from '../../slices'
+import { useTranslation } from 'react-i18next'
 
 export function ExamIndicator({ part, questions, dark = false }: ExamIndicatorT) {
-  const {
-    colors: { background }
-  } = useTheme()
+  const { t } = useTranslation()
   const { navigate } = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
   const dispatch = useTypedDispatch()
   const { courseLength, passed, exams } = useTypedSelector(st => st.profile)
@@ -52,7 +51,7 @@ export function ExamIndicator({ part, questions, dark = false }: ExamIndicatorT)
       {questions && (
         <>
           <TouchableOpacity onPress={handlePress} activeOpacity={0.7}>
-            <Text oneColor={dark ? undefined : white} h9 title={'Exam'} />
+            <Text oneColor={dark ? undefined : white} h9 title={t('exam')} />
           </TouchableOpacity>
           <ButtonVectorIcon
             onPress={handlePress}

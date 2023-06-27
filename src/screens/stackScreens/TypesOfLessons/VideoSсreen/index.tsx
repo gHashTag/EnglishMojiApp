@@ -12,6 +12,14 @@ interface VideoSсreenT {}
 
 export function VideoSсreen({}: VideoSсreenT) {
   const [isPortrait, setIsPortrait] = useState<boolean>(true)
+  useEffect(() => {
+    Orientation.unlockAllOrientations()
+    Orientation.addOrientationListener(oLestener)
+    return () => {
+      Orientation.removeOrientationListener(oLestener)
+      Orientation.lockToPortrait()
+    }
+  }, [])
   const { t } = useTranslation()
   const { currentLesson, sectionIndex, lessonData, lastIndex } = useTypedSelector(
     st => st.section
@@ -25,14 +33,7 @@ export function VideoSсreen({}: VideoSсreenT) {
     const portrair = orientation === 'PORTRAIT' || orientation === 'PORTRAIT-UPSIDEDOWN'
     setIsPortrait(portrair)
   }
-  useEffect(() => {
-    Orientation.unlockAllOrientations()
-    Orientation.addOrientationListener(oLestener)
-    return () => {
-      Orientation.removeOrientationListener(oLestener)
-      Orientation.lockToPortrait()
-    }
-  }, [])
+
   const isLast = lastIndex - 1 === sectionIndex
   const handleBack = () => {
     dispatch(goPrevious())
