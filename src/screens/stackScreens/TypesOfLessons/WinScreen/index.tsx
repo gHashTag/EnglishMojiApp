@@ -9,7 +9,6 @@ import { useTypedSelector } from '../../../../store'
 import { useDispatch } from 'react-redux'
 import { incrementSection, saveResult } from '../../../../slices'
 import { useFocusEffect } from '@react-navigation/native'
-import { nanoid } from 'nanoid/non-secure'
 
 interface WinScreenT {
   title?: string

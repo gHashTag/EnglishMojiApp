@@ -9,7 +9,7 @@ const styles = ScaledSheet.create({
   container: {
     alignSelf: 'center',
     justifyContent: 'center',
-    minWidth: W / 2.2,
+    minWidth: W / 1.5,
     height: s(53),
     borderRadius: s(40),
     borderWidth: s(1)

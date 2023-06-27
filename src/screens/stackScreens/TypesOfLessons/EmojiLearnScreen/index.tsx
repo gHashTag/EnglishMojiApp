@@ -54,7 +54,7 @@ export function EmojiLearnScreen() {
     }
   }, [dispatch, emojiData, speed])
   const isSymbol = curEmoji?.name?.length === 1
-  const title = curEmoji?.title
+  // const title = curEmoji?.title
   return (
     <View style={container}>
       <Header
@@ -66,19 +66,14 @@ export function EmojiLearnScreen() {
       {emojiData && curEmoji ? (
         <>
           <CenterView>
-            <Text
-              oneColor={white}
-              h8
-              title={title && title.length > 1 ? curEmoji?.title : ' '}
-            />
             <Space height={vs(30)} />
             {isSymbol ? (
-              <Text h10 title={curEmoji.title} />
+              <Text h1 title={curEmoji.title} />
             ) : (
               <Emoji name={curEmoji.name} style={emojiStyle} />
             )}
             <Space height={vs(30)} />
-            <Text oneColor={white} h8 title={curEmoji.ru} />
+            <Text oneColor={white} h8 title={curEmoji?.title} />
           </CenterView>
           <EmojiSlider
             initPercent={speed}
