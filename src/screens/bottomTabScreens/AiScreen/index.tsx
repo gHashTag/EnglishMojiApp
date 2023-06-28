@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 // @ts-expect-error
 import { OPEN_AI_KEY } from '@env'
 import axios from 'axios'
-import { ActivityIndicator, StyleSheet, View, useColorScheme } from 'react-native'
+import { ActivityIndicator, StyleSheet, View } from 'react-native'
 import { Bubble, GiftedChat, IMessage } from 'react-native-gifted-chat'
 
 import { Header } from '../../../components'
@@ -17,9 +17,8 @@ interface IContextSummary {
 
 const LOADING_MESSAGE_ID = 'loading-message-id'
 
-export const HomeAI: React.FC = () => {
-  const isDark = useColorScheme() === 'dark'
-  const primary = isDark ? 'rgb(52, 201, 252)' : '#FFA1CD'
+export const AiScreen: React.FC = () => {
+  const primary = '#FDBEEA'
   {
     const [messages, setMessages] = useState<IMessage[]>([])
     const [contextSummary, setContextSummary] = useState<IContextSummary>({
@@ -46,7 +45,7 @@ export const HomeAI: React.FC = () => {
       setMessages([
         {
           _id: 1,
-          text: 'Привет, я Моджи - твой преподаватель английского языка. \n\n Я ставлю задания в образе эмодзи, чтобы сделать уроки интересными. Готовы начать увлекательное изучение английского с помощью эмодзи-заданий? Добро пожаловать в мою команду!',
+          text: 'Привет, я Emoji - твой преподаватель английского языка. \n\n Я ставлю задания в образе эмодзи, чтобы сделать уроки интересными. Готовы начать увлекательное изучение английского с помощью эмодзи-заданий? Добро пожаловать в мою команду!',
           createdAt: new Date(),
           user: {
             _id: 2,
@@ -67,7 +66,7 @@ export const HomeAI: React.FC = () => {
         {
           role: 'system',
           content:
-            'Привет, я Моджи - твой преподаватель английского языка. \n\n Я ставлю задания в образе эмодзи, чтобы сделать уроки интересными. Готовы начать увлекательное изучение английского с помощью эмодзи-заданий? Добро пожаловать в мою команду!'
+            'Привет, я Emoji - твой преподаватель английского языка. \n\n Я ставлю задания в образе эмодзи, чтобы сделать уроки интересными. Готовы начать увлекательное изучение английского с помощью эмодзи-заданий? Добро пожаловать в мою команду!'
         },
         ...contextSummary.user.map(content => ({ role: 'user', content })),
         ...contextSummary.assistant.map(content => ({
@@ -155,8 +154,8 @@ export const HomeAI: React.FC = () => {
             right: { backgroundColor: `${primary}` }
           }}
           textStyle={{
-            left: { fontFamily: 'Montserrat' },
-            right: { color: '#000', fontFamily: 'Montserrat' }
+            left: { fontFamily: 'Avenir Next' },
+            right: { color: '#000', fontFamily: 'Avenir Next' }
           }}
         />
       )
@@ -164,7 +163,7 @@ export const HomeAI: React.FC = () => {
 
     return (
       <>
-        <Header title="Koshey AI" />
+        <Header title="Emoji AI" />
         <GiftedChat
           messages={messages}
           renderBubble={renderBubble}
