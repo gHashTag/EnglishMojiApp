@@ -1,30 +1,105 @@
 import React, { useEffect, useState } from 'react'
+
+// @ts-expect-error
+import { OPEN_AI_KEY } from '@env'
 import axios from 'axios'
-import { ActivityIndicator, StyleSheet, View } from 'react-native'
+import { ActivityIndicator, StyleSheet, View, useColorScheme } from 'react-native'
 import { Bubble, GiftedChat, IMessage } from 'react-native-gifted-chat'
+
 import { Header } from '../../../components'
 
 const LEELA_AI = require('../../../../assets/icons/appstore1024.png')
 
-// @ts-expect-error
-import { OPEN_AI_KEY } from '@env'
+interface IContextSummary {
+  user: string[]
+  assistant: string[]
+}
 
-export const AiScreen: React.FC = () => {
-  const primary = '#FDBEEA'
-  const LOADING_MESSAGE_ID = 'loading-message-id'
+const LOADING_MESSAGE_ID = 'loading-message-id'
 
-  const [messages, setMessages] = useState<IMessage[]>([])
-  const [loading, setLoading] = useState(false)
+export const HomeAI: React.FC = () => {
+  const isDark = useColorScheme() === 'dark'
+  const primary = isDark ? 'rgb(52, 201, 252)' : '#FFA1CD'
+  {
+    const [messages, setMessages] = useState<IMessage[]>([])
+    const [contextSummary, setContextSummary] = useState<IContextSummary>({
+      user: [],
+      assistant: []
+    })
+    const [loading, setLoading] = useState(false)
 
-  const generateRandomTask = async () => {
-    try {
-      const response = await axios.post(
-        'https://api.openai.com/v1/models/text-davinci-003',
+    const updateContextSummary = (message: IMessage) => {
+      if (message.user._id === 1) {
+        setContextSummary(prevState => {
+          const newUserMessages = [...prevState.user, message.text].slice(-3)
+          return { ...prevState, user: newUserMessages }
+        })
+      } else {
+        setContextSummary(prevState => {
+          const newAssistantMessages = [...prevState.assistant, message.text].slice(-3)
+          return { ...prevState, assistant: newAssistantMessages }
+        })
+      }
+    }
+
+    useEffect(() => {
+      setMessages([
         {
-          prompt: 'Создайте emoji-задание по английскому языку.',
-          max_tokens: 30,
-          n: 1,
-          stop: '\n'
+          _id: 1,
+          text: 'Привет, я Моджи - твой преподаватель английского языка. \n\n Я ставлю задания в образе эмодзи, чтобы сделать уроки интересными. Готовы начать увлекательное изучение английского с помощью эмодзи-заданий? Добро пожаловать в мою команду!',
+          createdAt: new Date(),
+          user: {
+            _id: 2,
+            name: 'Assistant',
+            avatar: LEELA_AI
+          }
+        }
+      ])
+    }, [])
+
+    const onSend = async (newMessages: IMessage[] = []) => {
+      setLoading(true)
+      setMessages(previousMessages => GiftedChat.append(previousMessages, newMessages))
+
+      updateContextSummary(newMessages[0])
+
+      const apiMessages = [
+        {
+          role: 'system',
+          content:
+            'Привет, я Моджи - твой преподаватель английского языка. \n\n Я ставлю задания в образе эмодзи, чтобы сделать уроки интересными. Готовы начать увлекательное изучение английского с помощью эмодзи-заданий? Добро пожаловать в мою команду!'
+        },
+        ...contextSummary.user.map(content => ({ role: 'user', content })),
+        ...contextSummary.assistant.map(content => ({
+          role: 'assistant',
+          content
+        })),
+        { role: 'user', content: newMessages[0].text }
+      ]
+
+      setMessages(previousMessages =>
+        GiftedChat.append(previousMessages, [
+          {
+            _id: LOADING_MESSAGE_ID,
+            text: '',
+            createdAt: new Date(),
+            user: {
+              _id: 2,
+              name: 'Assistant',
+              avatar: LEELA_AI
+            }
+          }
+        ])
+      )
+
+      // Запрос к OpenAI API
+      const response = await axios.post(
+        'https://api.openai.com/v1/chat/completions',
+        {
+          model: 'gpt-3.5-turbo',
+          messages: apiMessages,
+          max_tokens: 1000,
+          temperature: 0.2
         },
         {
           headers: {
@@ -34,109 +109,73 @@ export const AiScreen: React.FC = () => {
         }
       )
 
-      const randomTask = response.data.choices[0].text.trim()
-      return randomTask
-    } catch (error) {
-      console.error('Error generating task:', error)
-      // Обработка ошибок
-    }
-  }
+      setLoading(false)
 
-  useEffect(() => {
-    const initializeChat = async () => {
-      const generatedTask = await generateRandomTask()
+      setMessages(previousMessages =>
+        previousMessages.filter(message => message._id !== LOADING_MESSAGE_ID)
+      )
 
-      setMessages([
-        {
-          _id: 1,
-          text: generatedTask,
-          createdAt: new Date(),
-          user: {
-            _id: 2,
-            name: 'Assistant',
-            avatar: LEELA_AI
+      const assistantReply = response.data.choices[0].message.content
+
+      const loadingMessageId = Date.now().toString()
+
+      setMessages(previousMessages =>
+        GiftedChat.append(previousMessages, [
+          {
+            _id: loadingMessageId,
+            text: assistantReply,
+            createdAt: new Date(),
+            user: {
+              _id: 2,
+              name: 'Assistant',
+              avatar: LEELA_AI
+            }
           }
-        }
-      ])
+        ])
+      )
     }
 
-    initializeChat()
-  }, [])
+    const renderBubble = props => {
+      if (props.currentMessage._id === LOADING_MESSAGE_ID) {
+        return (
+          <View>
+            {loading ? (
+              <View style={styles.bubble}>
+                <ActivityIndicator size="small" color={primary} />
+              </View>
+            ) : null}
+          </View>
+        )
+      }
 
-  const onSend = async (newMessages: IMessage[] = []) => {
-    setLoading(true)
-    setMessages(previousMessages => GiftedChat.append(previousMessages, newMessages))
-
-    const generatedTask = await generateRandomTask()
-
-    setMessages(previousMessages =>
-      GiftedChat.append(previousMessages, [
-        {
-          _id: LOADING_MESSAGE_ID,
-          text: '',
-          createdAt: new Date(),
-          user: {
-            _id: 2,
-            name: 'Assistant',
-            avatar: LEELA_AI
-          }
-        }
-      ])
-    )
-
-    // Генерация ответа нейросетью
-    // ...
-
-    setLoading(false)
-
-    setMessages(previousMessages =>
-      previousMessages.filter(message => message._id !== LOADING_MESSAGE_ID)
-    )
-
-    // Отображение ответа нейросети
-    // ...
-  }
-
-  const renderBubble = props => {
-    if (props.currentMessage._id === LOADING_MESSAGE_ID) {
       return (
-        <View>
-          {loading ? (
-            <View style={styles.bubble}>
-              <ActivityIndicator size="small" color={primary} />
-            </View>
-          ) : null}
-        </View>
+        <Bubble
+          {...props}
+          wrapperStyle={{
+            right: { backgroundColor: `${primary}` }
+          }}
+          textStyle={{
+            left: { fontFamily: 'Montserrat' },
+            right: { color: '#000', fontFamily: 'Montserrat' }
+          }}
+        />
       )
     }
 
     return (
-      <Bubble
-        {...props}
-        wrapperStyle={{
-          right: { backgroundColor: `${primary}` }
-        }}
-        textStyle={{
-          left: { fontFamily: 'Avenir Next' },
-          right: { color: '#000', fontFamily: 'Avenir Next' }
-        }}
-      />
+      <>
+        <Header title="Koshey AI" />
+        <GiftedChat
+          messages={messages}
+          renderBubble={renderBubble}
+          onSend={newMessages => onSend(newMessages)}
+          user={{
+            _id: 1
+          }}
+        />
+      </>
     )
   }
-
-  return (
-    <>
-      <Header title="Moji AI" />
-      <GiftedChat
-        messages={messages}
-        renderBubble={renderBubble}
-        onSend={newMessages => onSend(newMessages)}
-        user={{
-          _id: 1
-        }}
-      />
-    </>
-  )
 }
 
 const styles = StyleSheet.create({
