@@ -62,7 +62,7 @@ function BottomTabNavigation() {
       tabBar={props => <BottomTabBar {...props} />}
     >
       <BottomTab.Screen name="TOP_TABS" component={EnScreen} />
-      <BottomTab.Screen name="AI_SCREEN" component={AiScreen} />
+      {/* <BottomTab.Screen name="AI_SCREEN" component={AiScreen} /> */}
       {/* <BottomTab.Screen name="QR_SCREEN" component={UI} /> */}
     </BottomTab.Navigator>
   )
