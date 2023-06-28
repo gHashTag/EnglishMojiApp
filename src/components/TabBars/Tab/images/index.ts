@@ -71,6 +71,14 @@ export const BottomIcons = [
     title: 'TOP_TABS'
   },
   {
+    path: require('./AI_SCREEN.png'),
+    title: 'AI_SCREEN'
+  },
+  {
+    path: require('./AI_SCREEN_ACTIVE.png'),
+    title: 'AI_SCREEN_ACTIVE'
+  },
+  {
     path: require('./QR_SCREEN_ACTIVE.png'),
     title: 'QR_SCREEN_ACTIVE'
   },

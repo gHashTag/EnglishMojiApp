@@ -18,6 +18,7 @@ interface lessonDetail extends sectionT {
 export type RootBottomTabParamList = {
   TOP_TABS?: NavigatorScreenParams<RootTopTabParamList>
   QR_SCREEN: undefined
+  AI_SCREEN: undefined
 }
 
 export type RootTopTabParamList = {
