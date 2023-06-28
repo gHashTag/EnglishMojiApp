@@ -147,13 +147,20 @@ export function EmojiSelect({ onWin, url }: EmojiSelectT) {
         onPressL={handleBack}
         onPressR={handlePlay}
         nameIconR=":loud_sound:"
-        title={title ? (title.length > 1 ? title : ' ') : '...'}
+        title={'Test'}
       />
       <View>
+        <View style={styles.sub}>
+          <Text
+            oneColor={white}
+            h8
+            title={title ? (title.length > 1 ? title : ' ') : '...'}
+          />
+        </View>
         <View style={lineContainer}>
           <Animated.View style={[animLine, line]} />
         </View>
-        <Space height={vs(55)} />
+        <Space height={vs(15)} />
         <Text
           centerText
           oneColor={isTrue ? green : 'red'}
@@ -177,7 +184,7 @@ export function EmojiSelect({ onWin, url }: EmojiSelectT) {
           )}
           keyExtractor={() => nanoid()}
         />
-        <Space height={bottom + vs(20)} />
+        <Space height={bottom + vs(60)} />
       </View>
     </View>
   )
@@ -206,6 +213,11 @@ const styles = StyleSheet.create({
   flexOne: {
     flex: 1,
     justifyContent: 'space-between'
+  },
+  sub: {
+    width: '80%',
+    alignSelf: 'center',
+    marginBottom: 30
   }
 })
 const { emojiStyle, line, lineContainer, flexOne } = styles
