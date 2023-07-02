@@ -4,14 +4,22 @@ import {
   LessonCard,
   Loading,
   ScrollContainer,
-  Space
+  Space,
+  Text
 } from '../../../components'
-import { en_color, en_gradient, handlePressCard } from '../../../constants'
+import {
+  en_color,
+  en_gradient,
+  handlePressCard,
+  openURL,
+  white
+} from '../../../constants'
 
 import { LessonData } from '../../../types/LessonTypes'
-import { useColorScheme } from 'react-native'
+import { Button, useColorScheme } from 'react-native'
 import { changeCourseLength } from '../../../slices'
 import { useTypedDispatch } from '../../../store'
+
 const res: LessonData[] = require('../../../EnForKids/Main.json')
 const resExam: questionsT[] = require('../../../EnForKids/examData/examEn.json')
 
@@ -76,6 +84,8 @@ export function EnScreen() {
           />
         )
       })}
+
+      <Button title="Privacy Policy" onPress={openURL} color={white} />
     </ScrollContainer>
   )
 }

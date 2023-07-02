@@ -1,5 +1,5 @@
 import { createNavigationContainerRef } from '@react-navigation/native'
-import { Dimensions, Platform } from 'react-native'
+import { Dimensions, Linking, Platform } from 'react-native'
 import Sound from 'react-native-sound'
 import { initLessonData, toggleColor } from './slices'
 import { store } from './store'
@@ -157,4 +157,10 @@ export const handlePressCard = (
   if (navRef.isReady()) {
     navRef.navigate('LESSON_SCREEN')
   }
+}
+
+export const openURL = () => {
+  Linking.openURL(
+    'https://raw.githubusercontent.com/gHashTag/PrivacyPolicy/master/EnglishMoji/en.md'
+  ).catch(err => console.error('Failed to open the URL', err))
 }

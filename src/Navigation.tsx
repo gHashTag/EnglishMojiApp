@@ -5,7 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { UI } from './UI'
 import { RootBottomTabParamList, RootStackParamList } from './types'
 import { black, darkTheme, gray, lightTheme, navRef, white } from './constants'
-import { EnScreen, LessonScreen, ExamScreen, AiScreen } from './screens'
+import { EnScreen, LessonScreen, ExamScreen } from './screens'
 import { BottomTabBar } from './components'
 import { StatusBar, useColorScheme } from 'react-native'
 import { useTypedSelector } from './store'
@@ -24,7 +24,7 @@ export function Navigation() {
   useEffect(() => {
     SystemNavigationBar.setNavigationColor(bg, !isDark ? false : true)
     SystemNavigationBar.setNavigationBarDividerColor(gray)
-  }, [bgState, isDark])
+  }, [bg, bgState, isDark])
   useEffect(() => {
     Orientation.lockToPortrait()
   }, [])

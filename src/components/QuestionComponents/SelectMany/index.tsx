@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { FlatList, Pressable, StyleSheet, View } from 'react-native'
+import { FlatList, Pressable, StyleSheet } from 'react-native'
 import { manySelectT } from '../../../types/LessonTypes'
 import { Text, ButtonSubmit, Space } from '../../'
 import { nanoid } from 'nanoid/non-secure'
 import { s, vs } from 'react-native-size-matters'
 import { useTheme } from '@react-navigation/native'
-import { green, H } from '../../../constants'
+import { H } from '../../../constants'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 interface selMany extends manySelectT {
@@ -17,7 +17,7 @@ export function SelectMany({ correctAnswers, questionText, variants, onWin }: se
   const handleSubmit = () => {
     const isEqual =
       correctAnswers.length === choices.length &&
-      correctAnswers.every((element, index) => {
+      correctAnswers.every(element => {
         return choices.includes(element)
       })
     return isEqual
