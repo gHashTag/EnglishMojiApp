@@ -53,7 +53,6 @@ export function EnScreen() {
     try {
       setLoad(true)
       setData(lessonData)
-      console.log('resTs', lessonData)
       setExamData(resExam)
     } catch (error) {
       console.log('error:', error)

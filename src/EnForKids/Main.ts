@@ -1,4 +1,5 @@
 import { LessonData } from '../types/LessonTypes'
+import { data } from './01-Numbers/data'
 
 const lessonData: LessonData[] = [
   {
@@ -14,14 +15,14 @@ const lessonData: LessonData[] = [
       },
       {
         type: 'emojiLearn',
-        contentUrl: require('./01-Numbers/data.json')
+        contentUrl: data
       },
       {
         type: 'quest',
         question: {
           type: 'emoji',
           emoji: {
-            dataUrl: require('./01-Numbers/data.json')
+            dataUrl: data
           }
         }
       }

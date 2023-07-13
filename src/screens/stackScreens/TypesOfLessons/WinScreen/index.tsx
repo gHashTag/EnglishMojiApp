@@ -42,9 +42,6 @@ export function WinScreen({ title }: WinScreenT) {
           <Image style={gifStyle} source={Unicorn} />
         </View>
       </CenterView>
-      {balloons.map(a => (
-        <Balloon key={a} />
-      ))}
     </View>
   )
 }

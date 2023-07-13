@@ -3,7 +3,7 @@ export type allPartsT = 'en' | 'rn' | 'aws' | 'ts' | 'js'
 export type SectionT = {
   type: 'video' | 'markdown' | 'quest' | 'emojiLearn' | 'learn' | 'win'
   poster?: string // if "video"
-  contentUrl?: string // if "video" or "markdown" or "emojiLearn" or 'learn'
+  contentUrl?: EmojiDataArray // if "video" or "markdown" or "emojiLearn" or 'learn'
   question?: questionsT // if  any
   header?: string
 }
@@ -16,8 +16,8 @@ export interface LessonData {
 
 export interface Question {
   type: string
-  emoji?: {
-    dataUrl: string
+  emoji: {
+    dataUrl: EmojiDataArray
   }
 }
 
@@ -66,7 +66,7 @@ export type manySelectT = {
 }
 
 export type emojiTestT = {
-  dataUrl: string
+  dataUrl: EmojiDataArray
 }
 
 export type emojiT = {
@@ -87,3 +87,12 @@ export type joinVariantsT = {
 export type supplementT = {
   questionText: string
 }
+
+export type EmojiData = {
+  id: number
+  name: string
+  title: string
+  url: string
+}
+
+export type EmojiDataArray = EmojiData[]

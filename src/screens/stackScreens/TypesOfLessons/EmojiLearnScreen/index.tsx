@@ -10,13 +10,11 @@ import {
 } from '../../../../components'
 import Emoji from 'react-native-emoji'
 import { s, vs } from 'react-native-size-matters'
-import { fetchJson, shuffle, white } from '../../../../constants'
+import { fetchJson, shuffle, white, win } from '../../../../constants'
 import { emojiT } from '../../../../types/LessonTypes'
 import Sound from 'react-native-sound'
 import { useTypedDispatch, useTypedSelector } from '../../../../store'
 import { goPrevious } from '../../../../slices'
-
-const win = new Sound('win.mp3')
 
 export function EmojiLearnScreen() {
   const { currentLesson } = useTypedSelector(st => st.section)

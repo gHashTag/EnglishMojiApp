@@ -16,6 +16,9 @@
 		43EA30A1A74F5F0FFEDA9717 /* libPods-EnglishMojiApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6494399B4FBE7E520AB494F /* libPods-EnglishMojiApp.a */; };
 		499A2BA27E6844F9B0600160 /* 3270Narrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A42A4340C7B94485B11B0F6F /* 3270Narrow.ttf */; };
 		4DD37F8348974B6C8FCF465F /* TheDolbak-Brush.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAACDD339BAE40ABA53F2088 /* TheDolbak-Brush.ttf */; };
+		73E7E6F82A601024000A98D6 /* error.wav in Resources */ = {isa = PBXBuildFile; fileRef = 73E7E6F62A601024000A98D6 /* error.wav */; };
+		73E7E6F92A601024000A98D6 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73E7E6F72A601024000A98D6 /* win.mp3 */; };
+		73E7E6FB2A60107A000A98D6 /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 73E7E6FA2A60107A000A98D6 /* clap.wav */; };
 		7B0CFBA8C9A040A08D929706 /* Spectral-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1611ADB1A3C464BA4DC9442 /* Spectral-MediumItalic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8408C9900A8742B3A523528A /* Spectral-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1FF8D288CB4BF1A262DD39 /* Spectral-BoldItalic.ttf */; };
@@ -52,6 +55,9 @@
 		53075DC679B74AA98F2F9726 /* Hack-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Hack-Regular.ttf"; path = "../assets/fonts/Hack-Regular.ttf"; sourceTree = "<group>"; };
 		54E7DD853BEF48179A869540 /* Spectral-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Spectral-Bold.ttf"; path = "../assets/fonts/Spectral-Bold.ttf"; sourceTree = "<group>"; };
 		5874F9872B6C4A36B8E72F00 /* Spectral-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Spectral-Medium.ttf"; path = "../assets/fonts/Spectral-Medium.ttf"; sourceTree = "<group>"; };
+		73E7E6F62A601024000A98D6 /* error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = error.wav; path = ../assets/sounds/error.wav; sourceTree = "<group>"; };
+		73E7E6F72A601024000A98D6 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = win.mp3; path = ../assets/sounds/win.mp3; sourceTree = "<group>"; };
+		73E7E6FA2A60107A000A98D6 /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = clap.wav; path = ../assets/sounds/clap.wav; sourceTree = "<group>"; };
 		7F390F33A91A497BAA77768E /* IBM-Logo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "IBM-Logo.ttf"; path = "../assets/fonts/IBM-Logo.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = EnglishMojiApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CF99C4374EF7785A2846980 /* Pods-EnglishMojiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnglishMojiApp.debug.xcconfig"; path = "Target Support Files/Pods-EnglishMojiApp/Pods-EnglishMojiApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +118,9 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				73E7E6F62A601024000A98D6 /* error.wav */,
+				73E7E6FA2A60107A000A98D6 /* clap.wav */,
+				73E7E6F72A601024000A98D6 /* win.mp3 */,
 			);
 			name = EnglishMojiApp;
 			sourceTree = "<group>";
@@ -281,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73E7E6FB2A60107A000A98D6 /* clap.wav in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				B2D3ACC5AA1742F5914A94B8 /* etna-free-font.otf in Resources */,
@@ -290,8 +300,10 @@
 				F1FB9E4C27504B0AB8E09EA1 /* KLMN_Flash_Pix.ttf in Resources */,
 				F8B883A48CA540ED969FCCB3 /* Spectral-Bold.ttf in Resources */,
 				8408C9900A8742B3A523528A /* Spectral-BoldItalic.ttf in Resources */,
+				73E7E6F92A601024000A98D6 /* win.mp3 in Resources */,
 				F94C94EB491D401586994AED /* Spectral-Medium.ttf in Resources */,
 				7B0CFBA8C9A040A08D929706 /* Spectral-MediumItalic.ttf in Resources */,
+				73E7E6F82A601024000A98D6 /* error.wav in Resources */,
 				4DD37F8348974B6C8FCF465F /* TheDolbak-Brush.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

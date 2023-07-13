@@ -4,7 +4,7 @@ import Sound from 'react-native-sound'
 import { initLessonData, toggleColor } from './slices'
 import { store } from './store'
 import { RootStackParamList } from './types'
-import { sectionT } from './types/LessonTypes'
+import { SectionT } from './types/LessonTypes'
 import { allPartsT } from './types/LessonTypes'
 
 // NAVIGATION
@@ -91,7 +91,7 @@ export const Narrow = '3270Narrow'
 
 export const errorSound = new Sound('error.wav', Sound.MAIN_BUNDLE)
 export const winSound = new Sound('win.mp3', Sound.MAIN_BUNDLE)
-export const clapSound = new Sound('clap.mp3', Sound.MAIN_BUNDLE)
+export const clapSound = new Sound('clap.wav', Sound.MAIN_BUNDLE)
 
 // FETCH
 
@@ -148,7 +148,7 @@ export function getRandomItem(arr: any[]) {
 
 export const handlePressCard = (
   color: allPartsT,
-  sections: sectionT[],
+  sections: SectionT[],
   cardName: string,
   id: number
 ) => {

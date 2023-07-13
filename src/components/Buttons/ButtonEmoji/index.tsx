@@ -1,6 +1,6 @@
 import { useTheme } from '@react-navigation/native'
 import React from 'react'
-import { StyleProp, StyleSheet, TouchableOpacity, View, ViewStyle } from 'react-native'
+import { StyleProp, StyleSheet, Pressable, View, ViewStyle } from 'react-native'
 import { en_color, W } from '../../../constants'
 import Emoji from 'react-native-emoji'
 import { Text } from '../../TextComponents'
@@ -23,8 +23,7 @@ export function ButtonEmoji({ name, viewStyle, onPress, textColor }: ButtonEmoji
     <View>
       <View style={[container, shadow, { backgroundColor: 'white' }]} />
       <View style={[container, mask, { backgroundColor: backgroundColor }]} />
-      <TouchableOpacity
-        activeOpacity={0.7}
+      <Pressable
         onPress={onPress}
         style={[container, { backgroundColor: backgroundColor }]}
       >
@@ -33,7 +32,7 @@ export function ButtonEmoji({ name, viewStyle, onPress, textColor }: ButtonEmoji
         ) : (
           <Emoji name={name} style={{ fontSize }} />
         )}
-      </TouchableOpacity>
+      </Pressable>
     </View>
   )
 }
