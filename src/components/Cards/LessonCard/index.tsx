@@ -1,5 +1,12 @@
 import React, { useState } from 'react'
-import { Pressable, StyleSheet, View, Image, TouchableOpacity } from 'react-native'
+import {
+  Pressable,
+  StyleSheet,
+  View,
+  Image,
+  TouchableOpacity,
+  ImageSourcePropType
+} from 'react-native'
 import Gradient from 'react-native-linear-gradient'
 import { s, vs } from 'react-native-size-matters'
 import Spinner from 'react-native-spinkit'
@@ -8,6 +15,8 @@ import { Text, ProgressChain, progressElementT } from '../../'
 import { black, W, white } from '../../../constants'
 import { useTypedSelector } from '../../../store'
 import { allPartsT } from '../../../types/LessonTypes'
+
+const fallbackImageSource: ImageSourcePropType = require('../../../EnForKids/00-Alphabet/alphabet.png')
 
 interface LessonCardT {
   id: number
@@ -37,6 +46,7 @@ export function LessonCard({
   const text = darkText ? black : white
   const [loadImg, setLoadImg] = useState<boolean>(true)
   const isComplete = useTypedSelector(st => st.profile.passed[part]).includes(id)
+  console.log('cardImage', cardImage)
   return (
     <Gradient
       colors={[gradient.top, gradient.bottom]}
@@ -51,7 +61,11 @@ export function LessonCard({
           onLoadStart={() => setLoadImg(true)}
           onLoadEnd={() => setLoadImg(false)}
           resizeMode="stretch"
-          source={{ uri: cardImage }}
+          source={
+            typeof cardImage === 'string'
+              ? { uri: cardImage }
+              : cardImage || fallbackImageSource
+          }
         />
         {isComplete && (
           <EntypoIcon style={checkStyle} color={text} name={'check'} size={s(35)} />

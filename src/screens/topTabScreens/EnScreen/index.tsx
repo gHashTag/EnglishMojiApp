@@ -21,6 +21,7 @@ import { changeCourseLength } from '../../../slices'
 import { useTypedDispatch } from '../../../store'
 
 const res: LessonData[] = require('../../../EnForKids/Main.json')
+const resTs: LessonData[] = require('../../../EnForKids/Main.ts')
 const resExam: questionsT[] = require('../../../EnForKids/examData/examEn.json')
 
 interface questionsT {
@@ -52,7 +53,9 @@ export function EnScreen() {
   const fetchData = async () => {
     try {
       setLoad(true)
-      setData(res)
+      setData(resTs)
+      console.log('res', res)
+      console.log('resTs', resTs)
       setExamData(resExam)
     } catch (error) {
       console.log('error:', error)
@@ -70,7 +73,7 @@ export function EnScreen() {
     <ScrollContainer bgColor={!isDark ? en_color : undefined}>
       <Space height={50} />
       <ExamIndicator questions={examData} part="en" />
-      {data.map((item: LessonData) => {
+      {data.default.map((item: LessonData) => {
         return (
           <LessonCard
             border={!isDark}
