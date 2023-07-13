@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { FlatList } from 'react-native-gesture-handler'
-import { nanoid } from 'nanoid/non-secure'
+
 import {
   en_color,
   errorSound,
@@ -29,9 +29,9 @@ const lineW = W / 1.85
 
 export function EmojiSelect({ onWin, url }: EmojiSelectT) {
   // STATES
-  const [variants, setVariants] = useState([])
+  const [variants, setVariants] = useState<emojiT[]>([])
   const [load, setLoad] = useState(true)
-  const [correct, setCorrect] = useState<emojiT>()
+  const [correct, setCorrect] = useState<emojiT | undefined>()
   const [isTrue, setIsTrue] = useState<boolean>(true)
 
   // SHARED VALUE
@@ -51,32 +51,35 @@ export function EmojiSelect({ onWin, url }: EmojiSelectT) {
     setLoad(true)
     try {
       const res = await fetchJson(url)
+      console.log('res', res)
       const maxLength = res.length > 405 ? 400 : res.length > 112 ? 110 : res.length - 1
+      console.log('maxLength', maxLength)
       max.current = maxLength
       step.value = lineW / maxLength
       setVariants(res)
     } catch (error) {
-      console.error(error)
+      console.error('error', error)
     } finally {
       setLoad(false)
     }
   }, [step, url])
   useEffect(() => {
     fetchEmojiData()
-  }, [])
+  }, [fetchEmojiData])
 
   const initTest = useCallback(async () => {
-    const vars: emojiT[] = variants.reduce((pr, cur, id) => {
+    const vars: emojiT[] = variants.reduce((pr: emojiT[], cur: emojiT, id: number) => {
       if (id < 9) {
         let newItem: emojiT | undefined
         do {
           newItem = getRandomItem(variants)
         } while (pr.findIndex((a: emojiT) => a.name === newItem?.name) !== -1)
-        return [...pr, newItem]
+        return [...pr, newItem as emojiT]
       } else {
         return pr
       }
-    }, [] as any)
+    }, [])
+
     let correctAnswer: emojiT = getRandomItem(vars)
     while (forPass.current.findIndex(a => a.name === correctAnswer.name) >= 0) {
       correctAnswer = getRandomItem(vars)
@@ -137,10 +140,12 @@ export function EmojiSelect({ onWin, url }: EmojiSelectT) {
     }
   })
   const title = correct?.title
+  const keyExtractor = (item: emojiT): string => item.id
+
   return load ? (
     <Loading color={white} />
   ) : (
-    <View style={flexOne}>
+    <View style={styles.flexOne}>
       <Header
         textColor={dark ? en_color : white}
         nameIconL=":back:"
@@ -157,8 +162,8 @@ export function EmojiSelect({ onWin, url }: EmojiSelectT) {
             title={title ? (title.length > 1 ? title : ' ') : '...'}
           />
         </View>
-        <View style={lineContainer}>
-          <Animated.View style={[animLine, line]} />
+        <View style={styles.lineContainer}>
+          <Animated.View style={[animLine, styles.line]} />
         </View>
         <Space height={vs(15)} />
         <Text
@@ -174,7 +179,7 @@ export function EmojiSelect({ onWin, url }: EmojiSelectT) {
           style={{ marginHorizontal: s(30) }}
           data={buttons.current}
           renderItem={({ item }) => (
-            <View style={emojiStyle}>
+            <View style={styles.emojiStyle}>
               <ButtonEmoji
                 textColor={dark ? undefined : white}
                 onPress={() => onChoice(item)}
@@ -182,7 +187,7 @@ export function EmojiSelect({ onWin, url }: EmojiSelectT) {
               />
             </View>
           )}
-          keyExtractor={() => nanoid()}
+          keyExtractor={keyExtractor}
         />
         <Space height={bottom + vs(60)} />
       </View>
@@ -220,9 +225,8 @@ const styles = StyleSheet.create({
     marginBottom: 30
   }
 })
-const { emojiStyle, line, lineContainer, flexOne } = styles
 
 interface EmojiSelectT {
-  url: string // emojiT[]
+  url: string
   onWin: () => void
 }

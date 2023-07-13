@@ -64,7 +64,7 @@ export type emojiTestT = {
 }
 
 export type emojiT = {
-  id: string | number
+  id: string
   name: string
   title: string
   url: string
