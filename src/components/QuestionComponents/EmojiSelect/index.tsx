@@ -27,16 +27,17 @@ import { goPrevious } from '../../../slices'
 
 const lineW = W / 1.85
 
-export function EmojiSelect({ onWin, url }: EmojiSelectT) {
+export function EmojiSelect({ onWin, dataUrl }: EmojiSelectT) {
   // STATES
   const [variants, setVariants] = useState<emojiT[]>([])
   const [load, setLoad] = useState(true)
   const [correct, setCorrect] = useState<emojiT | undefined>()
   const [isTrue, setIsTrue] = useState<boolean>(true)
-
+  const [url, setUrl] = useState<string>('')
   // SHARED VALUE
   const step = useSharedValue(0)
   const score = useSharedValue(0)
+
   // REFS
   const soundRef = useRef<Sound>()
   const buttons = useRef<emojiT[]>([])
@@ -50,19 +51,19 @@ export function EmojiSelect({ onWin, url }: EmojiSelectT) {
   const fetchEmojiData = useCallback(async () => {
     setLoad(true)
     try {
-      const res = await fetchJson(url)
-      console.log('res', res)
-      const maxLength = res.length > 405 ? 400 : res.length > 112 ? 110 : res.length - 1
-      console.log('maxLength', maxLength)
+      const maxLength =
+        dataUrl.length > 405 ? 400 : dataUrl.length > 112 ? 110 : dataUrl.length - 1
       max.current = maxLength
       step.value = lineW / maxLength
-      setVariants(res)
+
+      setVariants(dataUrl)
     } catch (error) {
       console.error('error', error)
     } finally {
       setLoad(false)
     }
-  }, [step, url])
+  }, [step, dataUrl])
+
   useEffect(() => {
     fetchEmojiData()
   }, [fetchEmojiData])
@@ -227,6 +228,6 @@ const styles = StyleSheet.create({
 })
 
 interface EmojiSelectT {
-  url: string
+  dataUrl: emojiT[]
   onWin: () => void
 }

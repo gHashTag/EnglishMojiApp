@@ -64,7 +64,7 @@ export function SelectQuestType({
       return <SelectMany onWin={onWin} {...manySelect} />
     case 'emoji':
       // @ts-ignore
-      return <EmojiSelect onWin={onWin} url={emoji?.dataUrl} />
+      return <EmojiSelect onWin={onWin} dataUrl={emoji?.dataUrl} />
     default:
       return null
   }

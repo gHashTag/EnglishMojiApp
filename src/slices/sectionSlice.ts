@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { goBack } from '../constants'
-import { allPartsT, sectionT } from '../types/LessonTypes'
+import { allPartsT, SectionT } from '../types/LessonTypes'
 
 const initialState: initT = {
   lessonId: 0,
@@ -47,7 +47,7 @@ export const sectionSlice = createSlice({
     initLessonData: (
       state,
       action: PayloadAction<{
-        sections: sectionT[]
+        sections: SectionT[]
         cardName: string
         part: allPartsT
         id: number
@@ -93,8 +93,8 @@ export const sectionReducer = sectionSlice.reducer
 
 interface initT {
   lessonId: number
-  lessonData: sectionT[]
-  currentLesson: sectionT | undefined
+  lessonData: SectionT[]
+  currentLesson: SectionT | undefined
   sectionIndex: number
   history: number[]
   lastIndex: number

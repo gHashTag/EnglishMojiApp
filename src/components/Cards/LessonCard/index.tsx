@@ -46,7 +46,7 @@ export function LessonCard({
   const text = darkText ? black : white
   const [loadImg, setLoadImg] = useState<boolean>(true)
   const isComplete = useTypedSelector(st => st.profile.passed[part]).includes(id)
-  console.log('cardImage', cardImage)
+
   return (
     <Gradient
       colors={[gradient.top, gradient.bottom]}

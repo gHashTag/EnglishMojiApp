@@ -1,24 +1,4 @@
-interface LessonData {
-  id: number
-  cardTitle: string
-  cardImage: any
-  sections: Section[]
-}
-
-interface Section {
-  type: string
-  header?: string
-  poster?: string
-  contentUrl?: string
-  question?: Question
-}
-
-interface Question {
-  type: string
-  emoji?: {
-    dataUrl: string
-  }
-}
+import { LessonData } from '../types/LessonTypes'
 
 const lessonData: LessonData[] = [
   {
@@ -49,4 +29,4 @@ const lessonData: LessonData[] = [
   }
 ]
 
-export default lessonData
+export { lessonData }

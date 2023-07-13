@@ -14,6 +14,7 @@ import {
 export function LessonScreen() {
   const sectionState = useTypedSelector(state => state.section)
   const type = sectionState.currentLesson?.type
+  console.log('type', type)
   const bg = useTypedSelector(st => st.bgColor.bgWithScheme)
   const dispatch = useTypedDispatch()
 

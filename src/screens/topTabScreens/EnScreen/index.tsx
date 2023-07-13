@@ -19,9 +19,8 @@ import { LessonData } from '../../../types/LessonTypes'
 import { Button, useColorScheme } from 'react-native'
 import { changeCourseLength } from '../../../slices'
 import { useTypedDispatch } from '../../../store'
+import { lessonData } from '../../../EnForKids/Main'
 
-const res: LessonData[] = require('../../../EnForKids/Main.json')
-const resTs: LessonData[] = require('../../../EnForKids/Main.ts')
 const resExam: questionsT[] = require('../../../EnForKids/examData/examEn.json')
 
 interface questionsT {
@@ -53,9 +52,8 @@ export function EnScreen() {
   const fetchData = async () => {
     try {
       setLoad(true)
-      setData(resTs)
-      console.log('res', res)
-      console.log('resTs', resTs)
+      setData(lessonData)
+      console.log('resTs', lessonData)
       setExamData(resExam)
     } catch (error) {
       console.log('error:', error)
@@ -73,7 +71,7 @@ export function EnScreen() {
     <ScrollContainer bgColor={!isDark ? en_color : undefined}>
       <Space height={50} />
       <ExamIndicator questions={examData} part="en" />
-      {data.default.map((item: LessonData) => {
+      {data.map((item: LessonData) => {
         return (
           <LessonCard
             border={!isDark}

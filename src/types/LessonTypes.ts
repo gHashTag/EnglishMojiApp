@@ -1,18 +1,24 @@
 export type allPartsT = 'en' | 'rn' | 'aws' | 'ts' | 'js'
 
-export interface LessonData {
-  id: number
-  cardTitle: string
-  cardImage: string
-  sections: sectionT[]
-}
-
-export type sectionT = {
-  type: 'markdown' | 'video' | 'quest' | 'emojiLearn' | 'learn' | 'win' // 'win' no json
+export type SectionT = {
+  type: 'video' | 'markdown' | 'quest' | 'emojiLearn' | 'learn' | 'win'
   poster?: string // if "video"
   contentUrl?: string // if "video" or "markdown" or "emojiLearn" or 'learn'
   question?: questionsT // if  any
   header?: string
+}
+export interface LessonData {
+  id: number
+  cardTitle: string
+  cardImage: any
+  sections: SectionT[]
+}
+
+export interface Question {
+  type: string
+  emoji?: {
+    dataUrl: string
+  }
 }
 
 export type questionsT = {
