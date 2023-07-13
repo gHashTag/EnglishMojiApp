@@ -64,3 +64,5 @@ yarn-error.log
 
 # Key's
 .env
+# testing
+/coverage
