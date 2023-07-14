@@ -85,6 +85,7 @@ export function EmojiSelect({ onWin, dataUrl }: EmojiSelectT) {
       correctAnswer = getRandomItem(vars)
     }
     forPass.current.push(correctAnswer)
+    console.log('correctAnswer.url', correctAnswer.url)
     const soundObj = new Sound(correctAnswer.url, Sound.MAIN_BUNDLE, err => {
       if (!err && score.value <= max.current) soundObj.play()
     })
