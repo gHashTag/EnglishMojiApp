@@ -8,7 +8,7 @@ import Animated, {
   withTiming
 } from 'react-native-reanimated'
 import { s } from 'react-native-size-matters'
-import Sound from 'react-native-sound'
+// import Sound from 'react-native-sound'
 import { SvgXml } from 'react-native-svg'
 import { getHeartBalloon, getJSBalloon, getSimpleBalloon } from '../../../assets/balloons'
 import { H, randomNumber, randomProperty, W } from '../../constants'
@@ -46,9 +46,9 @@ export const Balloon = memo(({ type }: BalloonT) => {
     }, delay)
   }, [])
   const onClap = () => {
-    const clap = new Sound('clap.mp3', Sound.MAIN_BUNDLE, () => {
-      clap.play()
-    })
+    // const clap = new Sound('clap.mp3', Sound.MAIN_BUNDLE, () => {
+    //   clap.play()
+    // })
     visible.value = false
   }
 

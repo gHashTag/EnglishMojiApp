@@ -19,7 +19,7 @@ export function WinScreen({ title }: WinScreenT) {
   const dispatch = useDispatch()
   useFocusEffect(
     useCallback(() => {
-      winSound.play()
+      // winSound.play()
       const balloonsCount = randomNumber(10, 18)
       let arr = []
       for (let i = 0; i < balloonsCount; i++) {

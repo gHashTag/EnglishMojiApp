@@ -4,18 +4,18 @@ import { FlatList } from 'react-native-gesture-handler'
 import { nanoid } from 'nanoid/non-secure'
 import {
   en_color,
-  errorSound,
+  // errorSound,
   fetchJson,
   getRandomItem,
   green,
   W,
-  white,
-  winSound
+  white
+  // winSound
 } from '../../../constants'
 import { emojiT } from '../../../types/LessonTypes'
 import { ButtonEmoji, Text, Space, Header, Loading } from '../../'
 import { s, vs } from 'react-native-size-matters'
-import Sound from 'react-native-sound'
+// import Sound from 'react-native-sound'
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
@@ -55,7 +55,7 @@ export function EmojiSelect({ onWin, dataUrl }: EmojiSelectT) {
         dataUrl.length > 405 ? 400 : dataUrl.length > 112 ? 110 : dataUrl.length - 1
       max.current = maxLength
       step.value = lineW / maxLength
-      console.log('dataUrl', dataUrl)
+      // console.log('dataUrl', dataUrl)
       setVariants(dataUrl)
     } catch (error) {
       console.error('error', error)
@@ -85,10 +85,10 @@ export function EmojiSelect({ onWin, dataUrl }: EmojiSelectT) {
       correctAnswer = getRandomItem(vars)
     }
     forPass.current.push(correctAnswer)
-    console.log('correctAnswer.url', correctAnswer.url)
-    const soundObj = new Sound(correctAnswer.url, Sound.MAIN_BUNDLE, err => {
-      if (!err && score.value <= max.current) soundObj.play()
-    })
+    // console.log('correctAnswer.url', correctAnswer.url)
+    // const soundObj = new Sound(correctAnswer.url, Sound.MAIN_BUNDLE, err => {
+    //   if (!err && score.value <= max.current) soundObj.play()
+    // })
 
     if (score.value >= max.current) {
       score.value = score.value + 1
@@ -96,7 +96,7 @@ export function EmojiSelect({ onWin, dataUrl }: EmojiSelectT) {
         onWin && onWin()
       }, 200)
     } else {
-      soundRef.current = soundObj
+      // soundRef.current = soundObj
       buttons.current = vars
       setCorrect(correctAnswer)
       score.value = score.value + 1
@@ -112,7 +112,7 @@ export function EmojiSelect({ onWin, dataUrl }: EmojiSelectT) {
       setIsTrue(true)
       initTest()
     } else {
-      errorSound.play()
+      // errorSound.play()
       setIsTrue(false)
       score.value = 1
     }

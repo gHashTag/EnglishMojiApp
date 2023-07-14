@@ -12,7 +12,7 @@ import Emoji from 'react-native-emoji'
 import { s, vs } from 'react-native-size-matters'
 import { fetchJson, shuffle, white, win } from '../../../../constants'
 import { emojiT } from '../../../../types/LessonTypes'
-import Sound from 'react-native-sound'
+// import Sound from 'react-native-sound'
 import { useTypedDispatch, useTypedSelector } from '../../../../store'
 import { goPrevious } from '../../../../slices'
 
@@ -38,13 +38,15 @@ export function EmojiLearnScreen() {
     if (emojiData) {
       const timerId = setInterval(() => {
         if (curIndex.current !== emojiData.length - 1) {
-          const soundObj = new Sound(emojiData[curIndex.current].url, undefined, () => {
-            setCurEmoji(emojiData[curIndex.current])
-            soundObj.play()
-            curIndex.current = curIndex.current + 1
-          })
+          // const soundObj = new Sound(emojiData[curIndex.current].url, undefined, () => {
+          //   setCurEmoji(emojiData[curIndex.current])
+          //   soundObj.play()
+
+          // })
+          setCurEmoji(emojiData[curIndex.current])
+          curIndex.current = curIndex.current + 1
         } else {
-          win.play()
+          // win.play()
           dispatch(goPrevious())
         }
       }, 4500 - speed * 29)
