@@ -16,7 +16,7 @@ import {
 } from '../../../constants'
 
 import { LessonData } from '../../../types/LessonTypes'
-import { Button, useColorScheme } from 'react-native'
+import { StyleSheet, useColorScheme } from 'react-native'
 import { changeCourseLength } from '../../../slices'
 import { useTypedDispatch } from '../../../store'
 import { lessonData } from '../../../EnForKids/Main'
@@ -85,7 +85,14 @@ export function EnScreen() {
         )
       })}
 
-      <Button title="Privacy Policy" onPress={openURL} color={white} />
+      <Text title="Privacy Policy" onPress={openURL} style={styles.btn} />
     </ScrollContainer>
   )
 }
+const styles = StyleSheet.create({
+  btn: {
+    alignSelf: 'center',
+    color: white,
+    fontSize: 20
+  }
+})

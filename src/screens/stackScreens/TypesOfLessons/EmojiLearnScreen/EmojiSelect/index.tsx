@@ -1,21 +1,17 @@
-import React, { useEffect, useRef, useState } from 'react'
-import { StyleSheet, View } from 'react-native'
-import { FlatList } from 'react-native-gesture-handler'
-import { nanoid } from 'nanoid/non-secure'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
+import { StyleSheet, View, FlatList } from 'react-native'
+
 import {
   en_color,
-  // errorSound,
-  fetchJson,
+  errorSound,
   getRandomItem,
   green,
   W,
   white
-  // winSound
-} from '../../../constants'
-import { emojiT } from '../../../types/LessonTypes'
-import { ButtonEmoji, Text, Space, Header, Loading } from '../../'
+} from '../../../../../constants'
+import { emojiT } from '../../../../../types/LessonTypes'
+import { ButtonEmoji, Text, Space, Header, Loading } from '../../../../../components'
 import { s, vs } from 'react-native-size-matters'
-// import Sound from 'react-native-sound'
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
@@ -24,7 +20,7 @@ import Animated, {
 import { useTheme } from '@react-navigation/native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { useDispatch } from 'react-redux'
-import { goPrevious } from '../../../slices'
+import { goPrevious } from '../../../../../slices'
 
 const lineW = W / 1.85
 
@@ -32,14 +28,15 @@ export function EmojiSelect({ onWin, dataUrl }: EmojiSelectT) {
   // STATES
   const [variants, setVariants] = useState<emojiT[]>([])
   const [load, setLoad] = useState(true)
-  const [correct, setCorrect] = useState<emojiT>()
+  const [correct, setCorrect] = useState<emojiT | undefined>()
   const [isTrue, setIsTrue] = useState<boolean>(true)
-
+  const [url, setUrl] = useState<string>('')
   // SHARED VALUE
   const step = useSharedValue(0)
   const score = useSharedValue(0)
+
   // REFS
-  const soundRef = useRef<Sound>()
+
   const buttons = useRef<emojiT[]>([])
   const max = useRef<number>(0)
   const forPass = useRef<emojiT[]>([])
@@ -48,46 +45,57 @@ export function EmojiSelect({ onWin, dataUrl }: EmojiSelectT) {
   const dispatch = useDispatch()
   const { dark } = useTheme()
 
-  const fetchEmojiData = async () => {
+  const handlePlay = useCallback(() => {
+    // if (soundRef.current) {
+    //   console.log('soundRef.current', soundRef.current)
+    //   soundRef.current.play(() => {})
+    // }
+  }, [])
+
+  const fetchEmojiData = useCallback(async () => {
     setLoad(true)
     try {
       const maxLength =
         dataUrl.length > 405 ? 400 : dataUrl.length > 112 ? 110 : dataUrl.length - 1
       max.current = maxLength
       step.value = lineW / maxLength
-      // console.log('dataUrl', dataUrl)
+
       setVariants(dataUrl)
     } catch (error) {
       console.error('error', error)
     } finally {
       setLoad(false)
     }
-  }
+  }, [step, dataUrl])
 
   useEffect(() => {
     fetchEmojiData()
   }, [fetchEmojiData])
 
-  const initTest = async () => {
-    const vars: emojiT[] = variants.reduce((pr, cur, id) => {
+  const initTest = useCallback(async () => {
+    const vars: emojiT[] = variants.reduce((pr: emojiT[], cur: emojiT, id: number) => {
       if (id < 9) {
-        let newItem: emojiT | undefined = undefined
+        let newItem: emojiT | undefined
         do {
           newItem = getRandomItem(variants)
         } while (pr.findIndex((a: emojiT) => a.name === newItem?.name) !== -1)
-        return [...pr, newItem]
+        return [...pr, newItem as emojiT]
       } else {
         return pr
       }
-    }, [] as any)
+    }, [])
+
     let correctAnswer: emojiT = getRandomItem(vars)
     while (forPass.current.findIndex(a => a.name === correctAnswer.name) >= 0) {
       correctAnswer = getRandomItem(vars)
     }
     forPass.current.push(correctAnswer)
-    // console.log('correctAnswer.url', correctAnswer.url)
-    // const soundObj = new Sound(correctAnswer.url, Sound.MAIN_BUNDLE, err => {
-    //   if (!err && score.value <= max.current) soundObj.play()
+
+    // const soundObj = new Sound(correctAnswer.url, undefined, error => {
+    //   if (error) {
+    //     console.log('failed to load the sound', error)
+    //     return
+    //   }
     // })
 
     if (score.value >= max.current) {
@@ -96,35 +104,38 @@ export function EmojiSelect({ onWin, dataUrl }: EmojiSelectT) {
         onWin && onWin()
       }, 200)
     } else {
+      // console.log('soundObj', soundObj)
       // soundRef.current = soundObj
       buttons.current = vars
       setCorrect(correctAnswer)
       score.value = score.value + 1
     }
-  }
-  useEffect(() => {
-    if (!load) initTest()
-  }, [load])
+  }, [onWin, score, variants])
 
-  const onChoice = async (item: emojiT, index: number) => {
-    const isCorrect = item.id === correct?.id
-    if (isCorrect) {
-      setIsTrue(true)
+  useEffect(() => {
+    if (!load) {
       initTest()
-    } else {
-      // errorSound.play()
-      setIsTrue(false)
-      score.value = 1
     }
-  }
-  const handlePlay = () => {
-    if (soundRef.current) {
-      soundRef.current.play(() => {})
-    }
-  }
-  const handleBack = () => {
+  }, [load, initTest])
+
+  const onChoice = useCallback(
+    async (item: emojiT) => {
+      const isCorrect = item.id === correct?.id
+      if (isCorrect) {
+        setIsTrue(true)
+        initTest()
+      } else {
+        errorSound.play()
+        setIsTrue(false)
+        score.value = 1
+      }
+    },
+    [correct?.id, initTest, score]
+  )
+
+  const handleBack = useCallback(() => {
     dispatch(goPrevious())
-  }
+  }, [dispatch])
 
   const animLine = useAnimatedStyle(() => {
     return {
@@ -132,23 +143,32 @@ export function EmojiSelect({ onWin, dataUrl }: EmojiSelectT) {
     }
   })
   const title = correct?.title
+  const keyExtractor = (item: emojiT): string => item.id
+
   return load ? (
     <Loading color={white} />
   ) : (
-    <View style={flexOne}>
+    <View style={styles.flexOne}>
       <Header
         textColor={dark ? en_color : white}
         nameIconL=":back:"
         onPressL={handleBack}
         onPressR={handlePlay}
         nameIconR=":loud_sound:"
-        title={title ? (title.length > 1 ? title : ' ') : '...'}
+        title={'Test'}
       />
       <View>
-        <View style={lineContainer}>
-          <Animated.View style={[animLine, line]} />
+        <View style={styles.sub}>
+          <Text
+            oneColor={white}
+            h8
+            title={title ? (title.length > 1 ? title : ' ') : '...'}
+          />
         </View>
-        <Space height={vs(55)} />
+        <View style={styles.lineContainer}>
+          <Animated.View style={[animLine, styles.line]} />
+        </View>
+        <Space height={vs(15)} />
         <Text
           centerText
           oneColor={isTrue ? green : 'red'}
@@ -159,20 +179,20 @@ export function EmojiSelect({ onWin, dataUrl }: EmojiSelectT) {
         <Space height={vs(35)} />
         <FlatList
           numColumns={3}
-          style={{ marginHorizontal: s(30) }}
+          style={styles.flatStyle}
           data={buttons.current}
-          renderItem={({ item, index }) => (
-            <View style={emojiStyle}>
+          renderItem={({ item }) => (
+            <View style={styles.emojiStyle}>
               <ButtonEmoji
                 textColor={dark ? undefined : white}
-                onPress={() => onChoice(item, index)}
+                onPress={() => onChoice(item)}
                 name={item.name}
               />
             </View>
           )}
-          keyExtractor={() => nanoid()}
+          keyExtractor={keyExtractor}
         />
-        <Space height={bottom + vs(20)} />
+        <Space height={bottom + vs(60)} />
       </View>
     </View>
   )
@@ -202,11 +222,15 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'space-between'
   },
-  bottomCont: {}
+  sub: {
+    width: '80%',
+    alignSelf: 'center',
+    marginBottom: 30
+  },
+  flatStyle: { marginHorizontal: s(30) }
 })
-const { emojiStyle, line, lineContainer, flexOne, bottomCont } = styles
 
 interface EmojiSelectT {
-  dataUrl: string // emojiT[]
+  dataUrl: emojiT[]
   onWin: () => void
 }

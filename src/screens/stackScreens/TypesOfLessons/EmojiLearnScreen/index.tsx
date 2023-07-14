@@ -81,6 +81,7 @@ export function EmojiLearnScreen() {
             emojiR=":tiger:"
             emojiL=":turtle:"
           />
+
           <Space height={vs(45)} />
         </>
       ) : (
