@@ -1,67 +1,81 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { StyleSheet, View } from 'react-native'
 import {
+  Background,
   CenterView,
   EmojiSlider,
   Header,
   Loading,
   Space,
   Text
-} from '../../../../components'
+} from '../components'
 import Emoji from 'react-native-emoji'
 import { s, vs } from 'react-native-size-matters'
-import { fetchJson, shuffle, white, win } from '../../../../constants'
-import { emojiT } from '../../../../types/LessonTypes'
+import { goBack, shuffle, white } from '../constants'
+import { emojiT } from '../types/LessonTypes'
 // import Sound from 'react-native-sound'
-import { useTypedDispatch, useTypedSelector } from '../../../../store'
-import { goPrevious } from '../../../../slices'
+import { NativeStackNavigationProp } from '@react-navigation/native-stack'
+import { RootStackParamList } from '../Navigation'
+import { RouteProp } from '@react-navigation/native'
 
-export function EmojiLearnScreen() {
-  const { currentLesson } = useTypedSelector(st => st.section)
-  const dataUrl = currentLesson?.contentUrl
+type ProfileScreenNavigationProp = NativeStackNavigationProp<
+  RootStackParamList,
+  'LEARN_SCREEN'
+>
 
+type ProfileScreenRouteProp = RouteProp<RootStackParamList, 'LEARN_SCREEN'>
+
+type LearnScreenT = {
+  navigation: ProfileScreenNavigationProp
+  route: ProfileScreenRouteProp
+}
+
+export function LearnScreen({ navigation, route }: LearnScreenT) {
+  const lessonData = route.params.lessonData
+
+  const contentUrl = lessonData.sections[1].contentUrl
   const [emojiData, setEmojiData] = useState<emojiT[]>()
   const [curEmoji, setCurEmoji] = useState<emojiT>()
   const [speed, setSpeed] = useState<number>(35)
   const curIndex = useRef<number>(0)
-  const dispatch = useTypedDispatch()
+
   const fetchEmojiData = useCallback(async () => {
-    if (dataUrl) {
-      const res = await fetchJson(dataUrl)
-      setEmojiData(shuffle(res))
+    if (contentUrl) {
+      setEmojiData(shuffle(contentUrl))
     }
-  }, [dataUrl])
+  }, [contentUrl])
+
   useEffect(() => {
     fetchEmojiData()
   }, [fetchEmojiData])
+
   useEffect(() => {
     if (emojiData) {
       const timerId = setInterval(() => {
         if (curIndex.current !== emojiData.length - 1) {
-          // const soundObj = new Sound(emojiData[curIndex.current].url, undefined, () => {
-          //   setCurEmoji(emojiData[curIndex.current])
-          //   soundObj.play()
-
-          // })
           setCurEmoji(emojiData[curIndex.current])
           curIndex.current = curIndex.current + 1
         } else {
-          // win.play()
-          dispatch(goPrevious())
+          // winSound.play()
+          goBack()
         }
       }, 4500 - speed * 29)
       return () => clearInterval(timerId)
     }
-  }, [dispatch, emojiData, speed])
+  }, [emojiData, speed])
+
   const isSymbol = curEmoji?.name?.length === 1
-  // const title = curEmoji?.title
+  const title = curEmoji?.title
+
+  const { container, emojiStyle } = styles
+
   return (
-    <View style={container}>
+    <Background>
       <Header
-        onPressL={() => dispatch(goPrevious())}
-        nameIconL=":back:"
         textColor={white}
-        title={' '}
+        onPressL={() => goBack()}
+        nameIconL=":back:"
+        title={title}
       />
       {emojiData && curEmoji ? (
         <>
@@ -89,7 +103,7 @@ export function EmojiLearnScreen() {
           <Loading color={white} />
         </View>
       )}
-    </View>
+    </Background>
   )
 }
 
@@ -101,5 +115,3 @@ const styles = StyleSheet.create({
     fontSize: s(120)
   }
 })
-
-const { container, emojiStyle } = styles

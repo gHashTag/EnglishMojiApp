@@ -10,6 +10,7 @@ import {
 import { useTheme } from '@react-navigation/native'
 import { s } from 'react-native-size-matters'
 import { primary, secondary, Etna, KLMN, Narrow, white } from '../../../constants'
+import { string } from 'yup'
 
 const styles = StyleSheet.create({
   h0Style: {
@@ -76,6 +77,7 @@ const styles = StyleSheet.create({
 interface TwoColorsT {
   dark: string
   light: string
+  white: number
 }
 
 type FontTypeKeys =
@@ -95,7 +97,7 @@ export type FontType = Partial<Record<FontTypeKeys, boolean>>
 
 export interface TextT extends TextProps, FontType {
   title?: string
-  colors?: TwoColorsT
+  colors?: TwoColorsT | string
   oneColor?: string
   textStyle?: StyleProp<TextStyle>
   centerText?: boolean

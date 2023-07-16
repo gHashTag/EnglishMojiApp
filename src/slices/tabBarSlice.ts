@@ -1,8 +1,8 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { en_color } from '../constants'
+import { pink } from '../constants'
 
 const initialState: initT = {
-  lineColor: en_color
+  lineColor: pink
 }
 
 export const tabBarSlice = createSlice({

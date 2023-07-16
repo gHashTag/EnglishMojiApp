@@ -1,4 +1,5 @@
 export * from './TabBars'
+export * from './Background'
 export * from './TextComponents'
 export * from './Space'
 export * from './Buttons'

@@ -3,8 +3,7 @@ import { Dimensions, Linking, Platform } from 'react-native'
 // import Sound from 'react-native-sound'
 import { initLessonData, toggleColor } from './slices'
 import { store } from './store'
-import { RootStackParamList } from './types'
-import { SectionT } from './types/LessonTypes'
+import { LessonData, SectionT, emojiT } from './types/LessonTypes'
 import { allPartsT } from './types/LessonTypes'
 
 // NAVIGATION
@@ -16,9 +15,9 @@ export const goToUI = () => {
   }
 }
 
-export const goBack = () => {
+export const goBack = n => {
   if (navRef.isReady()) {
-    navRef.goBack()
+    navRef.goBack(n)
   }
 }
 
@@ -40,7 +39,7 @@ export const green = '#2ECC71'
 export const red = 'rgb(255, 69, 58)'
 
 export const en_gradient = '#FED2F1'
-export const en_color = '#FDBEEA'
+export const pink = '#FDBEEA'
 export const js_gradient = '#F6E367'
 export const js_color = '#F3DE50'
 export const rn_gradient = '#D3FFEF'
@@ -52,9 +51,9 @@ export const aws_color = '#242526'
 
 export const getColor = (id: number | allPartsT) => {
   if (typeof id === 'number') {
-    return [en_color, js_color, rn_color, ts_color, aws_color][id]
+    return [pink, js_color, rn_color, ts_color, aws_color][id]
   } else if (typeof id === 'string') {
-    return { en: en_color, js: js_color, rn: rn_color, ts: ts_color, aws: aws_color }[id]
+    return { en: pink, js: js_color, rn: rn_color, ts: ts_color, aws: aws_color }[id]
   }
 }
 // THEMES
@@ -126,7 +125,7 @@ export const handleError = (error: any) => {
   console.log('MY error: ', error)
 }
 
-export function shuffle(array: any[]) {
+export function shuffle(array: emojiT[]): emojiT[] {
   return array
     .map(value => ({ value, sort: Math.random() }))
     .sort((a, b) => a.sort - b.sort)
@@ -142,7 +141,7 @@ export const randomNumber = (min: number, max: number) => {
   return Math.floor(Math.random() * (max - min)) + min
 }
 
-export function getRandomItem(arr: any[]) {
+export function getRandomItem(arr: emojiT[]): emojiT {
   return arr[Math.floor(Math.random() * arr.length)]
 }
 
@@ -155,7 +154,7 @@ export const handlePressCard = (
   store.dispatch(toggleColor(color))
   store.dispatch(initLessonData({ sections, cardName, part: color, id }))
   if (navRef.isReady()) {
-    navRef.navigate('LESSON_SCREEN')
+    navRef.navigate('SELECT_SCREEN')
   }
 }
 

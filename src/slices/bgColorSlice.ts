@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { Appearance } from 'react-native'
-import { en_color, rn_color, aws_color, ts_color, js_color, black } from '../constants'
+import { pink, rn_color, aws_color, ts_color, js_color, black } from '../constants'
 import { allPartsT } from '../types/LessonTypes'
 
 const initialState: initT = {
@@ -9,7 +9,7 @@ const initialState: initT = {
 }
 
 const allColors = {
-  en: en_color,
+  en: pink,
   rn: rn_color,
   aws: aws_color,
   ts: ts_color,

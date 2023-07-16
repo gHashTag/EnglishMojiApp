@@ -1,96 +1,74 @@
-import React, { useState } from 'react'
-import { StyleSheet, Pressable, View, StyleProp, ViewStyle } from 'react-native'
-import { en_color, W } from '../../../constants'
+import React, { memo } from 'react'
+import { Platform, StyleProp, ViewStyle, View, TouchableOpacity } from 'react-native'
+import { ScaledSheet, ms } from 'react-native-size-matters'
 import Emoji from 'react-native-emoji'
-import { Text } from '../../TextComponents'
-import { vs } from 'react-native-size-matters'
-import { useTypedSelector } from '../../../store'
 import { useTheme } from '@react-navigation/native'
+import { black, white } from '../../../constants'
+import { Text } from '../../'
 
-const size = W / 4.6
-const fontSize = size / 1.75
+const diameter = ms(88, 0.8)
 
-export function ButtonEmoji({ name, viewStyle, onPress, textColor }: ButtonEmojiT) {
-  const {
-    dark,
-    colors: { background }
-  } = useTheme()
-  const isSymbol = name.length === 1
-  const { bgColor } = useTypedSelector(state => state.bgColor)
-  const backgroundColor = dark ? background : bgColor
-
-  const [isPressed, setIsPressed] = useState(false)
-
-  const handlePressIn = () => {
-    setIsPressed(true)
-  }
-
-  const handlePressOut = () => {
-    setIsPressed(false)
-  }
-
-  const containerStyle = [
-    styles.container,
-    styles.shadow,
-    { backgroundColor: 'white' },
-    isPressed && styles.containerPressed
-  ]
-
-  const maskStyle = [styles.container, styles.mask, { backgroundColor }]
-
-  const pressableStyle = [
-    styles.container,
-    { backgroundColor },
-    isPressed && styles.containerPressed
-  ]
-
-  return (
-    <View>
-      <View style={containerStyle} />
-      <View style={maskStyle} />
-      <Pressable
-        onPress={onPress}
-        onPressIn={handlePressIn}
-        onPressOut={handlePressOut}
-        style={pressableStyle}
-      >
-        {isSymbol ? (
-          <Text oneColor={textColor} textStyle={{ fontSize }} title={name} h7 />
-        ) : (
-          <Emoji name={name} style={{ fontSize }} />
-        )}
-      </Pressable>
-    </View>
-  )
+const circle = {
+  width: diameter,
+  height: diameter,
+  borderRadius: diameter / 2
 }
 
-const styles = StyleSheet.create({
+const styles = ScaledSheet.create({
   container: {
-    width: size,
-    height: size,
-    borderRadius: size,
-    alignItems: 'center',
+    alignSelf: 'center',
+    padding: 1
+  },
+  blue: {
+    ...circle,
+    height: diameter,
+    width: diameter
+  },
+  pink: {
+    ...circle,
+    top: 2,
+    height: diameter
+  },
+  iconBg: {
+    ...circle,
     justifyContent: 'center',
-    overflow: 'hidden',
-    zIndex: 3
+    alignItems: 'center'
   },
-  containerPressed: {
-    backgroundColor: 'lightgray'
-  },
-  shadow: {
-    position: 'absolute',
-    transform: [{ translateY: vs(-1.3) }],
-    zIndex: 0
-  },
-  mask: {
-    zIndex: 1,
-    position: 'absolute'
+  emoji: {
+    left: Platform.OS === 'ios' ? 1 : 0,
+    fontSize: Platform.OS === 'ios' ? '50@s' : '50@s'
   }
 })
 
-interface ButtonEmojiT {
-  name: string
-  viewStyle?: StyleProp<ViewStyle>
-  onPress?: () => void
+interface ButtonEmojiProps {
   textColor?: string
+  name: string
+  color?: string
+  onPress?: () => void
+  viewStyle?: StyleProp<ViewStyle>
 }
+
+const ButtonEmoji = memo<ButtonEmojiProps>(({ name, onPress, viewStyle, color }) => {
+  const { container, pink, blue, iconBg, emoji } = styles
+  const { dark } = useTheme()
+  console.log('dark', dark)
+  const backgroundColor = dark ? black : color
+  console.log('backgroundColor', backgroundColor)
+  return (
+    <TouchableOpacity onPress={onPress} style={[container, viewStyle]}>
+      <View style={[blue, { backgroundColor: white }]}>
+        <View style={[pink, { backgroundColor: backgroundColor }]}>
+          <View style={[iconBg, { backgroundColor }]}>
+            {name.length > 3 ? (
+              <Emoji name={name} style={emoji} />
+            ) : (
+              <Text h0 title={name} colors={white} />
+            )}
+          </View>
+        </View>
+      </View>
+    </TouchableOpacity>
+  )
+})
+
+export { ButtonEmoji }

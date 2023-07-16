@@ -1,6 +1,6 @@
-import { EmojiDataArray } from '../../types/LessonTypes'
+import { EmojiDataArray, emojiT } from '../../types/LessonTypes'
 
-const data: EmojiDataArray = [
+const data: emojiT[] = [
   {
     id: 0,
     name: ':zero:',

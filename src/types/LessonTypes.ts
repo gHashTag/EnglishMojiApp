@@ -1,17 +1,18 @@
 export type allPartsT = 'en' | 'rn' | 'aws' | 'ts' | 'js'
 
+export interface LessonData {
+  id: number
+  cardTitle: string
+  cardImage: any
+  sections: SectionT[]
+}
+
 export type SectionT = {
   type: 'video' | 'markdown' | 'quest' | 'emojiLearn' | 'learn' | 'win'
   poster?: string // if "video"
   contentUrl?: EmojiDataArray // if "video" or "markdown" or "emojiLearn" or 'learn'
   question?: questionsT // if  any
   header?: string
-}
-export interface LessonData {
-  id: number
-  cardTitle: string
-  cardImage: any
-  sections: SectionT[]
 }
 
 export interface Question {
@@ -70,7 +71,7 @@ export type emojiTestT = {
 }
 
 export type emojiT = {
-  id: string
+  id: number
   name: string
   title: string
   url: string

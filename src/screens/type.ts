@@ -2,7 +2,7 @@ import {
   RootBottomTabParamList,
   RootStackParamList,
   RootTopTabParamList
-} from '../../../types'
+} from '../../types'
 import { MaterialTopTabNavigationProp } from '@react-navigation/material-top-tabs'
 import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'

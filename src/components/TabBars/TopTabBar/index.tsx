@@ -4,7 +4,7 @@ import { StyleSheet, useColorScheme, View } from 'react-native'
 import { mvs, vs } from 'react-native-size-matters'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { Tab } from '../Tab'
-import { en_color, getColor, W } from '../../../constants'
+import { pink, getColor, W } from '../../../constants'
 import { useTypedDispatch } from '../../../store'
 import { setTabLineColor } from '../../../slices'
 import Animated, {
@@ -21,7 +21,7 @@ export function TopTabBar({ state, navigation, descriptors }: MaterialTopTabBarP
   const { top } = useSafeAreaInsets()
   const paddingTop = top + vs(5)
   const scheme = useColorScheme()
-  const [lineColor, setLineColor] = useState(en_color)
+  const [lineColor, setLineColor] = useState(pink)
   const dispatch = useTypedDispatch()
   // Animation
   const x = useSharedValue(0)
