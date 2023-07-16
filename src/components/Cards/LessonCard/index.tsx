@@ -14,13 +14,11 @@ import EntypoIcon from 'react-native-vector-icons/Entypo'
 import { Text, ProgressChain, progressElementT } from '../../'
 import { black, W, white } from '../../../constants'
 import { useTypedSelector } from '../../../store'
-import { allPartsT } from '../../../types/LessonTypes'
+import { ThemeT } from '../../../types/LessonTypes'
 
 const fallbackImageSource: ImageSourcePropType = require('../../../EnForKids/00-Alphabet/alphabet.png')
 
 interface LessonCardT {
-  id: number
-  part: allPartsT
   cardImage?: string
   title?: string
   gradient: {
@@ -34,10 +32,9 @@ interface LessonCardT {
 
 const widthCard = W - s(15) * 2
 const borderRadius = s(10)
+
 export function LessonCard({
   cardImage,
-  id,
-  part,
   gradient,
   darkText,
   onPress,

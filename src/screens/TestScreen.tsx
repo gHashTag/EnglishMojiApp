@@ -3,7 +3,7 @@ import { StyleSheet, View, FlatList } from 'react-native'
 import * as Progress from 'react-native-progress'
 import Sound from 'react-native-sound'
 import { pink, errorSound, green, shuffle, W, white, goBack } from '../constants'
-import { emojiT } from '../types/LessonTypes'
+import { emojiT, ThemeT } from '../types/LessonTypes'
 import { ButtonEmoji, Text, Space, Header, Loading, Background } from '../components'
 import { s, vs } from 'react-native-size-matters'
 import { RouteProp, useTheme } from '@react-navigation/native'
@@ -11,6 +11,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { useDispatch } from 'react-redux'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../Navigation'
+import { changeCourseLength, saveResult } from '../slices/profileSlice'
 
 const lineW = W / 1.85
 
@@ -36,9 +37,10 @@ const defautState = {
 export function TestScreen({ navigation, route }: TestScreenT) {
   const lessonData = route.params.lessonData
   const cardTitle = route.params.lessonData.cardTitle
-  console.log('cardTitle', cardTitle)
-  const title = route.params.lessonData.cardTitle
+  const dispatch = useDispatch()
+  const title = route.params.lessonData.cardTitle as ThemeT
   const contentUrl = lessonData.sections[0].contentUrl
+  const length = lessonData.sections[1].question.emoji.dataUrl.length
 
   // STATES
   const [bool, setBool] = useState<boolean>(true)
@@ -107,16 +109,18 @@ export function TestScreen({ navigation, route }: TestScreenT) {
     }
   }, [voice])
 
-  const onChoice = (title: string) => {
+  const onChoice = (name: string) => {
     const { random, sliceArray } = shake.current()
-    if (title === displayName.title) {
+    if (name === displayName.title) {
       const newAnswerCount = answer + 1
       setAnswer(newAnswerCount)
 
       // Check if we've answered all the questions correctly
       if (contentUrl && newAnswerCount === contentUrl.length) {
+        dispatch(changeCourseLength({ part: cardTitle, length }))
+        dispatch(saveResult({ part: cardTitle }))
         navigation.navigate('WIN_SCREEN', { title: cardTitle })
-        return // Exit the function early so the rest of the code isn't executed
+        return
       }
 
       setBool(true)

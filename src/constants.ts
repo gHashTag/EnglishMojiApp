@@ -3,7 +3,7 @@ import { Dimensions, Linking, Platform } from 'react-native'
 import Sound from 'react-native-sound'
 
 import { emojiT } from './types/LessonTypes'
-import { allPartsT } from './types/LessonTypes'
+import { ThemeT } from './types/LessonTypes'
 import { RootStackParamList } from './Navigation'
 
 // NAVIGATION
@@ -49,7 +49,7 @@ export const ts_color = '#007ACD'
 export const aws_gradient = '#333435'
 export const aws_color = '#242526'
 
-export const getColor = (id: number | allPartsT) => {
+export const getColor = (id: number | ThemeT) => {
   if (typeof id === 'number') {
     return [pink, js_color, rn_color, ts_color, aws_color][id]
   } else if (typeof id === 'string') {

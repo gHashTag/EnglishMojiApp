@@ -4,13 +4,13 @@ import { StyleSheet, View } from 'react-native'
 import { s, vs } from 'react-native-size-matters'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import { getColor, gray, white } from '../../constants'
-import { allPartsT } from '../../types/LessonTypes'
+import { ThemeT } from '../../types/LessonTypes'
 import { Space } from '../Space'
 import { Text } from '../TextComponents'
 
 interface ComingSoonT {
   textColor?: string
-  bg: allPartsT
+  bg: ThemeT
 }
 export function ComingSoon({ textColor, bg }: ComingSoonT) {
   const color = getColor(bg)

@@ -1,6 +1,4 @@
-export type allPartsT = 'en' | 'rn' | 'aws' | 'ts' | 'js'
-
-export type themeT =
+export type ThemeT =
   | 'alphabet'
   | 'numbers'
   | 'foodanddrinks'
@@ -17,7 +15,7 @@ export type themeT =
 
 export interface LessonData {
   id: number
-  cardTitle: themeT
+  cardTitle: ThemeT
   cardImage: any
   sections: SectionT[]
 }
@@ -25,8 +23,8 @@ export interface LessonData {
 export type SectionT = {
   type: 'video' | 'markdown' | 'quest' | 'emojiLearn' | 'learn' | 'win'
   poster?: string // if "video"
-  contentUrl?: EmojiDataArray // if "video" or "markdown" or "emojiLearn" or 'learn'
-  question?: questionsT // if  any
+  contentUrl: EmojiDataArray // if "video" or "markdown" or "emojiLearn" or 'learn'
+  question: questionsT // if  any
   header?: string
 }
 
@@ -54,7 +52,7 @@ export type questionsT = {
   manySelect?: manySelectT
   joinVariants?: joinVariantsT
   supplement?: supplementT
-  emoji?: emojiTestT
+  emoji: emojiTestT
 }
 
 export type oneSelectT = {

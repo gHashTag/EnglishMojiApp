@@ -11,7 +11,7 @@ import { BottomTabBar } from './components'
 import { StatusBar, useColorScheme } from 'react-native'
 import SystemNavigationBar from 'react-native-system-navigation-bar'
 import Orientation from 'react-native-orientation-locker'
-import { LessonData, allPartsT, questionsT } from './types/LessonTypes'
+import { LessonData, ThemeT, questionsT } from './types/LessonTypes'
 
 export type RootStackParamList = {
   UI: undefined
@@ -24,7 +24,7 @@ export type RootStackParamList = {
   WIN_SCREEN: { title: string }
   EXAM_SCREEN: {
     questions: questionsT[]
-    part: allPartsT
+    part: ThemeT
   }
 }
 

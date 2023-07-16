@@ -10,7 +10,7 @@ import { saveResult } from '../slices'
 import { RouteProp, useFocusEffect } from '@react-navigation/native'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../Navigation'
-import { themeT } from '../types/LessonTypes'
+import { ThemeT } from '../types/LessonTypes'
 
 type ProfileScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
@@ -25,7 +25,7 @@ type WinScreenT = {
 }
 
 function WinScreen({ navigation, route }: WinScreenT) {
-  const title = route.params.title
+  const title = route.params.title as ThemeT
   const dispatch = useDispatch()
   useFocusEffect(
     useCallback(() => {
@@ -35,8 +35,7 @@ function WinScreen({ navigation, route }: WinScreenT) {
   const onExit = () => {
     navigation.pop(3)
     try {
-      console.log('title', title)
-      dispatch(saveResult({ part: title as themeT }))
+      dispatch(saveResult({ part: title }))
     } catch (error) {
       console.log('error', error)
     }

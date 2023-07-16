@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, TouchableOpacity, View } from 'react-native'
 import { useTypedDispatch, useTypedSelector } from '../../store'
-import { allPartsT, questionsT } from '../../types/LessonTypes'
+import { ThemeT, questionsT } from '../../types/LessonTypes'
 import CircularProgress from 'react-native-circular-progress-indicator'
 import { s } from 'react-native-size-matters'
 import { white } from '../../constants'
@@ -10,7 +10,6 @@ import { Text } from '../TextComponents'
 import { ButtonVectorIcon } from '../Buttons'
 
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
-// import { toggleColor } from '../../slices'
 import { useTranslation } from 'react-i18next'
 import { RootStackParamList } from '../../Navigation'
 
@@ -18,19 +17,21 @@ export function ExamIndicator({ part, questions, dark = false }: ExamIndicatorT)
   const { t } = useTranslation()
   const { navigate } = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
   const dispatch = useTypedDispatch()
-  // const { courseLength, passed, exams } = useTypedSelector(st => st.profile)
-  // const percent = (121 / 456) * 100
-  // const isCompleted = exams[part]
-  // const percent = Math.ceil((passed[part].length / courseLength[part]) * 100)
+  const { passed, exam, courseLength } = useTypedSelector(st => st.profile)
+  const isCompleted = exam
+  let percent = 0
+  if (passed[part] && courseLength[part]) {
+    percent = Math.ceil((passed[part].length / courseLength[part]) * 100)
+  }
+
   const handlePress = () => {
     if (questions) {
-      // dispatch(toggleColor(part))
       navigate('EXAM_SCREEN', { questions, part })
     }
   }
   return (
     <View style={container}>
-      {/* <CircularProgress
+      <CircularProgress
         value={isNaN(percent) ? 0 : percent > 100 ? 100 : percent}
         maxValue={100}
         radius={s(35)}
@@ -61,7 +62,7 @@ export function ExamIndicator({ part, questions, dark = false }: ExamIndicatorT)
             name={isCompleted ? 'checkbox-outline' : 'checkbox-blank-outline'}
           />
         </>
-      )} */}
+      )}
     </View>
   )
 }
@@ -77,7 +78,7 @@ const styles = StyleSheet.create({
 const { container } = styles
 
 interface ExamIndicatorT {
-  part: allPartsT
+  part: ThemeT
   questions?: questionsT[]
   dark?: boolean
 }

@@ -14,6 +14,7 @@ import { Button, useColorScheme } from 'react-native'
 import { lessonData } from '../EnForKids/Main'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../Navigation'
+import { useDispatch } from 'react-redux'
 
 const resExam: questionsT[] = require('../EnForKids/examData/examEn.json')
 
@@ -45,7 +46,7 @@ function MainScreen({ navigation }: MainSсreenT) {
   const [examData, setExamData] = useState<questionsT[]>([])
   const [load, setLoad] = useState(true)
   const isDark = useColorScheme() === 'dark'
-
+  const dispatch = useDispatch()
   const fetchData = async () => {
     try {
       setLoad(true)
