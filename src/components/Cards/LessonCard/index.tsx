@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { cloneElement, useState } from 'react'
 import {
   Pressable,
   StyleSheet,
@@ -19,6 +19,8 @@ import { ThemeT } from '../../../types/LessonTypes'
 const fallbackImageSource: ImageSourcePropType = require('../../../EnForKids/00-Alphabet/alphabet.png')
 
 interface LessonCardT {
+  id: number
+  part: ThemeT
   cardImage?: string
   title?: string
   gradient: {
@@ -35,6 +37,8 @@ const borderRadius = s(10)
 
 export function LessonCard({
   cardImage,
+  id,
+  part,
   gradient,
   darkText,
   onPress,
@@ -42,7 +46,7 @@ export function LessonCard({
 }: LessonCardT) {
   const text = darkText ? black : white
   const [loadImg, setLoadImg] = useState<boolean>(true)
-  // const isComplete = useTypedSelector(st => st.profile.passed[part]).includes(id)
+  const isComplete = useTypedSelector(st => st.profile.passed[part][0] === true)
 
   return (
     <Gradient
@@ -64,9 +68,9 @@ export function LessonCard({
               : cardImage || fallbackImageSource
           }
         />
-        {/* {isComplete && (
+        {isComplete && (
           <EntypoIcon style={checkStyle} color={text} name={'check'} size={s(35)} />
-        )} */}
+        )}
       </TouchableOpacity>
     </Gradient>
   )

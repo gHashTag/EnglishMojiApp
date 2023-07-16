@@ -76,13 +76,12 @@ function MainScreen({ navigation }: MainSсreenT) {
         return (
           <LessonCard
             border={!isDark}
-            part="en"
             id={item.id}
+            part={item.cardTitle}
             key={item.id}
             onPress={() => handleItem(item)}
             gradient={{ top: en_gradient, bottom: pink }}
             cardImage={item.cardImage}
-            title={item.cardTitle}
           />
         )
       })}
