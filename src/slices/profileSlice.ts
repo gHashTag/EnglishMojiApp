@@ -26,8 +26,11 @@ export const profileSlice = createSlice({
   reducers: {
     saveResult: (state, action: PayloadAction<{ part: themeT }>) => {
       const { part } = action.payload
-      console.log('part', part)
-      // state.passed[part].push(true)
+      if (state.passed[part]) {
+        state.passed[part][0] = true
+      } else {
+        console.error(`Invalid part: ${part}`)
+      }
     },
     examComplete: state => {
       state.exam = true

@@ -34,12 +34,17 @@ function WinScreen({ navigation, route }: WinScreenT) {
   )
   const onExit = () => {
     navigation.pop(3)
-    dispatch(saveResult({ part: title as themeT }))
+    try {
+      console.log('title', title)
+      dispatch(saveResult({ part: title as themeT }))
+    } catch (error) {
+      console.log('error', error)
+    }
   }
   const { gifStyle, gifContainer } = styles
   return (
     <Background>
-      <Header onPressL={onExit} nameIconL=":back:" textColor="white" title="Победа" />
+      <Header onPressL={onExit} nameIconL=":back:" textColor="white" title="Win" />
 
       <CenterView>
         <Text h7 centerText oneColor={white} title={title} />

@@ -45,7 +45,7 @@ export function LessonCard({
 }: LessonCardT) {
   const text = darkText ? black : white
   const [loadImg, setLoadImg] = useState<boolean>(true)
-  const isComplete = useTypedSelector(st => st.profile.passed[part]).includes(id)
+  // const isComplete = useTypedSelector(st => st.profile.passed[part]).includes(id)
 
   return (
     <Gradient
@@ -67,9 +67,9 @@ export function LessonCard({
               : cardImage || fallbackImageSource
           }
         />
-        {isComplete && (
+        {/* {isComplete && (
           <EntypoIcon style={checkStyle} color={text} name={'check'} size={s(35)} />
-        )}
+        )} */}
       </TouchableOpacity>
     </Gradient>
   )

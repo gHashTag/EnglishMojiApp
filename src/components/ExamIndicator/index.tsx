@@ -10,7 +10,7 @@ import { Text } from '../TextComponents'
 import { ButtonVectorIcon } from '../Buttons'
 
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
-import { toggleColor } from '../../slices'
+// import { toggleColor } from '../../slices'
 import { useTranslation } from 'react-i18next'
 import { RootStackParamList } from '../../Navigation'
 
@@ -18,19 +18,19 @@ export function ExamIndicator({ part, questions, dark = false }: ExamIndicatorT)
   const { t } = useTranslation()
   const { navigate } = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
   const dispatch = useTypedDispatch()
-  const { courseLength, passed, exams } = useTypedSelector(st => st.profile)
+  // const { courseLength, passed, exams } = useTypedSelector(st => st.profile)
   // const percent = (121 / 456) * 100
-  const isCompleted = exams[part]
-  const percent = Math.ceil((passed[part].length / courseLength[part]) * 100)
+  // const isCompleted = exams[part]
+  // const percent = Math.ceil((passed[part].length / courseLength[part]) * 100)
   const handlePress = () => {
     if (questions) {
-      dispatch(toggleColor(part))
+      // dispatch(toggleColor(part))
       navigate('EXAM_SCREEN', { questions, part })
     }
   }
   return (
     <View style={container}>
-      <CircularProgress
+      {/* <CircularProgress
         value={isNaN(percent) ? 0 : percent > 100 ? 100 : percent}
         maxValue={100}
         radius={s(35)}
@@ -61,7 +61,7 @@ export function ExamIndicator({ part, questions, dark = false }: ExamIndicatorT)
             name={isCompleted ? 'checkbox-outline' : 'checkbox-blank-outline'}
           />
         </>
-      )}
+      )} */}
     </View>
   )
 }

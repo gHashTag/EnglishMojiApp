@@ -1,5 +1,4 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
-import { DragAndDropReducer } from './components/QuestionComponents/DragVariant/DragAndDropSlice'
 import { TypedUseSelectorHook, useDispatch, useSelector, useStore } from 'react-redux'
 import { profileReducer, tabBarReducer } from './slices'
 import {
@@ -35,7 +34,6 @@ const persistedProfileReducer = persistReducer(profileConfig, profileReducer)
 
 export const store = configureStore({
   reducer: {
-    DragAndDrop: DragAndDropReducer,
     profile: persistedProfileReducer,
     tabBar: tabBarReducer
   },

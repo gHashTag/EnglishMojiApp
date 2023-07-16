@@ -35,6 +35,8 @@ const defautState = {
 
 export function TestScreen({ navigation, route }: TestScreenT) {
   const lessonData = route.params.lessonData
+  const cardTitle = route.params.lessonData.cardTitle
+  console.log('cardTitle', cardTitle)
   const title = route.params.lessonData.cardTitle
   const contentUrl = lessonData.sections[0].contentUrl
 
@@ -113,7 +115,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
 
       // Check if we've answered all the questions correctly
       if (contentUrl && newAnswerCount === contentUrl.length) {
-        navigation.navigate('WIN_SCREEN', { title })
+        navigation.navigate('WIN_SCREEN', { title: cardTitle })
         return // Exit the function early so the rest of the code isn't executed
       }
 
