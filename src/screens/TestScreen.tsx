@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { StyleSheet, View, FlatList } from 'react-native'
 import * as Progress from 'react-native-progress'
 import Sound from 'react-native-sound'
-import { pink, errorSound, getRandomItem, green, shuffle, W, white } from '../constants'
+import { pink, errorSound, green, shuffle, W, white } from '../constants'
 import { emojiT } from '../types/LessonTypes'
 import { ButtonEmoji, Text, Space, Header, Loading, Background } from '../components'
 import { s, vs } from 'react-native-size-matters'
@@ -55,45 +55,39 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   const dispatch = useDispatch()
   const { dark } = useTheme()
 
-  // useEffect(() => {
-  //   // Создание звуковых объектов для каждого элемента
-  //   const soundObjects = contentUrl?.map(
-  //     url =>
-  //       new Sound(url, Sound.MAIN_BUNDLE, error => {
-  //         if (error) {
-  //           console.log('failed to load the sound', error)
-  //         }
-  //       })
-  //   )
-  //   setSounds(soundObjects || [])
-  // }, [contentUrl])
-
-  const handlePlay = useCallback(() => {
-    const currentSound = sounds[answer]
-    if (currentSound) {
-      currentSound.play(success => {
-        if (success) {
-          console.log('successfully finished playing')
-        } else {
-          console.log('playback failed due to audio decoding errors')
-        }
-      })
-    }
-  }, [answer, sounds])
-
-  const shake = () => {
+  const shake = useRef(() => {
     const shuff = contentUrl ? shuffle(contentUrl) : []
     const sliceArray = shuff.splice(0, 9)
     let random = shuffle(sliceArray)[0]
     if (random === displayName) {
       random = shuffle(sliceArray)[1]
     }
-    setNextStep(random) // Установка следующего шага
     return { random, sliceArray }
-  }
+  })
+  useEffect(() => {
+    if (!displayName.url) return
+
+    const sound = new Sound(displayName.url, Sound.MAIN_BUNDLE, error => {
+      if (error) {
+        console.log('failed to load the sound', error)
+        return
+      }
+
+      // Воспроизведение звука
+      sound.play(success => {
+        if (!success) {
+          console.log('Sound did not play successfully')
+        }
+      })
+    })
+
+    return () => {
+      sound.release()
+    }
+  }, [displayName])
 
   useEffect(() => {
-    const { random, sliceArray } = shake()
+    const { random, sliceArray } = shake.current()
     setDisplayName(random)
     updateData(sliceArray)
     setLoad(false)
@@ -103,40 +97,44 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   }, [navigation])
 
   useEffect(() => {
-    if (answer === contentUrl?.length) {
-      navigation.navigate('WIN_SCREEN', { title })
+    if (displayName.title) {
+      const { random } = shake.current()
+      setNextStep(random)
     }
-  }, [answer, contentUrl, navigation])
+  }, [displayName])
+
+  const handlePlay = useCallback(() => {
+    const currentSound = sounds[answer]
+    if (currentSound) {
+      currentSound.play()
+    }
+  }, [answer, sounds])
 
   const onChoice = (title: string) => {
-    const { random, sliceArray } = shake()
+    const { random, sliceArray } = shake.current()
     if (title === displayName.title) {
-      setAnswer(answer + 1)
+      const newAnswerCount = answer + 1
+      setAnswer(newAnswerCount)
+
+      // Check if we've answered all the questions correctly
+      if (contentUrl && newAnswerCount === contentUrl.length) {
+        navigation.navigate('WIN_SCREEN', { title })
+        return // Exit the function early so the rest of the code isn't executed
+      }
+
       setBool(true)
       updateData(sliceArray)
       setDisplayName(random)
-      var whoosh = new Sound(nextStep.url, Sound.MAIN_BUNDLE, error => {
+
+      var whoosh = new Sound(random.url, Sound.MAIN_BUNDLE, error => {
         if (error) {
           console.log('failed to load the sound', error)
           return
         }
-        // Звук успешно загружен
-        console.log(
-          'duration in seconds: ' +
-            whoosh.getDuration() +
-            'number of channels: ' +
-            whoosh.getNumberOfChannels()
-        )
-
-        // Воспроизведение звука с обратным вызовом onEnd
-        whoosh.play(success => {
-          if (success) {
-            console.log('successfully finished playing')
-          } else {
-            console.log('playback failed due to audio decoding errors')
-          }
-        })
+        whoosh.play()
       })
+
+      setNextStep(shake.current().random)
     } else {
       setAnswer(0)
       setBool(false)
@@ -159,6 +157,9 @@ export function TestScreen({ navigation, route }: TestScreenT) {
 
   const progress = contentUrl ? answer / contentUrl.length : 0
 
+  console.log('Текущий шаг:', displayTitle)
+  console.log('Следующий шаг:', nextStep.title)
+
   return (
     <Background>
       {load ? (
@@ -174,6 +175,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
             title={displayTitle}
           />
           <View>
+            <Space height={vs(120)} />
             <View style={styles.sub}>
               <Text oneColor={white} h8 title={displayTitle} />
             </View>
@@ -211,7 +213,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
               )}
               keyExtractor={keyExtractor}
             />
-            <Space height={bottom + vs(60)} />
+            <Space height={bottom + vs(40)} />
           </View>
         </View>
       )}
