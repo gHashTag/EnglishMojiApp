@@ -51,9 +51,9 @@ interface ButtonEmojiProps {
 const ButtonEmoji = memo<ButtonEmojiProps>(({ name, onPress, viewStyle, color }) => {
   const { container, pink, blue, iconBg, emoji } = styles
   const { dark } = useTheme()
-  console.log('dark', dark)
+
   const backgroundColor = dark ? black : color
-  console.log('backgroundColor', backgroundColor)
+
   return (
     <TouchableOpacity onPress={onPress} style={[container, viewStyle]}>
       <View style={[blue, { backgroundColor: white }]}>

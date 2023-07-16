@@ -1,15 +1,11 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { StyleSheet, View, FlatList } from 'react-native'
 import * as Progress from 'react-native-progress'
+import Sound from 'react-native-sound'
 import { pink, errorSound, getRandomItem, green, shuffle, W, white } from '../constants'
 import { emojiT } from '../types/LessonTypes'
 import { ButtonEmoji, Text, Space, Header, Loading, Background } from '../components'
 import { s, vs } from 'react-native-size-matters'
-import Animated, {
-  useAnimatedStyle,
-  useSharedValue,
-  withTiming
-} from 'react-native-reanimated'
 import { RouteProp, useTheme } from '@react-navigation/native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { useDispatch } from 'react-redux'
@@ -31,45 +27,68 @@ type TestScreenT = {
   route: ProfileScreenRouteProp
 }
 
+const defautState = {
+  id: 0,
+  name: '',
+  title: ' ',
+  url: ''
+}
+
 export function TestScreen({ navigation, route }: TestScreenT) {
   const lessonData = route.params.lessonData
   const title = route.params.lessonData.cardTitle
   const contentUrl = lessonData.sections[1].contentUrl
+
   // STATES
   const [bool, setBool] = useState<boolean>(true)
+  const [nextStep, setNextStep] = useState<emojiT>(defautState)
   const [load, setLoad] = useState(true)
-  const defautState = {
-    id: 0,
-    name: '',
-    title: ' ',
-    url: ''
-  }
 
   const [randomData, updateData] = useState<emojiT[]>([defautState])
   const [displayName, setDisplayName] = useState<emojiT>(defautState)
   const [count, setCount] = useState<number>(0)
   const [answer, setAnswer] = useState<number>(0)
+  const [sounds, setSounds] = useState<Sound[]>([])
+
   // OTHER HOOKS
   const { bottom } = useSafeAreaInsets()
   const dispatch = useDispatch()
   const { dark } = useTheme()
 
+  // useEffect(() => {
+  //   // Создание звуковых объектов для каждого элемента
+  //   const soundObjects = contentUrl?.map(
+  //     url =>
+  //       new Sound(url, Sound.MAIN_BUNDLE, error => {
+  //         if (error) {
+  //           console.log('failed to load the sound', error)
+  //         }
+  //       })
+  //   )
+  //   setSounds(soundObjects || [])
+  // }, [contentUrl])
+
   const handlePlay = useCallback(() => {
-    // if (soundRef.current) {
-    //   console.log('soundRef.current', soundRef.current)
-    //   soundRef.current.play(() => {})
-    // }
-  }, [])
+    const currentSound = sounds[answer]
+    if (currentSound) {
+      currentSound.play(success => {
+        if (success) {
+          console.log('successfully finished playing')
+        } else {
+          console.log('playback failed due to audio decoding errors')
+        }
+      })
+    }
+  }, [answer, sounds])
 
   const shake = () => {
     const shuff = contentUrl ? shuffle(contentUrl) : []
     const sliceArray = shuff.splice(0, 9)
-    let random
-    random = shuffle(sliceArray)[0]
+    let random = shuffle(sliceArray)[0]
     if (random === displayName) {
       random = shuffle(sliceArray)[1]
     }
-
+    setNextStep(random) // Установка следующего шага
     return { random, sliceArray }
   }
 
@@ -96,11 +115,34 @@ export function TestScreen({ navigation, route }: TestScreenT) {
       setBool(true)
       updateData(sliceArray)
       setDisplayName(random)
+      var whoosh = new Sound(nextStep.url, Sound.MAIN_BUNDLE, error => {
+        if (error) {
+          console.log('failed to load the sound', error)
+          return
+        }
+        // Звук успешно загружен
+        console.log(
+          'duration in seconds: ' +
+            whoosh.getDuration() +
+            'number of channels: ' +
+            whoosh.getNumberOfChannels()
+        )
+
+        // Воспроизведение звука с обратным вызовом onEnd
+        whoosh.play(success => {
+          if (success) {
+            console.log('successfully finished playing')
+          } else {
+            console.log('playback failed due to audio decoding errors')
+          }
+        })
+      })
     } else {
       setAnswer(0)
       setBool(false)
       setCount(count + 1)
       updateData(shuffle(randomData))
+      errorSound.play()
     }
   }
 
