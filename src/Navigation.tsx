@@ -9,10 +9,9 @@ import { black, darkTheme, gray, lightTheme, navRef, white } from './constants'
 import { MainScreen, WinScreen, LearnScreen, SelectSсreen, TestScreen } from './screens'
 import { BottomTabBar } from './components'
 import { StatusBar, useColorScheme } from 'react-native'
-import { useTypedSelector } from './store'
 import SystemNavigationBar from 'react-native-system-navigation-bar'
 import Orientation from 'react-native-orientation-locker'
-import { LessonData, SectionT, allPartsT, questionsT } from './types/LessonTypes'
+import { LessonData, allPartsT, questionsT } from './types/LessonTypes'
 
 export type RootStackParamList = {
   UI: undefined
@@ -34,14 +33,14 @@ const BottomTab = createBottomTabNavigator<RootBottomTabParamList>()
 
 export function Navigation() {
   const isDark = useColorScheme() === 'dark'
-  const bgState = useTypedSelector(state => state.bgColor.bgWithScheme)
+
   const barStyle = isDark ? 'light-content' : 'dark-content'
-  const bg = bgState ? bgState : isDark ? black : white
+  const bg = isDark ? black : white
   // SystemColors
   useEffect(() => {
     SystemNavigationBar.setNavigationColor(bg, !isDark ? false : true)
     SystemNavigationBar.setNavigationBarDividerColor(gray)
-  }, [bg, bgState, isDark])
+  }, [bg, isDark])
   useEffect(() => {
     Orientation.lockToPortrait()
   }, [])

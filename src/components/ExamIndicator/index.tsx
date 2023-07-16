@@ -8,10 +8,11 @@ import { white } from '../../constants'
 import { useNavigation } from '@react-navigation/native'
 import { Text } from '../TextComponents'
 import { ButtonVectorIcon } from '../Buttons'
-import { RootStackParamList } from '../../types'
+
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { toggleColor } from '../../slices'
 import { useTranslation } from 'react-i18next'
+import { RootStackParamList } from '../../Navigation'
 
 export function ExamIndicator({ part, questions, dark = false }: ExamIndicatorT) {
   const { t } = useTranslation()

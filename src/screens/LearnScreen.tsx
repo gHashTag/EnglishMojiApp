@@ -11,7 +11,7 @@ import {
 } from '../components'
 import Emoji from 'react-native-emoji'
 import { s, vs } from 'react-native-size-matters'
-import { goBack, shuffle, white } from '../constants'
+import { goBack, shuffle, white, winSound } from '../constants'
 import { emojiT } from '../types/LessonTypes'
 // import Sound from 'react-native-sound'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
@@ -56,7 +56,7 @@ export function LearnScreen({ navigation, route }: LearnScreenT) {
           setCurEmoji(emojiData[curIndex.current])
           curIndex.current = curIndex.current + 1
         } else {
-          // winSound.play()
+          winSound.play()
           goBack()
         }
       }, 4500 - speed * 29)

@@ -6,10 +6,11 @@ import Unicorn from '../../assets/gif/unicorn.gif'
 import { s, vs } from 'react-native-size-matters'
 import { W, white, winSound } from '../constants'
 import { useDispatch } from 'react-redux'
-import { incrementSection, saveResult } from '../slices'
+import { saveResult } from '../slices'
 import { RouteProp, useFocusEffect } from '@react-navigation/native'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../Navigation'
+import { themeT } from '../types/LessonTypes'
 
 type ProfileScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
@@ -28,14 +29,14 @@ function WinScreen({ navigation, route }: WinScreenT) {
   const dispatch = useDispatch()
   useFocusEffect(
     useCallback(() => {
-      // winSound.play()
+      winSound.play()
     }, [])
   )
   const onExit = () => {
     navigation.pop(3)
-    // dispatch(saveResult({ title }))
-    // dispatch(incrementSection())
+    dispatch(saveResult({ part: title as themeT }))
   }
+  const { gifStyle, gifContainer } = styles
   return (
     <Background>
       <Header onPressL={onExit} nameIconL=":back:" textColor="white" title="Победа" />
@@ -70,6 +71,5 @@ const styles = StyleSheet.create({
     overflow: 'hidden'
   }
 })
-const { gifStyle, gifContainer } = styles
 
 export { WinScreen }

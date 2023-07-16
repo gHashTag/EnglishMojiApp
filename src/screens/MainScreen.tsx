@@ -14,7 +14,6 @@ import { Button, useColorScheme } from 'react-native'
 import { lessonData } from '../EnForKids/Main'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../Navigation'
-import { RouteProp } from '@react-navigation/native'
 
 const resExam: questionsT[] = require('../EnForKids/examData/examEn.json')
 

@@ -1,10 +1,10 @@
 import { createNavigationContainerRef } from '@react-navigation/native'
 import { Dimensions, Linking, Platform } from 'react-native'
 import Sound from 'react-native-sound'
-import { initLessonData, toggleColor } from './slices'
-import { store } from './store'
-import { LessonData, SectionT, emojiT } from './types/LessonTypes'
+
+import { emojiT } from './types/LessonTypes'
 import { allPartsT } from './types/LessonTypes'
+import { RootStackParamList } from './Navigation'
 
 // NAVIGATION
 export const navRef = createNavigationContainerRef<RootStackParamList>()
@@ -15,9 +15,9 @@ export const goToUI = () => {
   }
 }
 
-export const goBack = n => {
+export const goBack = () => {
   if (navRef.isReady()) {
-    navRef.goBack(n)
+    navRef.goBack()
   }
 }
 
@@ -144,20 +144,6 @@ export const randomNumber = (min: number, max: number) => {
 export function getRandomItem(arr: emojiT[]): emojiT {
   return arr[Math.floor(Math.random() * arr.length)]
 }
-
-export const handlePressCard = (
-  color: allPartsT,
-  sections: SectionT[],
-  cardName: string,
-  id: number
-) => {
-  store.dispatch(toggleColor(color))
-  store.dispatch(initLessonData({ sections, cardName, part: color, id }))
-  if (navRef.isReady()) {
-    navRef.navigate('SELECT_SCREEN')
-  }
-}
-
 export const openURL = () => {
   Linking.openURL(
     'https://raw.githubusercontent.com/gHashTag/PrivacyPolicy/master/EnglishMoji/en.md'

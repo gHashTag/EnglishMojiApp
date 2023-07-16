@@ -1,7 +1,7 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
 import { DragAndDropReducer } from './components/QuestionComponents/DragVariant/DragAndDropSlice'
 import { TypedUseSelectorHook, useDispatch, useSelector, useStore } from 'react-redux'
-import { sectionReducer, bgColorReducer, profileReducer, tabBarReducer } from './slices'
+import { profileReducer, tabBarReducer } from './slices'
 import {
   persistStore,
   persistReducer,
@@ -19,23 +19,29 @@ const profileConfig = {
   version: 1,
   storage: AsyncStorage
 }
+
+let middlewareArray = getDefaultMiddleware({
+  serializableCheck: {
+    ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER]
+  }
+})
+
+if (__DEV__) {
+  const createFlipperDebugger = require('redux-flipper').default
+  middlewareArray.push(createFlipperDebugger())
+}
+
 const persistedProfileReducer = persistReducer(profileConfig, profileReducer)
 
 export const store = configureStore({
   reducer: {
     DragAndDrop: DragAndDropReducer,
-    bgColor: bgColorReducer,
-    section: sectionReducer,
     profile: persistedProfileReducer,
     tabBar: tabBarReducer
   },
-  middleware: getDefaultMiddleware =>
-    getDefaultMiddleware({
-      serializableCheck: {
-        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER]
-      }
-    })
+  middleware: middlewareArray
 })
+
 export let persistor = persistStore(store)
 
 export type RootState = ReturnType<typeof store.getState>

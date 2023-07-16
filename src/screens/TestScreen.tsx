@@ -2,14 +2,13 @@ import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { StyleSheet, View, FlatList } from 'react-native'
 import * as Progress from 'react-native-progress'
 import Sound from 'react-native-sound'
-import { pink, errorSound, green, shuffle, W, white } from '../constants'
+import { pink, errorSound, green, shuffle, W, white, goBack } from '../constants'
 import { emojiT } from '../types/LessonTypes'
 import { ButtonEmoji, Text, Space, Header, Loading, Background } from '../components'
 import { s, vs } from 'react-native-size-matters'
 import { RouteProp, useTheme } from '@react-navigation/native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { useDispatch } from 'react-redux'
-import { goPrevious } from '../slices'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../Navigation'
 
@@ -37,22 +36,21 @@ const defautState = {
 export function TestScreen({ navigation, route }: TestScreenT) {
   const lessonData = route.params.lessonData
   const title = route.params.lessonData.cardTitle
-  const contentUrl = lessonData.sections[1].contentUrl
+  const contentUrl = lessonData.sections[0].contentUrl
 
   // STATES
   const [bool, setBool] = useState<boolean>(true)
-  const [nextStep, setNextStep] = useState<emojiT>(defautState)
   const [load, setLoad] = useState(true)
 
   const [randomData, updateData] = useState<emojiT[]>([defautState])
   const [displayName, setDisplayName] = useState<emojiT>(defautState)
   const [count, setCount] = useState<number>(0)
   const [answer, setAnswer] = useState<number>(0)
-  const [sounds, setSounds] = useState<Sound[]>([])
+  const [voice, setVoice] = useState<Sound | null>(null)
 
   // OTHER HOOKS
   const { bottom } = useSafeAreaInsets()
-  const dispatch = useDispatch()
+
   const { dark } = useTheme()
 
   const shake = useRef(() => {
@@ -80,6 +78,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
         }
       })
     })
+    setVoice(sound)
 
     return () => {
       sound.release()
@@ -96,19 +95,15 @@ export function TestScreen({ navigation, route }: TestScreenT) {
     }
   }, [navigation])
 
-  useEffect(() => {
-    if (displayName.title) {
-      const { random } = shake.current()
-      setNextStep(random)
-    }
-  }, [displayName])
-
   const handlePlay = useCallback(() => {
-    const currentSound = sounds[answer]
-    if (currentSound) {
-      currentSound.play()
+    if (voice) {
+      voice.play(success => {
+        if (!success) {
+          console.log('Sound did not play successfully')
+        }
+      })
     }
-  }, [answer, sounds])
+  }, [voice])
 
   const onChoice = (title: string) => {
     const { random, sliceArray } = shake.current()
@@ -133,8 +128,6 @@ export function TestScreen({ navigation, route }: TestScreenT) {
         }
         whoosh.play()
       })
-
-      setNextStep(shake.current().random)
     } else {
       setAnswer(0)
       setBool(false)
@@ -143,10 +136,6 @@ export function TestScreen({ navigation, route }: TestScreenT) {
       errorSound.play()
     }
   }
-
-  const handleBack = useCallback(() => {
-    dispatch(goPrevious())
-  }, [dispatch])
 
   const keyExtractor = (item: emojiT): string => item.id.toString()
   const displayTitle = displayName
@@ -157,9 +146,6 @@ export function TestScreen({ navigation, route }: TestScreenT) {
 
   const progress = contentUrl ? answer / contentUrl.length : 0
 
-  console.log('Текущий шаг:', displayTitle)
-  console.log('Следующий шаг:', nextStep.title)
-
   return (
     <Background>
       {load ? (
@@ -169,7 +155,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
           <Header
             textColor={dark ? pink : white}
             nameIconL=":back:"
-            onPressL={handleBack}
+            onPressL={() => goBack()}
             onPressR={handlePlay}
             nameIconR=":loud_sound:"
             title={displayTitle}

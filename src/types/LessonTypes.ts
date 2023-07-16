@@ -1,8 +1,23 @@
 export type allPartsT = 'en' | 'rn' | 'aws' | 'ts' | 'js'
 
+export type themeT =
+  | 'alphabet'
+  | 'numbers'
+  | 'foodanddrinks'
+  | 'animals'
+  | 'activities'
+  | 'clothes'
+  | 'smiles'
+  | 'symbols'
+  | 'objects'
+  | 'travel'
+  | 'time'
+  | 'people'
+  | 'nature'
+
 export interface LessonData {
   id: number
-  cardTitle: string
+  cardTitle: themeT
   cardImage: any
   sections: SectionT[]
 }
