@@ -4,7 +4,7 @@ import { pink, en_gradient, openURL, white } from '../constants'
 
 import { LessonData } from '../types/LessonTypes'
 import { Button, useColorScheme } from 'react-native'
-import { lessonData } from '../EnForKids/Main'
+import { lessonData } from '../data/Main'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../Navigation'
 

@@ -72,7 +72,6 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   useEffect(() => {
     if (!displayName.url) return
     try {
-      console.log('displayName', displayName)
       const sound = new Sound(displayName.url, Sound.MAIN_BUNDLE, error => {
         if (error) {
           console.log('failed to load the sound', error)
@@ -167,7 +166,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
             title={displayTitle}
           />
           <View>
-            <Space height={vs(120)} />
+            <Space height={vs(90)} />
             <View style={styles.sub}>
               <Text oneColor={white} h8 title={displayTitle} />
             </View>

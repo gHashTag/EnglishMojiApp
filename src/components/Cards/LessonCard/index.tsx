@@ -16,7 +16,7 @@ import { black, W, white } from '../../../constants'
 import { useTypedSelector } from '../../../store'
 import { ThemeT } from '../../../types/LessonTypes'
 
-const fallbackImageSource: ImageSourcePropType = require('../../../EnForKids/00-Alphabet/alphabet.png')
+const fallbackImageSource: ImageSourcePropType = require('../../../data/img/alphabet.png')
 
 interface LessonCardT {
   id: number
