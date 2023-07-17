@@ -1,34 +1,31 @@
 import React from 'react'
-import { StyleSheet, TouchableOpacity, View } from 'react-native'
-import { useTypedDispatch, useTypedSelector } from '../../store'
-import { ThemeT, questionsT } from '../../types/LessonTypes'
+import { StyleSheet, View } from 'react-native'
+import { useTypedSelector } from '../../store'
+import { ThemeT } from '../../types/LessonTypes'
 import CircularProgress from 'react-native-circular-progress-indicator'
 import { s } from 'react-native-size-matters'
 import { white } from '../../constants'
-import { useNavigation } from '@react-navigation/native'
+
 import { Text } from '../TextComponents'
 import { ButtonVectorIcon } from '../Buttons'
 
-import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { useTranslation } from 'react-i18next'
-import { RootStackParamList } from '../../Navigation'
 
-export function ExamIndicator({ part, questions, dark = false }: ExamIndicatorT) {
+export function ExamIndicator({ dark = false }: ExamIndicatorT) {
   const { t } = useTranslation()
-  const { navigate } = useNavigation<NativeStackNavigationProp<RootStackParamList>>()
-  const dispatch = useTypedDispatch()
-  const { passed, exam, courseLength } = useTypedSelector(st => st.profile)
-  const isCompleted = exam
-  let percent = 0
-  if (passed[part] && courseLength[part]) {
-    percent = Math.ceil((passed[part].length / courseLength[part]) * 100)
-  }
+  const { passed } = useTypedSelector(st => st.profile)
 
-  const handlePress = () => {
-    if (questions) {
-      navigate('EXAM_SCREEN', { questions, part })
-    }
-  }
+  let totalPassed = 0
+
+  const totalThemes = Object.keys(passed).length
+
+  Object.keys(passed).forEach(key => {
+    const part = key as ThemeT
+    totalPassed += passed[part].filter(lesson => lesson === true).length
+  })
+
+  const percent = Math.round((totalPassed / totalThemes) * 100)
+  const isCompleted = percent === 100 ? true : false
   return (
     <View style={container}>
       <CircularProgress
@@ -50,19 +47,14 @@ export function ExamIndicator({ part, questions, dark = false }: ExamIndicatorT)
         inActiveStrokeColor={white}
         inActiveStrokeOpacity={0.3}
       />
-      {questions && (
-        <>
-          <TouchableOpacity onPress={handlePress} activeOpacity={0.7}>
-            <Text oneColor={dark ? undefined : white} h9 title={t('exam')} />
-          </TouchableOpacity>
-          <ButtonVectorIcon
-            onPress={handlePress}
-            color={dark ? undefined : white}
-            size={s(40)}
-            name={isCompleted ? 'checkbox-outline' : 'checkbox-blank-outline'}
-          />
-        </>
-      )}
+
+      <Text oneColor={dark ? undefined : white} h9 title={t('exam')} />
+
+      <ButtonVectorIcon
+        color={dark ? undefined : white}
+        size={s(40)}
+        name={isCompleted ? 'checkbox-outline' : 'checkbox-blank-outline'}
+      />
     </View>
   )
 }
@@ -78,7 +70,5 @@ const styles = StyleSheet.create({
 const { container } = styles
 
 interface ExamIndicatorT {
-  part: ThemeT
-  questions?: questionsT[]
   dark?: boolean
 }

@@ -36,8 +36,6 @@ export interface Question {
 }
 
 export type questionsT = {
-  // выборать одно, ввести текст ответа, перенести в области кубики, выборка,
-  // соединить варианты между собой, дополнить текст
   type:
     | 'oneChoice'
     | 'input'

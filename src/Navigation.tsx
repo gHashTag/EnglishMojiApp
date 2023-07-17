@@ -23,7 +23,6 @@ export type RootStackParamList = {
   TEST_SCREEN: { lessonData: LessonData }
   WIN_SCREEN: { title: string }
   EXAM_SCREEN: {
-    questions: questionsT[]
     part: ThemeT
   }
 }

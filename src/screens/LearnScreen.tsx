@@ -13,7 +13,7 @@ import Emoji from 'react-native-emoji'
 import { s, vs } from 'react-native-size-matters'
 import { goBack, shuffle, white, winSound } from '../constants'
 import { emojiT } from '../types/LessonTypes'
-// import Sound from 'react-native-sound'
+
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../Navigation'
 import { RouteProp } from '@react-navigation/native'
@@ -26,14 +26,13 @@ type ProfileScreenNavigationProp = NativeStackNavigationProp<
 type ProfileScreenRouteProp = RouteProp<RootStackParamList, 'LEARN_SCREEN'>
 
 type LearnScreenT = {
-  navigation: ProfileScreenNavigationProp
   route: ProfileScreenRouteProp
 }
 
-export function LearnScreen({ navigation, route }: LearnScreenT) {
+export function LearnScreen({ route }: LearnScreenT) {
   const lessonData = route.params.lessonData
+  const contentUrl = lessonData.sections[0].contentUrl
 
-  const contentUrl = lessonData.sections[1].contentUrl
   const [emojiData, setEmojiData] = useState<emojiT[]>()
   const [curEmoji, setCurEmoji] = useState<emojiT>()
   const [speed, setSpeed] = useState<number>(35)

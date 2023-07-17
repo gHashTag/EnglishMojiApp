@@ -11,7 +11,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { useDispatch } from 'react-redux'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../Navigation'
-import { changeCourseLength, saveResult } from '../slices/profileSlice'
+import { saveResult } from '../slices/profileSlice'
 
 const lineW = W / 1.85
 
@@ -117,7 +117,6 @@ export function TestScreen({ navigation, route }: TestScreenT) {
 
       // Check if we've answered all the questions correctly
       if (contentUrl && newAnswerCount === contentUrl.length) {
-        dispatch(changeCourseLength({ part: cardTitle, length }))
         dispatch(saveResult({ part: cardTitle }))
         navigation.navigate('WIN_SCREEN', { title: cardTitle })
         return

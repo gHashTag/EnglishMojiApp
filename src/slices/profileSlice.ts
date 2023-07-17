@@ -16,22 +16,6 @@ const initialState: initT = {
     time: [],
     people: [],
     nature: []
-  },
-  exam: false,
-  courseLength: {
-    alphabet: 0,
-    numbers: 0,
-    foodanddrinks: 0,
-    animals: 0,
-    activities: 0,
-    clothes: 0,
-    smiles: 0,
-    symbols: 0,
-    objects: 0,
-    travel: 0,
-    time: 0,
-    people: 0,
-    nature: 0
   }
 }
 
@@ -46,26 +30,14 @@ export const profileSlice = createSlice({
       } else {
         console.error(`Invalid part: ${part}`)
       }
-    },
-    examComplete: state => {
-      state.exam = true
-    },
-    changeCourseLength: (
-      state,
-      action: PayloadAction<{ part: ThemeT; length: number }>
-    ) => {
-      const { part, length } = action.payload
-      state.courseLength[part] = length
     }
   }
 })
 
-export const { saveResult, examComplete, changeCourseLength } = profileSlice.actions
+export const { saveResult } = profileSlice.actions
 
 export const profileReducer = profileSlice.reducer
 
 interface initT {
   passed: Record<ThemeT, boolean[]>
-  exam: boolean
-  courseLength: Record<ThemeT, number>
 }

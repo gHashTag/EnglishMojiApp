@@ -1,12 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {
-  ExamIndicator,
-  LessonCard,
-  Loading,
-  ScrollContainer,
-  Space,
-  Text
-} from '../components'
+import { ExamIndicator, LessonCard, Loading, ScrollContainer, Space } from '../components'
 import { pink, en_gradient, openURL, white } from '../constants'
 
 import { LessonData } from '../types/LessonTypes'
@@ -14,23 +7,6 @@ import { Button, useColorScheme } from 'react-native'
 import { lessonData } from '../EnForKids/Main'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../Navigation'
-import { useDispatch } from 'react-redux'
-
-const resExam: questionsT[] = require('../EnForKids/examData/examEn.json')
-
-interface questionsT {
-  type:
-    | 'input'
-    | 'oneChoice'
-    | 'drag'
-    | 'manySelect'
-    | 'joinVariants'
-    | 'supplement'
-    | 'emoji'
-  text: string
-  options: string[]
-  correctAnswer: string
-}
 
 type ProfileScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
@@ -43,15 +19,12 @@ type MainSсreenT = {
 
 function MainScreen({ navigation }: MainSсreenT) {
   const [data, setData] = useState<LessonData[]>([])
-  const [examData, setExamData] = useState<questionsT[]>([])
   const [load, setLoad] = useState(true)
   const isDark = useColorScheme() === 'dark'
-  const dispatch = useDispatch()
   const fetchData = async () => {
     try {
       setLoad(true)
       setData(lessonData)
-      setExamData(resExam)
     } catch (error) {
       console.log('error:', error)
     } finally {
@@ -71,7 +44,7 @@ function MainScreen({ navigation }: MainSсreenT) {
   ) : (
     <ScrollContainer bgColor={!isDark ? pink : undefined}>
       <Space height={50} />
-      <ExamIndicator questions={examData} part="en" />
+      <ExamIndicator />
       {data.map((item: LessonData) => {
         return (
           <LessonCard
