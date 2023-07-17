@@ -10,15 +10,6 @@ const lessonData: LessonData[] = [
       {
         type: 'emojiLearn',
         contentUrl: data
-      },
-      {
-        type: 'quest',
-        question: {
-          type: 'emoji',
-          emoji: {
-            dataUrl: data
-          }
-        }
       }
     ]
   }

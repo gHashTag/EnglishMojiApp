@@ -3,7 +3,7 @@ import { StyleSheet, View, FlatList } from 'react-native'
 import * as Progress from 'react-native-progress'
 import Sound from 'react-native-sound'
 import { pink, errorSound, green, shuffle, W, white, goBack } from '../constants'
-import { emojiT, ThemeT } from '../types/LessonTypes'
+import { emojiT } from '../types/LessonTypes'
 import { ButtonEmoji, Text, Space, Header, Loading, Background } from '../components'
 import { s, vs } from 'react-native-size-matters'
 import { RouteProp, useTheme } from '@react-navigation/native'
@@ -38,14 +38,13 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   const lessonData = route.params.lessonData
   const cardTitle = route.params.lessonData.cardTitle
   const dispatch = useDispatch()
-  const title = route.params.lessonData.cardTitle as ThemeT
   const contentUrl = lessonData.sections[0].contentUrl
-  const length = lessonData.sections[1].question.emoji.dataUrl.length
-
+  const usedEmojis = useRef<emojiT[]>([])
   // STATES
   const [bool, setBool] = useState<boolean>(true)
   const [load, setLoad] = useState(true)
-
+  // Add this line near your other state definitions
+  const [pastCorrectAnswers, setPastCorrectAnswers] = useState<emojiT[]>([])
   const [randomData, updateData] = useState<emojiT[]>([defautState])
   const [displayName, setDisplayName] = useState<emojiT>(defautState)
   const [count, setCount] = useState<number>(0)
@@ -58,7 +57,10 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   const { dark } = useTheme()
 
   const shake = useRef(() => {
-    const shuff = contentUrl ? shuffle(contentUrl) : []
+    const remainingEmojis = contentUrl.filter(
+      emoji => !usedEmojis.current.find(u => u.id === emoji.id)
+    ) // NEW: Filter out used emojis
+    const shuff = remainingEmojis ? shuffle(remainingEmojis) : []
     const sliceArray = shuff.splice(0, 9)
     let random = shuffle(sliceArray)[0]
     if (random === displayName) {
@@ -66,26 +68,30 @@ export function TestScreen({ navigation, route }: TestScreenT) {
     }
     return { random, sliceArray }
   })
+
   useEffect(() => {
     if (!displayName.url) return
-
-    const sound = new Sound(displayName.url, Sound.MAIN_BUNDLE, error => {
-      if (error) {
-        console.log('failed to load the sound', error)
-        return
-      }
-
-      // Воспроизведение звука
-      sound.play(success => {
-        if (!success) {
-          console.log('Sound did not play successfully')
+    try {
+      const sound = new Sound(displayName.url, Sound.MAIN_BUNDLE, error => {
+        if (error) {
+          console.log('failed to load the sound', error)
+          return
         }
-      })
-    })
-    setVoice(sound)
 
-    return () => {
-      sound.release()
+        // Воспроизведение звука
+        sound.play(success => {
+          if (!success) {
+            console.log('Sound did not play successfully')
+          }
+        })
+      })
+      setVoice(sound)
+
+      return () => {
+        sound.release()
+      }
+    } catch (error) {
+      console.error('An error occurred:', error)
     }
   }, [displayName])
 
@@ -110,11 +116,13 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   }, [voice])
 
   const onChoice = (name: string) => {
+    usedEmojis.current.push(displayName) // NEW: Add used emoji to the list
+
     const { random, sliceArray } = shake.current()
     if (name === displayName.title) {
       const newAnswerCount = answer + 1
       setAnswer(newAnswerCount)
-
+      setPastCorrectAnswers([...pastCorrectAnswers, displayName])
       // Check if we've answered all the questions correctly
       if (contentUrl && newAnswerCount === contentUrl.length) {
         dispatch(saveResult({ part: cardTitle }))
@@ -126,13 +134,17 @@ export function TestScreen({ navigation, route }: TestScreenT) {
       updateData(sliceArray)
       setDisplayName(random)
 
-      var whoosh = new Sound(random.url, Sound.MAIN_BUNDLE, error => {
-        if (error) {
-          console.log('failed to load the sound', error)
-          return
-        }
-        whoosh.play()
-      })
+      try {
+        var whoosh = new Sound(random?.url, Sound.MAIN_BUNDLE, error => {
+          if (error) {
+            console.log('failed to load the sound', error)
+            throw error // в случае ошибки, переходим к блоку catch
+          }
+          whoosh.play()
+        })
+      } catch (error) {
+        console.error('An error occurred:', error)
+      }
     } else {
       setAnswer(0)
       setBool(false)
@@ -191,7 +203,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
             <FlatList
               numColumns={3}
               style={styles.flatStyle}
-              data={randomData}
+              data={[...randomData, ...pastCorrectAnswers].slice(0, 9)}
               renderItem={({ item }) => (
                 <View style={styles.emojiStyle}>
                   <ButtonEmoji

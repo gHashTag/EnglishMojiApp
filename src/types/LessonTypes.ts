@@ -22,9 +22,8 @@ export interface LessonData {
 
 export type SectionT = {
   type: 'video' | 'markdown' | 'quest' | 'emojiLearn' | 'learn' | 'win'
-  poster?: string // if "video"
-  contentUrl: EmojiDataArray // if "video" or "markdown" or "emojiLearn" or 'learn'
-  question: questionsT // if  any
+  poster?: string
+  contentUrl: EmojiDataArray
   header?: string
 }
 
