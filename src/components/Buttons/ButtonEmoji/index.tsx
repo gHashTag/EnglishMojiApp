@@ -1,5 +1,5 @@
-import React, { memo } from 'react'
-import { Platform, StyleProp, ViewStyle, View, TouchableOpacity } from 'react-native'
+import React, { memo, useState } from 'react'
+import { Platform, StyleProp, ViewStyle, View, Pressable } from 'react-native'
 import { ScaledSheet, ms } from 'react-native-size-matters'
 import Emoji from 'react-native-emoji'
 import { useTheme } from '@react-navigation/native'
@@ -52,22 +52,33 @@ const ButtonEmoji = memo<ButtonEmojiProps>(({ name, onPress, viewStyle, color })
   const { container, pink, blue, iconBg, emoji } = styles
   const { dark } = useTheme()
 
-  const backgroundColor = dark ? black : color
+  const handlePress = () => {
+    if (onPress) onPress()
+  }
 
   return (
-    <TouchableOpacity onPress={onPress} style={[container, viewStyle]}>
-      <View style={[blue, { backgroundColor: white }]}>
-        <View style={[pink, { backgroundColor: backgroundColor }]}>
-          <View style={[iconBg, { backgroundColor }]}>
-            {name.length > 3 ? (
-              <Emoji name={name} style={emoji} />
-            ) : (
-              <Text h5 title={name} colors={white} />
-            )}
+    <Pressable
+      onPress={handlePress}
+      style={({ pressed }) => [
+        container,
+        viewStyle,
+        { backgroundColor: dark ? black : color }
+      ]}
+    >
+      {({ pressed }) => (
+        <View style={[blue, { backgroundColor: white }]}>
+          <View style={[pink, { backgroundColor: pressed ? white : color }]}>
+            <View style={[iconBg, { backgroundColor: 'transparent' }]}>
+              {name.length > 3 ? (
+                <Emoji name={name} style={emoji} />
+              ) : (
+                <Text h5 title={name} colors={white} />
+              )}
+            </View>
           </View>
         </View>
-      </View>
-    </TouchableOpacity>
+      )}
+    </Pressable>
   )
 })
 

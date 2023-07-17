@@ -7,6 +7,7 @@ import { Button, useColorScheme } from 'react-native'
 import { lessonData } from '../data/Main'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../Navigation'
+import { persistor } from '../store'
 
 type ProfileScreenNavigationProp = NativeStackNavigationProp<
   RootStackParamList,
@@ -23,6 +24,7 @@ function MainScreen({ navigation }: MainSсreenT) {
   const isDark = useColorScheme() === 'dark'
   const fetchData = async () => {
     try {
+      await persistor.purge()
       setLoad(true)
       setData(lessonData)
     } catch (error) {

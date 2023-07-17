@@ -3,19 +3,19 @@ import { ThemeT } from '../types/LessonTypes'
 
 const initialState: initT = {
   passed: {
-    alphabet: [],
-    numbers: [],
-    foodanddrinks: [],
-    animals: [],
-    activities: [],
-    clothes: [],
-    smiles: [],
-    symbols: [],
-    objects: [],
-    travel: [],
-    time: [],
-    people: [],
-    nature: []
+    alphabet: [false],
+    numbers: [false],
+    foodanddrinks: [false],
+    animals: [false],
+    activities: [false],
+    clothes: [false],
+    smiles: [false],
+    symbols: [false],
+    objects: [false],
+    travel: [false],
+    time: [false],
+    people: [false],
+    nature: [false]
   }
 }
 

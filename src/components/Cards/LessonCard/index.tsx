@@ -46,7 +46,9 @@ export function LessonCard({
 }: LessonCardT) {
   const text = darkText ? black : white
   const [loadImg, setLoadImg] = useState<boolean>(true)
-  const isComplete = useTypedSelector(st => st.profile.passed[part][0] === true)
+  const isComplete = useTypedSelector(st =>
+    st.profile.passed.hasOwnProperty(part) ? st.profile.passed[part][0] === true : false
+  )
 
   return (
     <Gradient
