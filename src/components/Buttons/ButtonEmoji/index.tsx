@@ -62,7 +62,7 @@ const ButtonEmoji = memo<ButtonEmojiProps>(({ name, onPress, viewStyle, color })
             {name.length > 3 ? (
               <Emoji name={name} style={emoji} />
             ) : (
-              <Text h0 title={name} colors={white} />
+              <Text h5 title={name} colors={white} />
             )}
           </View>
         </View>

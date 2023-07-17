@@ -9,7 +9,7 @@ import {
 } from 'react-native'
 import { useTheme } from '@react-navigation/native'
 import { s } from 'react-native-size-matters'
-import { primary, secondary, Etna, KLMN, Narrow, white } from '../../../constants'
+import { primary, secondary, Etna, KLMN, Narrow, white, black } from '../../../constants'
 import { string } from 'yup'
 
 const styles = StyleSheet.create({
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   h3Style: {
-    fontSize: s(16),
+    fontSize: s(20),
     fontFamily: Narrow
   },
   h4Style: {
@@ -120,13 +120,7 @@ export const Text = ({
   const isDark = scheme === 'dark'
   const textShadowColor = isDark ? primary : secondary
 
-  const curColor = oneColor
-    ? oneColor
-    : colors
-    ? isDark
-      ? colors.light
-      : colors.dark
-    : text
+  const curColor = oneColor ? oneColor : colors ? (isDark ? black : white) : text
 
   const stylesArray = Object.keys(fontType)
     .filter(key => fontType[key as FontTypeKeys])

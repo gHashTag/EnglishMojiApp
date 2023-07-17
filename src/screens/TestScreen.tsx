@@ -72,6 +72,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   useEffect(() => {
     if (!displayName.url) return
     try {
+      console.log('displayName', displayName)
       const sound = new Sound(displayName.url, Sound.MAIN_BUNDLE, error => {
         if (error) {
           console.log('failed to load the sound', error)
@@ -133,18 +134,6 @@ export function TestScreen({ navigation, route }: TestScreenT) {
       setBool(true)
       updateData(sliceArray)
       setDisplayName(random)
-
-      try {
-        var whoosh = new Sound(random?.url, Sound.MAIN_BUNDLE, error => {
-          if (error) {
-            console.log('failed to load the sound', error)
-            throw error // в случае ошибки, переходим к блоку catch
-          }
-          whoosh.play()
-        })
-      } catch (error) {
-        console.error('An error occurred:', error)
-      }
     } else {
       setAnswer(0)
       setBool(false)

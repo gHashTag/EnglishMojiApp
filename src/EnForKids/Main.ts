@@ -1,6 +1,7 @@
 import { LessonData } from '../types/LessonTypes'
-import { data as numberData } from './01-Numbers/data'
 import { data as alphabetData } from './00-Alphabet/data'
+import { data as numberData } from './01-Numbers/data'
+import { data as foodData } from './02-Food'
 
 const lessonData: LessonData[] = [
   {
@@ -22,6 +23,17 @@ const lessonData: LessonData[] = [
       {
         type: 'emojiLearn',
         contentUrl: numberData
+      }
+    ]
+  },
+  {
+    id: 2,
+    cardTitle: 'foodanddrinks',
+    cardImage: require('./02-Food/food.png'),
+    sections: [
+      {
+        type: 'emojiLearn',
+        contentUrl: foodData
       }
     ]
   }
