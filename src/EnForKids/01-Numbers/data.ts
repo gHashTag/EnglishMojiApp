@@ -1,4 +1,4 @@
-import { EmojiDataArray, emojiT } from '../../types/LessonTypes'
+import { emojiT } from '../../types/LessonTypes'
 
 const data: emojiT[] = [
   {
