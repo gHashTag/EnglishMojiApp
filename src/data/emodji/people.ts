@@ -321,7 +321,7 @@ const people: emojiT[] = [
     name: ':man-gesturing-no:',
     ru: 'мужчина жестикулирует-нет',
     title: 'man gesturing-no',
-    url: 'man_gesturing-no.mp3'
+    url: 'man_gesturing_no.mp3'
   },
   {
     id: 47,
@@ -342,7 +342,7 @@ const people: emojiT[] = [
     name: ':man-facepalming:',
     ru: 'ладонью по лицу',
     title: 'man-facepalming',
-    url: 'man-facepalming.mp3'
+    url: 'man_facepalming.mp3'
   },
   {
     id: 50,
@@ -377,7 +377,7 @@ const people: emojiT[] = [
     name: ':mrs_claus:',
     ru: 'Снегурочка',
     title: 'mrs. claus',
-    url: 'mrs._claus.mp3'
+    url: 'mrs_claus.mp3'
   },
   {
     id: 55,
@@ -699,7 +699,7 @@ const people: emojiT[] = [
     name: ':woman-gesturing-ok:',
     ru: 'женщина жестикулирует-ок',
     title: 'woman gesturing-ok',
-    url: 'woman_gesturing-ok.mp3'
+    url: 'woman_gesturing_ok.mp3'
   },
   {
     id: 101,
@@ -741,7 +741,7 @@ const people: emojiT[] = [
     name: ':clap:',
     ru: 'хлопая в ладоши',
     title: 'сlapping hands',
-    url: 'сlapping_hands.mp3'
+    url: 'сlap.mp3'
   }
 ]
 

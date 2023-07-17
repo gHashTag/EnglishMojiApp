@@ -155,7 +155,7 @@ const clothes: emojiT[] = [
     id: 25,
     name: ':shirt:',
     title: 't-shirt',
-    url: 't-shirt.mp3'
+    url: 't_shirt.mp3'
   },
   {
     id: 26,

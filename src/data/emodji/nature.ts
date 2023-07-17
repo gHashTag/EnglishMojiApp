@@ -13,7 +13,7 @@ const nature: emojiT[] = [
     name: ':earth_asia:',
     ru: 'Азия-Австралия',
     title: 'Asia-Australia',
-    url: 'asia-australia.mp3'
+    url: 'asia_australia.mp3'
   },
   {
     id: 2,
@@ -160,7 +160,7 @@ const nature: emojiT[] = [
     name: ':earth_africa:',
     ru: 'глобус Европа-Африка',
     title: 'globe europe-africa',
-    url: 'globe_europe-africa.mp3'
+    url: 'globe_europe_africa.mp3'
   },
   {
     id: 23,
@@ -419,7 +419,7 @@ const nature: emojiT[] = [
     name: ':wind_blowing_face:',
     ru: 'дует ветер',
     title: "wind's blowing",
-    url: "wind's_blowing.mp3"
+    url: 'winds_blowing.mp3'
   }
 ]
 

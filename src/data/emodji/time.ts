@@ -90,91 +90,91 @@ const time: emojiT[] = [
     name: ':clock130:',
     ru: 'час тридцать',
     title: 'one-thirty',
-    url: 'one-thirty.mp3'
+    url: 'one_thirty.mp3'
   },
   {
     id: 13,
     name: ':clock230:',
     ru: 'два тридцать',
     title: 'two-thirty',
-    url: 'two-thirty.mp3'
+    url: 'two_thirty.mp3'
   },
   {
     id: 14,
     name: ':clock330:',
     ru: 'три тридцать',
     title: 'three-thirty',
-    url: 'three-thirty.mp3'
+    url: 'three_thirty.mp3'
   },
   {
     id: 15,
     name: ':clock430:',
     ru: 'четыре тридцать',
     title: 'four-thirty',
-    url: 'four-thirty.mp3'
+    url: 'four_thirty.mp3'
   },
   {
     id: 16,
     name: ':clock530:',
     ru: 'пять тридцать',
     title: 'five-thirty',
-    url: 'five-thirty.mp3'
+    url: 'five_thirty.mp3'
   },
   {
     id: 17,
     name: ':clock530:',
     ru: 'пол шестого',
     title: 'five-thirty',
-    url: 'five-thirty.mp3'
+    url: 'five_thirty.mp3'
   },
   {
     id: 18,
     name: ':clock630:',
     ru: 'шесть тридцать',
     title: 'six-thirty',
-    url: 'six-thirty.mp3'
+    url: 'six_thirty.mp3'
   },
   {
     id: 19,
     name: ':clock730:',
     ru: 'семь тридцать',
     title: 'seven-thirty',
-    url: 'seven-thirty.mp3'
+    url: 'seven_thirty.mp3'
   },
   {
     id: 20,
     name: ':clock830:',
     ru: 'восемь тридцать',
     title: 'eight-thirty',
-    url: 'eight-thirty.mp3'
+    url: 'eight_thirty.mp3'
   },
   {
     id: 21,
     name: ':clock930:',
     ru: 'девять тридцать',
     title: 'nine-thirty',
-    url: 'nine-thirty.mp3'
+    url: 'nine_thirty.mp3'
   },
   {
     id: 22,
     name: ':clock1030:',
     ru: 'десять тридцать',
     title: 'ten-thirty',
-    url: 'ten-thirty.mp3'
+    url: 'ten_thirty.mp3'
   },
   {
     id: 23,
     name: ':clock1130:',
     ru: 'одиннадцать тридцать',
     title: 'eleven-thirty',
-    url: 'eleven-thirty.mp3'
+    url: 'eleven_thirty.mp3'
   },
   {
     id: 24,
     name: ':clock1230:',
     ru: 'двенадцать тридцать',
     title: 'twelve-thirty',
-    url: 'twelve-thirty.mp3'
+    url: 'twelve_thirty.mp3'
   }
 ]
 

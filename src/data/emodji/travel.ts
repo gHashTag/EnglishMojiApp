@@ -216,7 +216,7 @@ const travel: emojiT[] = [
     name: ':bullettrain_side:',
     ru: 'высокоскоростной поезд',
     title: 'high-speed train',
-    url: 'high-speed_train.mp3'
+    url: 'high_speed_train.mp3'
   },
   {
     id: 31,

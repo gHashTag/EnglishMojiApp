@@ -482,7 +482,7 @@ const objects: emojiT[] = [
     name: ':package:',
     ru: 'пакет',
     title: 'package',
-    url: 'package.mp3'
+    url: 'pack.mp3'
   },
   {
     id: 71,

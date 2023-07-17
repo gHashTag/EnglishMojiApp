@@ -160,7 +160,7 @@ const symbols: emojiT[] = [
     name: ':e-mail:',
     ru: 'эл. почта',
     title: 'e-mail',
-    url: 'e-mail.mp3'
+    url: 'e_mail.mp3'
   },
   {
     id: 25,
@@ -524,7 +524,7 @@ const symbols: emojiT[] = [
     name: ':star_of_david:',
     ru: 'звезда Давида',
     title: 'star of David',
-    url: 'star_of_David.mp3'
+    url: 'star_of_david.mp3'
   },
   {
     id: 79,

@@ -85,7 +85,7 @@ android {
         applicationId "com.englishmojiapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 8
+        versionCode 10
         versionName "1.2"
     }
 
@@ -116,6 +116,12 @@ android {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
+    }
+}
+
+tasks.whenTaskAdded { task ->
+    if(task.name == "lintVitalAnalyzeRelease") {
+        task.dependsOn "copyReactNativeVectorIconFonts"
     }
 }
 

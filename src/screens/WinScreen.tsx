@@ -5,8 +5,7 @@ import { Background, CenterView, Header, Space, Text } from '../components'
 import Unicorn from '../../assets/gif/unicorn.gif'
 import { s, vs } from 'react-native-size-matters'
 import { W, white, winSound } from '../constants'
-import { useDispatch } from 'react-redux'
-import { saveResult } from '../slices'
+
 import { RouteProp, useFocusEffect } from '@react-navigation/native'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../Navigation'
@@ -26,20 +25,14 @@ type WinScreenT = {
 
 function WinScreen({ navigation, route }: WinScreenT) {
   const title = route.params.title as ThemeT
-  const dispatch = useDispatch()
+
   useFocusEffect(
     useCallback(() => {
       winSound.play()
     }, [])
   )
-  const onExit = () => {
-    navigation.pop(3)
-    try {
-      dispatch(saveResult({ part: title }))
-    } catch (error) {
-      console.log('error', error)
-    }
-  }
+  const onExit = () => navigation.pop(3)
+
   const { gifStyle, gifContainer } = styles
   return (
     <Background>

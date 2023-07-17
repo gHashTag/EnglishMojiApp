@@ -83,7 +83,7 @@ const smiles: emojiT[] = [
     name: ':heart_eyes:',
     ru: 'лицо с сердечными глазами',
     title: 'face with heart-eyes',
-    url: 'face_with_heart-eyes.mp3'
+    url: 'face_with_heart_eyes.mp3'
   },
   {
     id: 12,
@@ -174,7 +174,7 @@ const smiles: emojiT[] = [
     name: ':stuck_out_tongue:',
     ru: 'лицо с высунутым языком',
     title: 'face with stuck-out tongue',
-    url: 'face_with_stuck-out_tongue.mp3'
+    url: 'face_with_stuck_out_tongue.mp3'
   },
   {
     id: 25,
@@ -391,7 +391,7 @@ const smiles: emojiT[] = [
     name: ':upside_down_face:',
     ru: 'перевернутое лицо',
     title: 'upside-down face',
-    url: 'upside-down_face.mp3'
+    url: 'upside_down_face.mp3'
   },
   {
     id: 56,
@@ -433,7 +433,7 @@ const smiles: emojiT[] = [
     name: ':face_with_head_bandage:',
     ru: 'лицо с повязкой на голову',
     title: 'face with head-bandage',
-    url: 'face_with_head-bandage.mp3'
+    url: 'face_with_head_bandage.mp3'
   },
   {
     id: 62,

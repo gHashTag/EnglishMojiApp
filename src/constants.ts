@@ -90,7 +90,7 @@ export const Narrow = '3270Narrow'
 
 export const errorSound = new Sound('error.wav', Sound.MAIN_BUNDLE)
 export const winSound = new Sound('win.mp3', Sound.MAIN_BUNDLE)
-export const clapSound = new Sound('clap.wav', Sound.MAIN_BUNDLE)
+export const clapSound = new Sound('clap.mp3', Sound.MAIN_BUNDLE)
 
 // FETCH
 

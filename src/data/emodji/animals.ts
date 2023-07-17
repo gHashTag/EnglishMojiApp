@@ -329,7 +329,7 @@ const animals: emojiT[] = [
     id: 55,
     name: ':t-rex:',
     title: 't-rex',
-    url: 't-rex.mp3'
+    url: 't_rex.mp3'
   },
   {
     id: 56,

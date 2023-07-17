@@ -105,12 +105,12 @@ export function LearnScreen({ navigation, route }: LearnScreenT) {
           <CenterView>
             <Space height={vs(30)} />
             {isSymbol ? (
-              <Text h1 title={curEmoji.title} />
+              <Text h10 title={curEmoji.title} />
             ) : (
               <Emoji name={curEmoji.name} style={emojiStyle} />
             )}
             <Space height={vs(30)} />
-            <Text oneColor={white} h8 title={curEmoji?.title} />
+            {!isSymbol && <Text oneColor={white} h8 title={curEmoji?.title} />}
           </CenterView>
           <EmojiSlider
             initPercent={speed}

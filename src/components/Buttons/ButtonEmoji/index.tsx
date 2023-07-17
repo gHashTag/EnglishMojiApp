@@ -55,24 +55,20 @@ const ButtonEmoji = memo<ButtonEmojiProps>(({ name, onPress, viewStyle, color })
   const handlePress = () => {
     if (onPress) onPress()
   }
-
+  const backgroundColor = dark ? black : color
   return (
     <Pressable
       onPress={handlePress}
-      style={({ pressed }) => [
-        container,
-        viewStyle,
-        { backgroundColor: dark ? black : color }
-      ]}
+      style={({ pressed }) => [container, viewStyle, { backgroundColor }]}
     >
       {({ pressed }) => (
         <View style={[blue, { backgroundColor: white }]}>
-          <View style={[pink, { backgroundColor: pressed ? white : color }]}>
+          <View style={[pink, { backgroundColor: pressed ? white : backgroundColor }]}>
             <View style={[iconBg, { backgroundColor: 'transparent' }]}>
               {name.length > 3 ? (
                 <Emoji name={name} style={emoji} />
               ) : (
-                <Text h5 title={name} colors={white} />
+                <Text h5 title={name} oneColor={white} />
               )}
             </View>
           </View>

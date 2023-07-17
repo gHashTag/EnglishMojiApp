@@ -25,6 +25,7 @@ export const profileSlice = createSlice({
   reducers: {
     saveResult: (state, action: PayloadAction<{ part: ThemeT }>) => {
       const { part } = action.payload
+
       if (state.passed[part]) {
         state.passed[part][0] = true
       } else {
