@@ -8,7 +8,8 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "build": "cd android && ./gradlew bundleRelease"
+    "build": "cd android && ./gradlew bundleRelease",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.1",
@@ -25,6 +26,8 @@
     "i18next": "^23.1.0",
     "iso-country": "^3.0.0",
     "nanoid": "^4.0.0",
+    "patch-package": "^7.0.2",
+    "postinstall-postinstall": "^2.1.0",
     "react": "18.2.0",
     "react-hook-form": "^7.32.0",
     "react-i18next": "^13.0.0",
