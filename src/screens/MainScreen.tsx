@@ -10,7 +10,7 @@ import {
 import { pink, en_gradient, openURL, white } from '../constants'
 
 import { LessonData } from '../types/LessonTypes'
-import { Button, Text, useColorScheme } from 'react-native'
+import { Text, useColorScheme } from 'react-native'
 import { lessonData } from '../data/Main'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../Navigation'
@@ -68,7 +68,7 @@ function MainScreen({ navigation }: MainSсreenT) {
         )
       })}
       <CenterView>
-        <Text onPress={openURL} style={{ color: white, fontSize: 19 }}>
+        <Text onPress={openURL} style={{ color: white, fontSize: 19 }} testID="welcome">
           Privacy Policy
         </Text>
       </CenterView>

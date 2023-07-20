@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { StyleSheet, View, FlatList } from 'react-native'
 import * as Progress from 'react-native-progress'
 import Sound from 'react-native-sound'
@@ -31,7 +31,7 @@ const defautState = {
   id: 0,
   name: '',
   title: ' ',
-  url: ''
+  url: 'empty.mp3'
 }
 
 export function TestScreen({ navigation, route }: TestScreenT) {
@@ -39,14 +39,14 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   const cardTitle = route.params.lessonData.cardTitle
   const dispatch = useDispatch()
   const contentUrl = lessonData.sections[0].contentUrl
-  const usedEmojis = useRef<emojiT[]>([])
+
   // STATES
   const [bool, setBool] = useState<boolean>(true)
   const [load, setLoad] = useState(true)
   // Add this line near your other state definitions
   const [pastCorrectAnswers, setPastCorrectAnswers] = useState<emojiT[]>([])
   const [randomData, updateData] = useState<emojiT[]>([defautState])
-  const [displayName, setDisplayName] = useState<emojiT>(defautState)
+  const [displayName, setDisplayName] = useState<emojiT | null>(defautState)
   const [count, setCount] = useState<number>(0)
   const [answer, setAnswer] = useState<number>(0)
   const [voice, setVoice] = useState<Sound | null>(null)
@@ -56,23 +56,30 @@ export function TestScreen({ navigation, route }: TestScreenT) {
 
   const { dark } = useTheme()
 
+  const remainingEmojis = useMemo(() => contentUrl, [contentUrl])
+
+  const shuffledEmojis = useMemo(() => shuffle(remainingEmojis), [remainingEmojis])
+  // console.log('shuffledEmojis', shuffledEmojis)
+  const pastEmojis = useRef<emojiT[]>([])
+  console.log('pastEmojis', pastEmojis)
   const shake = useRef(() => {
-    const remainingEmojis = contentUrl.filter(
-      emoji => !usedEmojis.current.find(u => u.id === emoji.id)
-    ) // NEW: Filter out used emojis
-    const shuff = remainingEmojis ? shuffle(remainingEmojis) : []
-    const sliceArray = shuff.splice(0, 9)
-    let random = shuffle(sliceArray)[0]
-    if (random === displayName) {
-      random = shuffle(sliceArray)[1]
-    }
-    return { random, sliceArray }
+    const arrayWithoutPastEmojis: emojiT[] = shuffledEmojis.filter(
+      emoji => !pastEmojis.current.includes(emoji)
+    )
+
+    const trueAnswerArray: emojiT[] = arrayWithoutPastEmojis.slice(0, 9)
+    const shuffleArray = shuffle(trueAnswerArray)
+    const trueAnswer: emojiT = shuffle(trueAnswerArray)[0]
+    console.log('trueAnswer', trueAnswer)
+    pastEmojis.current.push(trueAnswer)
+    return { trueAnswer, shuffleArray }
   })
 
   useEffect(() => {
-    if (!displayName.url) return
     try {
-      const sound = new Sound(displayName.url, Sound.MAIN_BUNDLE, error => {
+      const soundUrl = displayName?.url ? displayName.url : 'empty.mp3'
+      console.log('soundUrl', soundUrl)
+      const sound = new Sound(soundUrl, Sound.MAIN_BUNDLE, error => {
         if (error) {
           console.log('failed to load the sound', error)
           return
@@ -91,14 +98,14 @@ export function TestScreen({ navigation, route }: TestScreenT) {
         sound.release()
       }
     } catch (error) {
-      console.error('An error occurred:', error)
+      console.error('An error sound:', error)
     }
   }, [displayName])
 
   useEffect(() => {
-    const { random, sliceArray } = shake.current()
-    setDisplayName(random)
-    updateData(sliceArray)
+    const { trueAnswer, shuffleArray } = shake.current()
+    setDisplayName(trueAnswer)
+    updateData(shuffleArray)
     setLoad(false)
     return () => {
       setAnswer(0)
@@ -116,10 +123,8 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   }, [voice])
 
   const onChoice = (name: string) => {
-    usedEmojis.current.push(displayName) // NEW: Add used emoji to the list
-
-    const { random, sliceArray } = shake.current()
-    if (name === displayName.title) {
+    const { trueAnswer, shuffleArray } = shake.current()
+    if (name === displayName?.title) {
       const newAnswerCount = answer + 1
       setAnswer(newAnswerCount)
       setPastCorrectAnswers([...pastCorrectAnswers, displayName])
@@ -131,9 +136,10 @@ export function TestScreen({ navigation, route }: TestScreenT) {
       }
 
       setBool(true)
-      updateData(sliceArray)
-      setDisplayName(random)
+      updateData(shuffleArray)
+      setDisplayName(trueAnswer) // Move setDisplayName here
     } else {
+      pastEmojis.current = []
       setAnswer(0)
       setBool(false)
       setCount(count + 1)
@@ -163,7 +169,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
             onPressL={() => goBack()}
             onPressR={handlePlay}
             nameIconR=":loud_sound:"
-            title={displayTitle}
+            title="Test"
           />
           <View>
             <Space height={vs(90)} />

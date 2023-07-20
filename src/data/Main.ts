@@ -1,7 +1,7 @@
 import { LessonData } from '../types/LessonTypes'
 import { alphabet } from './emodji/alphabet'
 import { numbers } from './emodji/numbers'
-import { foodanddrinks } from './emodji/foodanddrinks'
+import { food } from './emodji/food'
 import { animals } from './emodji/animals'
 import { activities } from './emodji/activities'
 import { clothes } from './emodji/clothes'
@@ -38,12 +38,12 @@ const lessonData: LessonData[] = [
   },
   {
     id: 2,
-    cardTitle: 'foodanddrinks',
+    cardTitle: 'food',
     cardImage: require('./img/food.png'),
     sections: [
       {
         type: 'emojiLearn',
-        contentUrl: foodanddrinks
+        contentUrl: food
       }
     ]
   },

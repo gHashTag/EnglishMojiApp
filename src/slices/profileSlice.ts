@@ -5,7 +5,7 @@ const initialState: initT = {
   passed: {
     alphabet: [false],
     numbers: [false],
-    foodanddrinks: [false],
+    food: [false],
     animals: [false],
     activities: [false],
     clothes: [false],

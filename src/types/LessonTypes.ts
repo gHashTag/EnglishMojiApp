@@ -1,7 +1,7 @@
 export type ThemeT =
   | 'alphabet'
   | 'numbers'
-  | 'foodanddrinks'
+  | 'food'
   | 'animals'
   | 'activities'
   | 'clothes'

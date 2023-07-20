@@ -39,7 +39,7 @@ function WinScreen({ navigation, route }: WinScreenT) {
       <Header onPressL={onExit} nameIconL=":back:" textColor="white" title="Win" />
 
       <CenterView>
-        <Text h7 centerText oneColor={white} title={title} />
+        <Text h7 centerText oneColor={white} title={title.toUpperCase()} />
         <Space height={vs(30)} />
         <View style={gifContainer}>
           <Image style={gifStyle} source={Unicorn} />

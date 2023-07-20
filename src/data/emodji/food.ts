@@ -1,6 +1,6 @@
 import { emojiT } from '../../types/LessonTypes'
 
-const foodanddrinks: emojiT[] = [
+const food: emojiT[] = [
   {
     id: 0,
     name: ':green_apple:',
@@ -471,4 +471,4 @@ const foodanddrinks: emojiT[] = [
   }
 ]
 
-export { foodanddrinks }
+export { food }
