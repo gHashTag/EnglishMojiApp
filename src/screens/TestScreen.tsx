@@ -38,7 +38,7 @@ type TestScreenT = {
 
 const defautState = {
   id: 0,
-  name: '',
+  name: '  ',
   title: ' ',
   url: 'empty.mp3'
 }
@@ -87,22 +87,11 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   useEffect(() => {
     try {
       const soundUrl = displayName?.url ? displayName.url : 'empty.mp3'
-
-      const sound = new Sound(soundUrl, Sound.MAIN_BUNDLE, error => {
-        if (error) {
-          captureException(`failed to load the sound: ${error}`)
-          return
-        }
-
-        // Воспроизведение звука
-        sound.play(success => {
-          if (!success) {
-            captureException('Sound did not play successfully')
-          }
-        })
+      const sound = new Sound(soundUrl, Sound.MAIN_BUNDLE, () => {
+        sound.play()
       })
+      sound.play()
       setVoice(sound)
-
       return () => {
         sound.release()
       }
