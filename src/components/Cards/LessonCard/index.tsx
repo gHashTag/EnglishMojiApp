@@ -1,17 +1,10 @@
-import React, { cloneElement, useState } from 'react'
-import {
-  Pressable,
-  StyleSheet,
-  View,
-  Image,
-  TouchableOpacity,
-  ImageSourcePropType
-} from 'react-native'
+import React, { useState } from 'react'
+import { Pressable, StyleSheet, Image, ImageSourcePropType } from 'react-native'
 import Gradient from 'react-native-linear-gradient'
 import { s, vs } from 'react-native-size-matters'
 import Spinner from 'react-native-spinkit'
 import EntypoIcon from 'react-native-vector-icons/Entypo'
-import { Text, ProgressChain, progressElementT } from '../../'
+
 import { black, W, white } from '../../../constants'
 import { useTypedSelector } from '../../../store'
 import { ThemeT } from '../../../types/LessonTypes'
@@ -49,6 +42,8 @@ export function LessonCard({
   const isComplete = useTypedSelector(st =>
     st.profile.passed.hasOwnProperty(part) ? st.profile.passed[part][0] === true : false
   )
+  const { container, bordered, imgStyle, pressableContainer, checkStyle, emptyImg } =
+    styles
 
   return (
     <Gradient
@@ -56,7 +51,7 @@ export function LessonCard({
       start={{ x: 0.25, y: 0.25 }}
       style={[container, border && bordered]}
     >
-      <TouchableOpacity activeOpacity={0.5} style={pressableContainer} onPress={onPress}>
+      <Pressable style={pressableContainer} onPress={onPress}>
         {loadImg && <Spinner type="FadingCircleAlt" color={text} size={s(50)} />}
         <Image
           borderRadius={borderRadius}
@@ -73,7 +68,7 @@ export function LessonCard({
         {isComplete && (
           <EntypoIcon style={checkStyle} color={text} name={'check'} size={s(35)} />
         )}
-      </TouchableOpacity>
+      </Pressable>
     </Gradient>
   )
 }
@@ -83,7 +78,8 @@ const styles = StyleSheet.create({
     borderRadius: borderRadius,
     width: widthCard,
     height: widthCard,
-    marginVertical: vs(15)
+    marginVertical: vs(15),
+    alignSelf: 'center'
   },
   pressableContainer: {
     flex: 1,
@@ -108,5 +104,3 @@ const styles = StyleSheet.create({
     height: 1
   }
 })
-
-const { container, bordered, imgStyle, pressableContainer, checkStyle, emptyImg } = styles
