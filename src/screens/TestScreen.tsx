@@ -1,8 +1,17 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { StyleSheet, View, FlatList } from 'react-native'
+import { StyleSheet, View, FlatList, Button } from 'react-native'
 import * as Progress from 'react-native-progress'
 import Sound from 'react-native-sound'
-import { pink, errorSound, green, shuffle, W, white, goBack } from '../constants'
+import {
+  pink,
+  errorSound,
+  green,
+  shuffle,
+  W,
+  white,
+  goBack,
+  captureException
+} from '../constants'
 import { emojiT } from '../types/LessonTypes'
 import { ButtonEmoji, Text, Space, Header, Loading, Background } from '../components'
 import { s, vs } from 'react-native-size-matters'
@@ -59,9 +68,9 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   const remainingEmojis = useMemo(() => contentUrl, [contentUrl])
 
   const shuffledEmojis = useMemo(() => shuffle(remainingEmojis), [remainingEmojis])
-  // console.log('shuffledEmojis', shuffledEmojis)
+
   const pastEmojis = useRef<emojiT[]>([])
-  console.log('pastEmojis', pastEmojis)
+
   const shake = useRef(() => {
     const arrayWithoutPastEmojis: emojiT[] = shuffledEmojis.filter(
       emoji => !pastEmojis.current.includes(emoji)
@@ -70,7 +79,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
     const trueAnswerArray: emojiT[] = arrayWithoutPastEmojis.slice(0, 9)
     const shuffleArray = shuffle(trueAnswerArray)
     const trueAnswer: emojiT = shuffle(trueAnswerArray)[0]
-    console.log('trueAnswer', trueAnswer)
+
     pastEmojis.current.push(trueAnswer)
     return { trueAnswer, shuffleArray }
   })
@@ -78,17 +87,17 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   useEffect(() => {
     try {
       const soundUrl = displayName?.url ? displayName.url : 'empty.mp3'
-      console.log('soundUrl', soundUrl)
+
       const sound = new Sound(soundUrl, Sound.MAIN_BUNDLE, error => {
         if (error) {
-          console.log('failed to load the sound', error)
+          captureException(`failed to load the sound: ${error}`)
           return
         }
 
         // Воспроизведение звука
         sound.play(success => {
           if (!success) {
-            console.log('Sound did not play successfully')
+            captureException('Sound did not play successfully')
           }
         })
       })
@@ -98,7 +107,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
         sound.release()
       }
     } catch (error) {
-      console.error('An error sound:', error)
+      captureException(error)
     }
   }, [displayName])
 
@@ -116,7 +125,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
     if (voice) {
       voice.play(success => {
         if (!success) {
-          console.log('Sound did not play successfully')
+          captureException('Sound did not play successfully')
         }
       })
     }
@@ -137,7 +146,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
 
       setBool(true)
       updateData(shuffleArray)
-      setDisplayName(trueAnswer) // Move setDisplayName here
+      setDisplayName(trueAnswer)
     } else {
       pastEmojis.current = []
       setAnswer(0)

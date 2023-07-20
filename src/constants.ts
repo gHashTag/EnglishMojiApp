@@ -1,7 +1,7 @@
 import { createNavigationContainerRef } from '@react-navigation/native'
 import { Dimensions, Linking, Platform } from 'react-native'
 import Sound from 'react-native-sound'
-
+import * as Sentry from '@sentry/react-native'
 import { emojiT } from './types/LessonTypes'
 import { ThemeT } from './types/LessonTypes'
 import { RootStackParamList } from './Navigation'
@@ -99,7 +99,7 @@ export const fetchJson = async (url: string) => {
     const res = await (await fetch(url)).json()
     return res
   } catch (error) {
-    handleError(error)
+    captureException(error)
     return []
   }
 }
@@ -114,16 +114,12 @@ export const fetchText = async (url: string) => {
       return ''
     }
   } catch (error) {
-    handleError(error)
+    captureException(error)
     return ''
   }
 }
 
 // FUNCTIONS
-
-export const handleError = (error: any) => {
-  console.log('MY error: ', error)
-}
 
 export function shuffle(array: emojiT[]): emojiT[] {
   return array
@@ -148,4 +144,18 @@ export const openURL = () => {
   Linking.openURL(
     'https://raw.githubusercontent.com/gHashTag/PrivacyPolicy/master/EnglishMoji/en.md'
   ).catch(err => console.error('Failed to open the URL', err))
+}
+
+export const captureException = (error: any) => {
+  if (!error) {
+    console.log(
+      '%c captureException called with messing or incorrect arguments',
+      'background: #555; color: yellow'
+    )
+    return
+  }
+  console.error(`My Error: ${error}`)
+  if (!__DEV__) {
+    Sentry.captureException(error)
+  }
 }

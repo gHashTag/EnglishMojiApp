@@ -7,7 +7,7 @@ import {
   ScrollContainer,
   Space
 } from '../components'
-import { pink, en_gradient, openURL, white } from '../constants'
+import { pink, en_gradient, openURL, white, captureException } from '../constants'
 
 import { LessonData } from '../types/LessonTypes'
 import { Text, useColorScheme } from 'react-native'
@@ -35,7 +35,7 @@ function MainScreen({ navigation }: MainSсreenT) {
       setLoad(true)
       setData(lessonData)
     } catch (error) {
-      console.log('error:', error)
+      captureException(error)
     } finally {
       setLoad(false)
     }

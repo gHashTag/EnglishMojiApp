@@ -9,7 +9,7 @@
     "start": "react-native start",
     "test": "jest",
     "build": "cd android && ./gradlew bundleRelease",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package && cd ios && pod install && cd .."
   },
   "dependencies": {
     "@hookform/resolvers": "^2.9.1",
@@ -22,9 +22,11 @@
     "@react-navigation/native": "^6.0.10",
     "@react-navigation/native-stack": "^6.6.2",
     "@reduxjs/toolkit": "^1.8.2",
+    "@sentry/react-native": "^5.7.1",
     "axios": "^1.4.0",
     "i18next": "^23.1.0",
     "iso-country": "^3.0.0",
+    "lodash": "^4.17.21",
     "nanoid": "^4.0.0",
     "patch-package": "^7.0.2",
     "postinstall-postinstall": "^2.1.0",
@@ -96,5 +98,8 @@
   },
   "engines": {
     "node": ">=16"
+  },
+  "resolutions": {
+    "promise": "^8.0.3"
   }
 }

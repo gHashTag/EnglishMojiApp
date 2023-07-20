@@ -11,7 +11,7 @@ import {
 } from '../components'
 import Emoji from 'react-native-emoji'
 import { s, vs } from 'react-native-size-matters'
-import { goBack, shuffle, white, winSound } from '../constants'
+import { captureException, goBack, shuffle, white, winSound } from '../constants'
 import { emojiT } from '../types/LessonTypes'
 import Sound from 'react-native-sound'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
@@ -62,11 +62,11 @@ export function LearnScreen({ navigation, route }: LearnScreenT) {
             Sound.MAIN_BUNDLE,
             error => {
               if (error) {
-                console.log('failed to load the sound', error)
+                captureException(`failed to load the sound: ${error}`)
               } else {
                 sound.current?.play(success => {
                   if (!success) {
-                    console.log('Sound did not play successfully')
+                    captureException('Sound did not play successfully')
                   }
                 }) // Играем новый звук
               }

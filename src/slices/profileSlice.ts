@@ -1,5 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { ThemeT } from '../types/LessonTypes'
+import { captureException } from '@sentry/react-native'
 
 const initialState: initT = {
   passed: {
@@ -29,7 +30,7 @@ export const profileSlice = createSlice({
       if (state.passed[part]) {
         state.passed[part][0] = true
       } else {
-        console.error(`Invalid part: ${part}`)
+        captureException(`Invalid part: ${part}`)
       }
     }
   }
