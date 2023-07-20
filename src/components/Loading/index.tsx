@@ -4,6 +4,10 @@ import { s } from 'react-native-size-matters'
 import Spinner from 'react-native-spinkit'
 import { primary } from '../../constants'
 
+interface LoadingT {
+  color?: string
+}
+
 export function Loading({ color = primary }: LoadingT) {
   return (
     <View style={container}>
@@ -19,7 +23,3 @@ const styles = StyleSheet.create({
   }
 })
 const { container } = styles
-
-interface LoadingT {
-  color?: string
-}

@@ -3,7 +3,6 @@ import {
   CenterView,
   ExamIndicator,
   LessonCard,
-  Loading,
   ScrollContainer,
   Space
 } from '../components'
@@ -27,17 +26,13 @@ type MainSсreenT = {
 
 function MainScreen({ navigation }: MainSсreenT) {
   const [data, setData] = useState<LessonData[]>([])
-  const [load, setLoad] = useState(true)
   const isDark = useColorScheme() === 'dark'
   const fetchData = async () => {
     try {
       await persistor.purge()
-      setLoad(true)
       setData(lessonData)
     } catch (error) {
       captureException(error)
-    } finally {
-      setLoad(false)
     }
   }
   useEffect(() => {
@@ -50,9 +45,7 @@ function MainScreen({ navigation }: MainSсreenT) {
 
   const bundleVersion = DeviceInfo.getVersion()
   const buildVersion = DeviceInfo.getBuildNumber()
-  return load ? (
-    <Loading color={pink} />
-  ) : (
+  return (
     <ScrollContainer bgColor={!isDark ? pink : undefined}>
       <Space height={50} />
       <ExamIndicator />

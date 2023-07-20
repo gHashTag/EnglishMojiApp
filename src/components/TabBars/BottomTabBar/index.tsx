@@ -3,11 +3,11 @@ import { useTheme } from '@react-navigation/native'
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import { mvs, s, vs } from 'react-native-size-matters'
+import { s, vs } from 'react-native-size-matters'
 import { useTypedSelector } from '../../../store'
 import { Tab } from '../Tab'
 
-export function BottomTabBar({ state, descriptors, navigation }: BottomTabBarProps) {
+export function BottomTabBar({ state, navigation }: BottomTabBarProps) {
   const { index, routes } = state
   const { bottom } = useSafeAreaInsets()
   const handlePress = (name: string, isFocused: boolean) => {
@@ -19,9 +19,7 @@ export function BottomTabBar({ state, descriptors, navigation }: BottomTabBarPro
     }
   }
   const { lineColor } = useTypedSelector(st => st.tabBar)
-  const {
-    colors: { border }
-  } = useTheme()
+
   const paddingBottom = bottom + s(5)
   return (
     <View style={[tabContainer, { paddingBottom, borderColor: lineColor }]}>
