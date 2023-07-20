@@ -99,8 +99,5 @@
   },
   "engines": {
     "node": ">=16"
-  },
-  "resolutions": {
-    "promise": "^8.0.3"
   }
 }

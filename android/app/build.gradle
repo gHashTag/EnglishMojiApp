@@ -76,17 +76,16 @@ def jscFlavor = 'org.webkit:android-jsc:+'
 
 
 apply from: "../../node_modules/@sentry/react-native/sentry.gradle"
+
 android {
-    ndkVersion rootProject.ext.ndkVersion
-
-    compileSdkVersion rootProject.ext.compileSdkVersion
-
     namespace "com.englishmojiapp"
+    ndkVersion rootProject.ext.ndkVersion
+    compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "com.englishmojiapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 16
+        versionCode 17
         versionName "1.4"
     }
 
