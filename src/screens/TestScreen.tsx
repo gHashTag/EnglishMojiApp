@@ -155,6 +155,8 @@ export function TestScreen({ navigation, route }: TestScreenT) {
 
   const progress = contentUrl ? answer / contentUrl.length : 0
 
+  const combinedData = [...new Set([...randomData, ...pastCorrectAnswers])].slice(0, 9)
+
   return (
     <Background>
       {load ? (
@@ -195,7 +197,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
             <FlatList
               numColumns={3}
               style={styles.flatStyle}
-              data={[...randomData, ...pastCorrectAnswers].slice(0, 9)}
+              data={combinedData}
               renderItem={({ item }) => (
                 <View style={styles.emojiStyle}>
                   <ButtonEmoji
