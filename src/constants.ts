@@ -1,6 +1,6 @@
 import { createNavigationContainerRef } from '@react-navigation/native'
 import { Dimensions, Linking, Platform } from 'react-native'
-import Sound from 'react-native-sound'
+import TrackPlayer from 'react-native-track-player';
 import * as Sentry from '@sentry/react-native'
 import { emojiT } from './types/LessonTypes'
 import { ThemeT } from './types/LessonTypes'
@@ -88,36 +88,43 @@ export const Narrow = '3270Narrow'
 
 // SOUNDS
 
-export const errorSound = new Sound('error.wav', Sound.MAIN_BUNDLE)
-export const winSound = new Sound('win.mp3', Sound.MAIN_BUNDLE)
-export const clapSound = new Sound('clap.mp3', Sound.MAIN_BUNDLE)
+const soundMap: { [key: string]: any } = {
+  errorSound: 'error.wav',
+  winSound: 'win.mp3',
+  clapSound: 'clap.mp3',
+};
 
-// FETCH
+export const initTracks = async () => {
+  await TrackPlayer.add([
+    { id: 'errorSound', url: soundMap['errorSound'], title: 'Error Sound', artist: 'App' },
+    { id: 'winSound', url: soundMap['winSound'], title: 'Win Sound', artist: 'App' },
+    { id: 'clapSound', url: soundMap['clapSound'], title: 'Clap Sound', artist: 'App' },
+  ]);
+};
 
-export const fetchJson = async (url: string) => {
-  try {
-    const res = await (await fetch(url)).json()
-    return res
-  } catch (error) {
-    captureException(error)
-    return []
-  }
-}
+export const playSoundById = async (id: string) => {
+  await TrackPlayer.reset();
+  await TrackPlayer.add({ id, url: soundMap[id], title: `${id} Sound`, artist: 'App' });
+  await TrackPlayer.play();
+};
 
-export const fetchText = async (url: string) => {
-  try {
-    const fetchRes = await fetch(url)
-    if (fetchRes.ok) {
-      const res = await fetchRes.text()
-      return res
-    } else {
-      return ''
-    }
-  } catch (error) {
-    captureException(error)
-    return ''
-  }
-}
+export const errorSound = {
+  play: async () => {
+    await playSoundById('errorSound');
+  },
+};
+
+export const winSound = {
+  play: async () => {
+    await playSoundById('winSound');
+  },
+};
+
+export const clapSound = {
+  play: async () => {
+    await playSoundById('clapSound');
+  },
+};
 
 // FUNCTIONS
 

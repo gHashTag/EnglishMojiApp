@@ -3,11 +3,14 @@ import { LogBox } from 'react-native'
 import './src/i18n'
 import { AppWithProviders } from './src/AppWithProviders'
 import * as Sentry from '@sentry/react-native'
+import TrackPlayer from 'react-native-track-player'
 
 LogBox.ignoreLogs([
   'ViewPropTypes will be removed from React Native',
   'Cannot record touch end without a touch start.'
 ])
+
+TrackPlayer.setupPlayer()
 
 Sentry.init({
   dsn: 'https://11b2332955ba4e05858786b2d38816b8@o749286.ingest.sentry.io/4505561170771968',

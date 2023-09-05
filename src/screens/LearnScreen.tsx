@@ -13,7 +13,7 @@ import Emoji from 'react-native-emoji'
 import { s, vs } from 'react-native-size-matters'
 import { captureException, goBack, shuffle, white, winSound } from '../constants'
 import { emojiT } from '../types/LessonTypes'
-import Sound from 'react-native-sound'
+import TrackPlayer from 'react-native-track-player'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../Navigation'
 import { RouteProp } from '@react-navigation/native'
@@ -33,7 +33,6 @@ type LearnScreenT = {
 export function LearnScreen({ navigation, route }: LearnScreenT) {
   const lessonData = route.params.lessonData
   const contentUrl = lessonData.sections[0].contentUrl
-  const sound = useRef<Sound | null>(null)
   const [emojiData, setEmojiData] = useState<emojiT[]>()
   const [curEmoji, setCurEmoji] = useState<emojiT>()
   const [speed, setSpeed] = useState<number>(35)
@@ -49,40 +48,44 @@ export function LearnScreen({ navigation, route }: LearnScreenT) {
     fetchEmojiData()
   }, [fetchEmojiData])
 
+  // Using useEffect to handle logic after each render or when dependencies change
   useEffect(() => {
+    // Check if we have emojiData
     if (emojiData) {
-      const timerId = setInterval(() => {
+      // Create a timer to perform actions every (4500 - speed * 29) milliseconds
+      const timerId = setInterval(async () => {
+        // If the current index is not the last one in the emojiData array
         if (curIndex.current !== emojiData.length - 1) {
+          // Set the current emoji
           setCurEmoji(emojiData[curIndex.current])
-          if (sound.current) {
-            sound.current.stop() // Останавливаем предыдущий звук
-          }
-          sound.current = new Sound(
-            emojiData[curIndex.current].url,
-            Sound.MAIN_BUNDLE,
-            error => {
-              if (error) {
-                captureException(`failed to load the sound: ${error}`)
-              } else {
-                sound.current?.play(success => {
-                  if (!success) {
-                    captureException('Sound did not play successfully')
-                  }
-                }) // Играем новый звук
-              }
-            }
-          )
+
+          // Reset the player to stop the previous track if it's playing
+          await TrackPlayer.reset()
+
+          // Add the new track and start playing it
+          await TrackPlayer.add({
+            id: curIndex.current.toString(),
+            url: emojiData[curIndex.current].url
+            // Additional fields like artist, title, etc. could be added here
+          })
+          await TrackPlayer.play().catch(error => {
+            // Handle play errors
+            captureException(`Failed to play the track: ${error}`)
+          })
+
+          // Increment the current index by 1
           curIndex.current = curIndex.current + 1
         } else {
+          // If we've reached the last emoji, play the victory sound and navigate to the WIN_SCREEN
           winSound.play()
           navigation.navigate('WIN_SCREEN', { title: lessonData.cardTitle })
         }
       }, 4500 - speed * 29)
+
+      // Reset the player when the component is unmounted
       return () => {
         clearInterval(timerId)
-        if (sound.current) {
-          sound.current.release() // Освобождаем звук, когда компонент размонтирован
-        }
+        TrackPlayer.reset()
       }
     }
   }, [emojiData, speed])

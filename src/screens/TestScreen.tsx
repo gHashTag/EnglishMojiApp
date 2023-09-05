@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { StyleSheet, View, FlatList, Button } from 'react-native'
 import * as Progress from 'react-native-progress'
-import Sound from 'react-native-sound'
+import TrackPlayer from 'react-native-track-player'
 import {
   pink,
   errorSound,
@@ -58,7 +58,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   const [displayName, setDisplayName] = useState<emojiT | null>(defautState)
   const [count, setCount] = useState<number>(0)
   const [answer, setAnswer] = useState<number>(0)
-  const [voice, setVoice] = useState<Sound | null>(null)
+  const [voice, setVoice] = useState<number | null>(null)
 
   // OTHER HOOKS
   const { bottom } = useSafeAreaInsets()
@@ -85,20 +85,76 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   })
 
   useEffect(() => {
-    try {
-      const soundUrl = displayName?.url ? displayName.url : 'empty.mp3'
-      const sound = new Sound(soundUrl, Sound.MAIN_BUNDLE, () => {
-        sound.play()
+    const soundUrl = displayName?.url ? displayName.url : 'empty.mp3'
+
+    const playSound = async () => {
+      await TrackPlayer.add({
+        id: 'trackId',
+        url: soundUrl
       })
-      sound.play()
-      setVoice(sound)
-      return () => {
-        sound.release()
-      }
-    } catch (error) {
-      captureException(error)
+      setVoice(1) // Допустим, 1 - это ID этого трека
+      await TrackPlayer.play()
+    }
+
+    if (displayName) {
+      playSound()
+    }
+
+    return () => {
+      TrackPlayer.reset()
     }
   }, [displayName])
+
+  useEffect(() => {
+    // Регистрация слушателя для событий проигрывателя
+    const listener = TrackPlayer.addEventListener('playback-queue-ended', () => {
+      // Обработка события playback-queue-ended
+    })
+
+    // Возвращение функции очистки, чтобы удалить слушатель при размонтировании компонента
+    return () => {
+      listener.remove()
+    }
+  }, [])
+
+  const handlePlay = useCallback(async () => {
+    const queue = await TrackPlayer.getQueue()
+    console.log(queue)
+
+    if (queue.length > 1 && queue[queue.length - 1].url === 'error.wav') {
+      // Если последний звук в очереди - "error.wav"
+      const soundUrl = queue[queue.length - 2].url // Воспроизводим предпоследний звук
+
+      const playSound = async () => {
+        await TrackPlayer.add({
+          id: 'trackId',
+          url: soundUrl
+        })
+        setVoice(1) // Предположим, что 1 - это ID этого трека
+        await TrackPlayer.play()
+      }
+
+      if (soundUrl) {
+        playSound()
+      }
+    } else {
+      // Если последний звук в очереди не является "error.wav"
+      const soundUrl = queue[queue.length - 1].url // Воспроизводим последний звук
+
+      const playSound = async () => {
+        await TrackPlayer.add({
+          id: 'trackId',
+          url: soundUrl
+        })
+        setVoice(1) // Предположим, что 1 - это ID этого трека
+        await TrackPlayer.play()
+      }
+
+      if (soundUrl) {
+        playSound()
+      }
+    }
+  }, [])
 
   useEffect(() => {
     const { trueAnswer, shuffleArray } = shake.current()
@@ -109,16 +165,6 @@ export function TestScreen({ navigation, route }: TestScreenT) {
       setAnswer(0)
     }
   }, [navigation])
-
-  const handlePlay = useCallback(() => {
-    if (voice) {
-      voice.play(success => {
-        if (!success) {
-          captureException('Sound did not play successfully')
-        }
-      })
-    }
-  }, [voice])
 
   const onChoice = (name: string) => {
     const { trueAnswer, shuffleArray } = shake.current()
