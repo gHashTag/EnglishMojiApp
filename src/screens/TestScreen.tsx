@@ -1,17 +1,8 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { StyleSheet, View, FlatList, Button } from 'react-native'
+import { StyleSheet, View, FlatList } from 'react-native'
 import * as Progress from 'react-native-progress'
 import TrackPlayer from 'react-native-track-player'
-import {
-  pink,
-  errorSound,
-  green,
-  shuffle,
-  W,
-  white,
-  goBack,
-  captureException
-} from '../constants'
+import { pink, green, shuffle, W, white, goBack, captureException } from '../constants'
 import { emojiT } from '../types/LessonTypes'
 import { ButtonEmoji, Text, Space, Header, Loading, Background } from '../components'
 import { s, vs } from 'react-native-size-matters'
@@ -52,21 +43,18 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   // STATES
   const [bool, setBool] = useState<boolean>(true)
   const [load, setLoad] = useState(true)
-  // Add this line near your other state definitions
   const [pastCorrectAnswers, setPastCorrectAnswers] = useState<emojiT[]>([])
   const [randomData, updateData] = useState<emojiT[]>([defautState])
   const [displayName, setDisplayName] = useState<emojiT | null>(defautState)
   const [count, setCount] = useState<number>(0)
   const [answer, setAnswer] = useState<number>(0)
   const [voice, setVoice] = useState<number | null>(null)
+  const [trackQueue, setTrackQueue] = useState([])
 
-  // OTHER HOOKS
   const { bottom } = useSafeAreaInsets()
-
   const { dark } = useTheme()
 
   const remainingEmojis = useMemo(() => contentUrl, [contentUrl])
-
   const shuffledEmojis = useMemo(() => shuffle(remainingEmojis), [remainingEmojis])
 
   const pastEmojis = useRef<emojiT[]>([])
@@ -92,7 +80,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
         id: 'trackId',
         url: soundUrl
       })
-      setVoice(1) // Допустим, 1 - это ID этого трека
+      setVoice(1)
       await TrackPlayer.play()
     }
 
@@ -106,12 +94,11 @@ export function TestScreen({ navigation, route }: TestScreenT) {
   }, [displayName])
 
   useEffect(() => {
-    // Регистрация слушателя для событий проигрывателя
-    const listener = TrackPlayer.addEventListener('playback-queue-ended', () => {
-      // Обработка события playback-queue-ended
+    const listener = TrackPlayer.addEventListener('playback-queue-ended', async () => {
+      const newQueue = await TrackPlayer.getQueue()
+      console.log('Queue ended. New queue:', newQueue)
     })
 
-    // Возвращение функции очистки, чтобы удалить слушатель при размонтировании компонента
     return () => {
       listener.remove()
     }
@@ -119,18 +106,19 @@ export function TestScreen({ navigation, route }: TestScreenT) {
 
   const handlePlay = useCallback(async () => {
     const queue = await TrackPlayer.getQueue()
-    console.log(queue)
+    console.log('Current queue:', queue)
 
-    if (queue.length > 1 && queue[queue.length - 1].url === 'error.wav') {
-      // Если последний звук в очереди - "error.wav"
-      const soundUrl = queue[queue.length - 2].url // Воспроизводим предпоследний звук
+    const lastPlayedTrack = queue[queue.length - 1]
+
+    if (lastPlayedTrack && lastPlayedTrack.url === 'error.wav' && queue.length > 1) {
+      const soundUrl = queue[queue.length - 2].url
 
       const playSound = async () => {
         await TrackPlayer.add({
           id: 'trackId',
           url: soundUrl
         })
-        setVoice(1) // Предположим, что 1 - это ID этого трека
+        setVoice(1)
         await TrackPlayer.play()
       }
 
@@ -138,16 +126,17 @@ export function TestScreen({ navigation, route }: TestScreenT) {
         playSound()
       }
     } else {
-      // Если последний звук в очереди не является "error.wav"
-      const soundUrl = queue[queue.length - 1].url // Воспроизводим последний звук
+      const soundUrl = lastPlayedTrack ? lastPlayedTrack.url : null
 
       const playSound = async () => {
-        await TrackPlayer.add({
-          id: 'trackId',
-          url: soundUrl
-        })
-        setVoice(1) // Предположим, что 1 - это ID этого трека
-        await TrackPlayer.play()
+        if (soundUrl) {
+          await TrackPlayer.add({
+            id: 'trackId',
+            url: soundUrl
+          })
+          setVoice(1)
+          await TrackPlayer.play()
+        }
       }
 
       if (soundUrl) {
@@ -172,7 +161,7 @@ export function TestScreen({ navigation, route }: TestScreenT) {
       const newAnswerCount = answer + 1
       setAnswer(newAnswerCount)
       setPastCorrectAnswers([...pastCorrectAnswers, displayName])
-      // Check if we've answered all the questions correctly
+
       if (contentUrl && newAnswerCount === contentUrl.length) {
         dispatch(saveResult({ part: cardTitle }))
         navigation.navigate('WIN_SCREEN', { title: cardTitle })
@@ -188,7 +177,12 @@ export function TestScreen({ navigation, route }: TestScreenT) {
       setBool(false)
       setCount(count + 1)
       updateData(shuffle(randomData))
-      errorSound.play()
+      // Play error sound
+      TrackPlayer.add({
+        id: 'errorSoundId',
+        url: 'error.wav'
+      })
+      TrackPlayer.play()
     }
   }
 
@@ -270,19 +264,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     margin: vs(5)
-  },
-  line: {
-    height: vs(7),
-    backgroundColor: white
-  },
-  lineContainer: {
-    width: lineW + vs(2),
-    alignSelf: 'center',
-    height: vs(9),
-    borderRadius: vs(9),
-    overflow: 'hidden',
-    borderWidth: vs(1),
-    borderColor: white
   },
   flexOne: {
     flex: 1,
